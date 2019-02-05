@@ -9,20 +9,56 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Attribute;
   private ConceptPresentation props_Check;
+  private ConceptPresentation props_ChildrenTypeCheck;
+  private ConceptPresentation props_ClassMisuseCheck;
+  private ConceptPresentation props_CustomCheck;
   private ConceptPresentation props_Linter;
+  private ConceptPresentation props_MissingAttributeCheck;
+  private ConceptPresentation props_MissingTagCheck;
+  private ConceptPresentation props_ParentTypeCheck;
+  private ConceptPresentation props_Selector;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Attribute:
+        if (props_Attribute == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("attribute");
+          props_Attribute = cpb.create();
+        }
+        return props_Attribute;
       case LanguageConceptSwitch.Check:
         if (props_Check == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Check = cpb.create();
         }
         return props_Check;
+      case LanguageConceptSwitch.ChildrenTypeCheck:
+        if (props_ChildrenTypeCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ChildrenTypeCheck = cpb.create();
+        }
+        return props_ChildrenTypeCheck;
+      case LanguageConceptSwitch.ClassMisuseCheck:
+        if (props_ClassMisuseCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ClassMisuseCheck = cpb.create();
+        }
+        return props_ClassMisuseCheck;
+      case LanguageConceptSwitch.CustomCheck:
+        if (props_CustomCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_CustomCheck = cpb.create();
+        }
+        return props_CustomCheck;
       case LanguageConceptSwitch.Linter:
         if (props_Linter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -30,6 +66,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Linter = cpb.create();
         }
         return props_Linter;
+      case LanguageConceptSwitch.MissingAttributeCheck:
+        if (props_MissingAttributeCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_MissingAttributeCheck = cpb.create();
+        }
+        return props_MissingAttributeCheck;
+      case LanguageConceptSwitch.MissingTagCheck:
+        if (props_MissingTagCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_MissingTagCheck = cpb.create();
+        }
+        return props_MissingTagCheck;
+      case LanguageConceptSwitch.ParentTypeCheck:
+        if (props_ParentTypeCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ParentTypeCheck = cpb.create();
+        }
+        return props_ParentTypeCheck;
+      case LanguageConceptSwitch.Selector:
+        if (props_Selector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Selector");
+          props_Selector = cpb.create();
+        }
+        return props_Selector;
     }
     return null;
   }

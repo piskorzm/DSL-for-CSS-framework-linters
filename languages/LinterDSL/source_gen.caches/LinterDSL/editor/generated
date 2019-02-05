@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3kdal4ra4qjr3onpck4427l7zczlq3m">
-  <files names="EditorAspectDescriptorImpl.java:Linter_Editor.java:Linter_EditorBuilder_a.java" />
+<product version="3" modelHash="63kaudoje4fffl3kykepekqs4v9vnid">
+  <files names="Attribute_Editor.java:Attribute_EditorBuilder_a.java:ChildrenTypeCheck_Editor.java:ChildrenTypeCheck_EditorBuilder_a.java:ClassMisuseCheck_Editor.java:ClassMisuseCheck_EditorBuilder_a.java:CustomCheck_Editor.java:CustomCheck_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Linter_Editor.java:Linter_EditorBuilder_a.java:MissingAttributeCheck_Editor.java:MissingAttributeCheck_EditorBuilder_a.java:MissingTagCheck_Editor.java:MissingTagCheck_EditorBuilder_a.java:ParentTypeCheck_Editor.java:ParentTypeCheck_EditorBuilder_a.java:Selector_Editor.java:Selector_EditorBuilder_a.java" />
 </product>
 
