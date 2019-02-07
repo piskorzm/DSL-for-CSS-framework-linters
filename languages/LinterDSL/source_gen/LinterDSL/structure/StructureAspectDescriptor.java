@@ -104,9 +104,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302101");
     b.version(2);
-    b.property("required", 0x472d73cdfe35f5d6L).type(PrimitiveTypeId.BOOLEAN).origin("5128882879215302102").done();
-    b.aggregate("allow", 0x472d73cdfe35f5d8L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302104").done();
-    b.aggregate("prohibit", 0x472d73cdfe35f5daL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302106").done();
+    b.aggregate("allowed", 0x472d73cdfe35f5d8L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302104").done();
+    b.aggregate("required", 0x472d73cdfe35f5daL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302106").done();
     b.alias("children type");
     return b.create();
   }
@@ -146,7 +145,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302316");
     b.version(2);
-    b.aggregate("attributes", 0x472d73cdfe35f6adL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f69bL).optional(true).ordered(true).multiple(true).origin("5128882879215302317").done();
+    b.aggregate("attributes", 0x472d73cdfe35f6adL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302317").done();
     b.alias("missing attribute");
     return b.create();
   }

@@ -182,22 +182,17 @@
     <property role="TrG5h" value="ChildrenTypeCheck" />
     <property role="34LRSv" value="children type" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
-    <node concept="1TJgyi" id="4sHsWRYdvnm" role="1TKVEl">
-      <property role="IQ2nx" value="5128882879215302102" />
-      <property role="TrG5h" value="required" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="4sHsWRYdvno" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302104" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="allow" />
+      <property role="20kJfa" value="allowed" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
     <node concept="1TJgyj" id="4sHsWRYdvnq" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302106" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="prohibit" />
+      <property role="20kJfa" value="required" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
@@ -223,7 +218,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4sHsWRYdvqr" resolve="Attribute" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
   <node concept="1TIwiD" id="4sHsWRYdvsh">

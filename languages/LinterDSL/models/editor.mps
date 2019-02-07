@@ -387,23 +387,13 @@
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvpe" role="2iSdaV" />
           </node>
-          <node concept="3EZMnI" id="4sHsWRYdvpf" role="3EZMnx">
-            <node concept="VPM3Z" id="4sHsWRYdvpg" role="3F10Kt" />
-            <node concept="3F0ifn" id="4sHsWRYdvph" role="3EZMnx">
-              <property role="3F0ifm" value="required:" />
-            </node>
-            <node concept="3F0A7n" id="4sHsWRYdvpi" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:4sHsWRYdvnm" resolve="required" />
-            </node>
-            <node concept="l2Vlx" id="4sHsWRYdvpj" role="2iSdaV" />
-          </node>
           <node concept="3EZMnI" id="4sHsWRYdvpk" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYdvpl" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYdvpm" role="3EZMnx">
-              <property role="3F0ifm" value="allow:" />
+              <property role="3F0ifm" value="allowed:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYdvpn" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:4sHsWRYdvno" resolve="allow" />
+              <ref role="1NtTu8" to="izhu:4sHsWRYdvno" resolve="allowed" />
               <node concept="l2Vlx" id="4sHsWRYdvpo" role="2czzBx" />
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvpp" role="2iSdaV" />
@@ -411,10 +401,10 @@
           <node concept="3EZMnI" id="4sHsWRYdvpq" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYdvpr" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYdvps" role="3EZMnx">
-              <property role="3F0ifm" value="prohibit:" />
+              <property role="3F0ifm" value="required:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYdvpt" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:4sHsWRYdvnq" resolve="prohibit" />
+              <ref role="1NtTu8" to="izhu:4sHsWRYdvnq" resolve="required" />
               <node concept="l2Vlx" id="4sHsWRYdvpu" role="2czzBx" />
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvpv" role="2iSdaV" />
