@@ -109,17 +109,14 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("}");
     tgs.newLine();
-    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("});");
-    tgs.newLine();
     tgs.newLine();
 
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("});");
-    tgs.newLine();
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -147,6 +144,51 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.newLine();
 
+    tgs.append("function missingTagCheck(name, id, description, applyTo, unique, violationMessage) {");
+    tgs.newLine();
+    tgs.newLine();
+
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var missingTags = [];");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("var duplicatedTags = [];");
+
+    tgs.indent();
+    tgs.append("applyTo.forEach(function(selector) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (!$(selector).length) {");
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("missingTags.push(selector);");
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("if ($(selector).length) > 1 && unique) {");
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("duplicatedTags.concat($(selector));");
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+
+
+    tgs.newLine();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2ae6L, "checks"))) {
       tgs.appendNode(item);
     }

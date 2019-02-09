@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="c400f415-6edc-4c5f-a0ce-ccbb04f551e6" name="LinterDSL">
+      <concept id="5128882879215243137" name="LinterDSL.structure.MissingTagCheck" flags="ng" index="2T67Lc">
+        <property id="5128882879215243138" name="unique" index="2T67Lf" />
+      </concept>
       <concept id="5128882879215302417" name="LinterDSL.structure.ClassMisuseCheck" flags="ng" index="2T68js">
         <child id="5128882879215302418" name="intendedTagTypes" index="2T68jv" />
       </concept>
@@ -38,7 +41,7 @@
     <property role="TrG5h" value="bootlint" />
     <property role="1NTRdd" value="Bootstrap" />
     <node concept="2T68js" id="1T6agG5PpDf" role="1NTRaP">
-      <property role="TrG5h" value=".row" />
+      <property role="TrG5h" value="Misuse of row class" />
       <property role="1NTRax" value="1" />
       <property role="1NTRaS" value="dd" />
       <property role="1Ny813" value="aaaaa" />
@@ -61,7 +64,17 @@
         <property role="1NyYtj" value=".card" />
       </node>
       <node concept="1Ny1xz" id="7GUEhtghC_h" role="2T68ol">
-        <property role="1NyYtj" value=".card-hearde" />
+        <property role="1NyYtj" value="card-header" />
+      </node>
+    </node>
+    <node concept="2T67Lc" id="4Jlejzb$iOx" role="1NTRaP">
+      <property role="TrG5h" value="UTF required" />
+      <property role="1NTRaS" value="a utf-8 must be used" />
+      <property role="1NTRax" value="3" />
+      <property role="2T67Lf" value="true" />
+      <property role="1Ny813" value="Only UTF-8 charset can be accepted" />
+      <node concept="1Ny1xz" id="4Jlejzb$iO$" role="1Ny81s">
+        <property role="1NyYtj" value="head&gt;meta; charset=UTF-8" />
       </node>
     </node>
   </node>

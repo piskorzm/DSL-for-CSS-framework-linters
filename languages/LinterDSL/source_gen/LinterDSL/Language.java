@@ -15,6 +15,7 @@ import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import LinterDSL.structure.ConceptPresentationAspectImpl;
 import jetbrains.mps.text.rt.TextGenAspectDescriptor;
+import LinterDSL.textGen.null;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import LinterDSL.typesystem.TypesystemDescriptor;
 
@@ -61,7 +62,7 @@ public class Language extends LanguageRuntime {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
     }
     if (aspectClass == TextGenAspectDescriptor.class) {
-      return aspectClass.cast(new LinterDSL.textGen.TextGenAspectDescriptor());
+      return aspectClass.cast(new null());
     }
     if (aspectClass == IHelginsDescriptor.class) {
       return aspectClass.cast(new TypesystemDescriptor());

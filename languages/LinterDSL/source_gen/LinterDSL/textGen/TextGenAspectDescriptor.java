@@ -28,6 +28,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new ClassMisuseCheck_TextGen();
       case LanguageConceptSwitch.Linter:
         return new Linter_TextGen();
+      case LanguageConceptSwitch.MissingTagCheck:
+        return new MissingTagCheck_TextGen();
       case LanguageConceptSwitch.Selector:
         return new Selector_TextGen();
     }
