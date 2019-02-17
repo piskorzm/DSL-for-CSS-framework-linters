@@ -90,10 +90,13 @@
         <node concept="2iRfu4" id="4sHsWRYcrCB" role="2iSdaV" />
         <node concept="VPM3Z" id="4sHsWRYcrCC" role="3F10Kt" />
         <node concept="3F0ifn" id="4sHsWRYcrCG" role="3EZMnx">
-          <property role="3F0ifm" value="parent type" />
+          <property role="3F0ifm" value="Parent type check" />
         </node>
         <node concept="3F0A7n" id="4sHsWRYcrCP" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="1inX5h2xhQU" role="3EZMnx">
+          <property role="3F0ifm" value="with id" />
         </node>
         <node concept="3F0A7n" id="4sHsWRYcrD5" role="3EZMnx">
           <ref role="1NtTu8" to="izhu:7hDm5c7zyFM" resolve="id" />
@@ -110,20 +113,10 @@
         <node concept="3XFhqQ" id="4sHsWRYcOTv" role="3EZMnx" />
         <node concept="3EZMnI" id="4sHsWRYcL6F" role="3EZMnx">
           <node concept="VPM3Z" id="4sHsWRYcL6H" role="3F10Kt" />
-          <node concept="3EZMnI" id="4sHsWRYcL6Q" role="3EZMnx">
-            <node concept="VPM3Z" id="4sHsWRYcL6S" role="3F10Kt" />
-            <node concept="3F0ifn" id="4sHsWRYcL71" role="3EZMnx">
-              <property role="3F0ifm" value="description:" />
-            </node>
-            <node concept="3F0A7n" id="4sHsWRYcL77" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:7hDm5c7zyFF" resolve="description" />
-            </node>
-            <node concept="l2Vlx" id="4sHsWRYcL6V" role="2iSdaV" />
-          </node>
           <node concept="3EZMnI" id="4sHsWRYcL7w" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYcL7y" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYcL7$" role="3EZMnx">
-              <property role="3F0ifm" value="apply to:" />
+              <property role="3F0ifm" value="if an element that satisfies one of the following selectors:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYcL7N" role="3EZMnx">
               <ref role="1NtTu8" to="izhu:1gpTSTB$mvi" resolve="applyTo" />
@@ -131,47 +124,16 @@
             </node>
             <node concept="l2Vlx" id="4sHsWRYcL7_" role="2iSdaV" />
           </node>
-          <node concept="3EZMnI" id="4sHsWRYcL86" role="3EZMnx">
-            <node concept="VPM3Z" id="4sHsWRYcL88" role="3F10Kt" />
-            <node concept="3F0ifn" id="4sHsWRYcL8a" role="3EZMnx">
-              <property role="3F0ifm" value="absolute:" />
-            </node>
-            <node concept="3F0A7n" id="4sHsWRYcL8v" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:72rEP0BaARb" resolve="absolute" />
-            </node>
-            <node concept="l2Vlx" id="4sHsWRYcL8b" role="2iSdaV" />
-          </node>
           <node concept="3EZMnI" id="4sHsWRYcL9p" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYcL9r" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYcL9t" role="3EZMnx">
-              <property role="3F0ifm" value="allow:" />
+              <property role="3F0ifm" value="has a direct parent which does not satisfy one of the following:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYcL9R" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:1gpTSTB$w3v" resolve="allow" />
+              <ref role="1NtTu8" to="izhu:1gpTSTB$w3v" resolve="allowedDirectParents" />
               <node concept="l2Vlx" id="4sHsWRYcL9T" role="2czzBx" />
             </node>
             <node concept="l2Vlx" id="4sHsWRYcL9u" role="2iSdaV" />
-          </node>
-          <node concept="3EZMnI" id="4sHsWRYcLb5" role="3EZMnx">
-            <node concept="VPM3Z" id="4sHsWRYcLb7" role="3F10Kt" />
-            <node concept="3F0ifn" id="4sHsWRYcLb9" role="3EZMnx">
-              <property role="3F0ifm" value="prohibit:" />
-            </node>
-            <node concept="3F2HdR" id="4sHsWRYcLbD" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:1gpTSTB$w3x" resolve="prohibit" />
-              <node concept="l2Vlx" id="4sHsWRYcLbF" role="2czzBx" />
-            </node>
-            <node concept="l2Vlx" id="4sHsWRYcLba" role="2iSdaV" />
-          </node>
-          <node concept="3EZMnI" id="4sHsWRYcLcd" role="3EZMnx">
-            <node concept="VPM3Z" id="4sHsWRYcLcf" role="3F10Kt" />
-            <node concept="3F0ifn" id="4sHsWRYcLch" role="3EZMnx">
-              <property role="3F0ifm" value="violation message:" />
-            </node>
-            <node concept="3F0A7n" id="4sHsWRYcLcR" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:1gpTSTB$mvd" resolve="violationMessage" />
-            </node>
-            <node concept="l2Vlx" id="4sHsWRYcLci" role="2iSdaV" />
           </node>
           <node concept="3F0ifn" id="4sHsWRYcSf3" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYcL6K" role="2iSdaV" />
@@ -487,7 +449,7 @@
               <property role="3F0ifm" value="attributes:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYdvsb" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:4sHsWRYdvqH" resolve="attributes" />
+              <ref role="1NtTu8" to="izhu:4sHsWRYdvqH" resolve="requiredAttributes" />
               <node concept="l2Vlx" id="4sHsWRYdvsd" role="2czzBx" />
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvrn" role="2iSdaV" />
