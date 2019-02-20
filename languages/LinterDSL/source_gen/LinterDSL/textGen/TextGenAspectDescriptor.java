@@ -22,14 +22,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
-      case LanguageConceptSwitch.ChildrenTypeCheck:
-        return new ChildrenTypeCheck_TextGen();
-      case LanguageConceptSwitch.ClassMisuseCheck:
-        return new ClassMisuseCheck_TextGen();
+      case LanguageConceptSwitch.AllowedChildrenCheck:
+        return new AllowedChildrenCheck_TextGen();
+      case LanguageConceptSwitch.AllowedParentCheck:
+        return new AllowedParentCheck_TextGen();
       case LanguageConceptSwitch.Linter:
         return new Linter_TextGen();
       case LanguageConceptSwitch.MissingTagCheck:
         return new MissingTagCheck_TextGen();
+      case LanguageConceptSwitch.MisuseCheck:
+        return new MisuseCheck_TextGen();
       case LanguageConceptSwitch.Selector:
         return new Selector_TextGen();
     }

@@ -16,15 +16,15 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAllowedChildrenCheck = createDescriptorForAllowedChildrenCheck();
+  /*package*/ final ConceptDescriptor myConceptAllowedParentCheck = createDescriptorForAllowedParentCheck();
   /*package*/ final ConceptDescriptor myConceptAttribute = createDescriptorForAttribute();
   /*package*/ final ConceptDescriptor myConceptCheck = createDescriptorForCheck();
-  /*package*/ final ConceptDescriptor myConceptChildrenTypeCheck = createDescriptorForChildrenTypeCheck();
-  /*package*/ final ConceptDescriptor myConceptClassMisuseCheck = createDescriptorForClassMisuseCheck();
-  /*package*/ final ConceptDescriptor myConceptCustomCheck = createDescriptorForCustomCheck();
   /*package*/ final ConceptDescriptor myConceptLinter = createDescriptorForLinter();
-  /*package*/ final ConceptDescriptor myConceptMissingAttributeCheck = createDescriptorForMissingAttributeCheck();
   /*package*/ final ConceptDescriptor myConceptMissingTagCheck = createDescriptorForMissingTagCheck();
-  /*package*/ final ConceptDescriptor myConceptParentTypeCheck = createDescriptorForParentTypeCheck();
+  /*package*/ final ConceptDescriptor myConceptMisuseCheck = createDescriptorForMisuseCheck();
+  /*package*/ final ConceptDescriptor myConceptRequiredChildrenCheck = createDescriptorForRequiredChildrenCheck();
+  /*package*/ final ConceptDescriptor myConceptRequiredParentCheck = createDescriptorForRequiredParentCheck();
   /*package*/ final ConceptDescriptor myConceptSelector = createDescriptorForSelector();
   /*package*/ final EnumerationDescriptor myEnumerationCheckType = new EnumerationDescriptor_CheckType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -35,31 +35,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptCheck, myConceptChildrenTypeCheck, myConceptClassMisuseCheck, myConceptCustomCheck, myConceptLinter, myConceptMissingAttributeCheck, myConceptMissingTagCheck, myConceptParentTypeCheck, myConceptSelector);
+    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAllowedParentCheck, myConceptAttribute, myConceptCheck, myConceptLinter, myConceptMissingTagCheck, myConceptMisuseCheck, myConceptRequiredChildrenCheck, myConceptRequiredParentCheck, myConceptSelector);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.AllowedChildrenCheck:
+        return myConceptAllowedChildrenCheck;
+      case LanguageConceptSwitch.AllowedParentCheck:
+        return myConceptAllowedParentCheck;
       case LanguageConceptSwitch.Attribute:
         return myConceptAttribute;
       case LanguageConceptSwitch.Check:
         return myConceptCheck;
-      case LanguageConceptSwitch.ChildrenTypeCheck:
-        return myConceptChildrenTypeCheck;
-      case LanguageConceptSwitch.ClassMisuseCheck:
-        return myConceptClassMisuseCheck;
-      case LanguageConceptSwitch.CustomCheck:
-        return myConceptCustomCheck;
       case LanguageConceptSwitch.Linter:
         return myConceptLinter;
-      case LanguageConceptSwitch.MissingAttributeCheck:
-        return myConceptMissingAttributeCheck;
       case LanguageConceptSwitch.MissingTagCheck:
         return myConceptMissingTagCheck;
-      case LanguageConceptSwitch.ParentTypeCheck:
-        return myConceptParentTypeCheck;
+      case LanguageConceptSwitch.MisuseCheck:
+        return myConceptMisuseCheck;
+      case LanguageConceptSwitch.RequiredChildrenCheck:
+        return myConceptRequiredChildrenCheck;
+      case LanguageConceptSwitch.RequiredParentCheck:
+        return myConceptRequiredParentCheck;
       case LanguageConceptSwitch.Selector:
         return myConceptSelector;
       default:
@@ -76,6 +76,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAllowedChildrenCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "AllowedChildrenCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f5d5L);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302101");
+    b.version(2);
+    b.aggregate("allowedChildren", 0x472d73cdfe35f5d8L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302104").done();
+    b.alias("children type check");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAllowedParentCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "AllowedParentCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x709bab50272a6dcaL);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8114267514380905930");
+    b.version(2);
+    b.aggregate("allowedDirectParents", 0x1419e78e679200dfL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("1448443353985319135").done();
+    b.alias("allowed parent check");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAttribute() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "Attribute", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f69bL);
     b.class_(false, false, false);
@@ -92,41 +112,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8388332894586546920");
     b.version(2);
     b.property("id", 0x74695853078e2af2L).type(PrimitiveTypeId.INTEGER).origin("8388332894586546930").done();
-    b.property("description", 0x74695853078e2aebL).type(PrimitiveTypeId.STRING).origin("8388332894586546923").done();
     b.property("type", 0x1419e78e6791678eL).type(MetaIdFactory.dataTypeId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e67916789L)).origin("1448443353985279886").done();
-    b.property("violationMessage", 0x1419e78e679167cdL).type(PrimitiveTypeId.STRING).origin("1448443353985279949").done();
     b.aggregate("applyTo", 0x1419e78e679167d2L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("1448443353985279954").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForChildrenTypeCheck() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ChildrenTypeCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f5d5L);
-    b.class_(false, false, false);
-    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302101");
-    b.version(2);
-    b.aggregate("allowed", 0x472d73cdfe35f5d8L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302104").done();
-    b.aggregate("required", 0x472d73cdfe35f5daL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302106").done();
-    b.alias("children type");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForClassMisuseCheck() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ClassMisuseCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f711L);
-    b.class_(false, false, false);
-    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302417");
-    b.version(2);
-    b.aggregate("intendedTagTypes", 0x472d73cdfe35f712L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302418").done();
-    b.alias("class misuse");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForCustomCheck() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "CustomCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e679184d5L);
-    b.class_(false, false, false);
-    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/1448443353985287381");
-    b.version(2);
-    b.property("codePath", 0x1419e78e679184d8L).type(PrimitiveTypeId.STRING).origin("1448443353985287384").done();
-    b.alias("custom");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLinter() {
@@ -139,16 +126,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("checks", 0x74695853078e2ae6L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L).optional(true).ordered(true).multiple(true).origin("8388332894586546918").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForMissingAttributeCheck() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "MissingAttributeCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f6acL);
-    b.class_(false, false, false);
-    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302316");
-    b.version(2);
-    b.aggregate("attributes", 0x472d73cdfe35f6adL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302317").done();
-    b.alias("missing attribute");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForMissingTagCheck() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "MissingTagCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe350f81L);
     b.class_(false, false, false);
@@ -156,19 +133,37 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215243137");
     b.version(2);
     b.property("unique", 0x472d73cdfe350f82L).type(PrimitiveTypeId.BOOLEAN).origin("5128882879215243138").done();
-    b.alias("missing tag");
+    b.alias("missing tag check");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForParentTypeCheck() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ParentTypeCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x709bab50272a6dcaL);
+  private static ConceptDescriptor createDescriptorForMisuseCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "MisuseCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x472d73cdfe35f711L);
     b.class_(false, false, false);
     b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8114267514380905930");
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5128882879215302417");
     b.version(2);
-    b.property("absolute", 0x709bab50272a6dcbL).type(PrimitiveTypeId.BOOLEAN).origin("8114267514380905931").done();
-    b.aggregate("allow", 0x1419e78e679200dfL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("1448443353985319135").done();
-    b.aggregate("prohibit", 0x1419e78e679200e1L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("1448443353985319137").done();
-    b.alias("parent type");
+    b.aggregate("requiredCharacteristisc", 0x472d73cdfe35f712L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5128882879215302418").done();
+    b.alias("misuse check");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRequiredChildrenCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "RequiredChildrenCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9051462808395798600");
+    b.version(2);
+    b.aggregate("requiredChildren", 0x7d9d4177b0175849L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798601").done();
+    b.alias("required children check");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRequiredParentCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "RequiredParentCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b01757b9L);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9051462808395798457");
+    b.version(2);
+    b.aggregate("requiredParents", 0x7d9d4177b01757baL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798458").done();
+    b.alias("required parent check");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSelector() {

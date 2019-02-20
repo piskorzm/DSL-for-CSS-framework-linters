@@ -9,15 +9,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AllowedChildrenCheck;
+  private ConceptPresentation props_AllowedParentCheck;
   private ConceptPresentation props_Attribute;
   private ConceptPresentation props_Check;
-  private ConceptPresentation props_ChildrenTypeCheck;
-  private ConceptPresentation props_ClassMisuseCheck;
-  private ConceptPresentation props_CustomCheck;
   private ConceptPresentation props_Linter;
-  private ConceptPresentation props_MissingAttributeCheck;
   private ConceptPresentation props_MissingTagCheck;
-  private ConceptPresentation props_ParentTypeCheck;
+  private ConceptPresentation props_MisuseCheck;
+  private ConceptPresentation props_RequiredChildrenCheck;
+  private ConceptPresentation props_RequiredParentCheck;
   private ConceptPresentation props_Selector;
 
   @Override
@@ -25,6 +25,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AllowedChildrenCheck:
+        if (props_AllowedChildrenCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AllowedChildrenCheck = cpb.create();
+        }
+        return props_AllowedChildrenCheck;
+      case LanguageConceptSwitch.AllowedParentCheck:
+        if (props_AllowedParentCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AllowedParentCheck = cpb.create();
+        }
+        return props_AllowedParentCheck;
       case LanguageConceptSwitch.Attribute:
         if (props_Attribute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -38,27 +52,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Check = cpb.create();
         }
         return props_Check;
-      case LanguageConceptSwitch.ChildrenTypeCheck:
-        if (props_ChildrenTypeCheck == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ChildrenTypeCheck = cpb.create();
-        }
-        return props_ChildrenTypeCheck;
-      case LanguageConceptSwitch.ClassMisuseCheck:
-        if (props_ClassMisuseCheck == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ClassMisuseCheck = cpb.create();
-        }
-        return props_ClassMisuseCheck;
-      case LanguageConceptSwitch.CustomCheck:
-        if (props_CustomCheck == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_CustomCheck = cpb.create();
-        }
-        return props_CustomCheck;
       case LanguageConceptSwitch.Linter:
         if (props_Linter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -66,13 +59,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Linter = cpb.create();
         }
         return props_Linter;
-      case LanguageConceptSwitch.MissingAttributeCheck:
-        if (props_MissingAttributeCheck == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_MissingAttributeCheck = cpb.create();
-        }
-        return props_MissingAttributeCheck;
       case LanguageConceptSwitch.MissingTagCheck:
         if (props_MissingTagCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,13 +66,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MissingTagCheck = cpb.create();
         }
         return props_MissingTagCheck;
-      case LanguageConceptSwitch.ParentTypeCheck:
-        if (props_ParentTypeCheck == null) {
+      case LanguageConceptSwitch.MisuseCheck:
+        if (props_MisuseCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_ParentTypeCheck = cpb.create();
+          props_MisuseCheck = cpb.create();
         }
-        return props_ParentTypeCheck;
+        return props_MisuseCheck;
+      case LanguageConceptSwitch.RequiredChildrenCheck:
+        if (props_RequiredChildrenCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_RequiredChildrenCheck = cpb.create();
+        }
+        return props_RequiredChildrenCheck;
+      case LanguageConceptSwitch.RequiredParentCheck:
+        if (props_RequiredParentCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_RequiredParentCheck = cpb.create();
+        }
+        return props_RequiredParentCheck;
       case LanguageConceptSwitch.Selector:
         if (props_Selector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

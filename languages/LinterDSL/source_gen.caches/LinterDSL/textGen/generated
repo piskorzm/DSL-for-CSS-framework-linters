@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-1wnyj4ste2hq2ng5adf5kqcp9h8o6zh">
-  <files names="ChildrenTypeCheck_TextGen.java:ClassMisuseCheck_TextGen.java:Linter_TextGen.java:Linter_functions.java:MissingTagCheck_TextGen.java:Selector_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="-byrupqti3c6653rhrm71n6r5ussb3js">
+  <files names="AllowedChildrenCheck_TextGen.java:AllowedParentCheck_TextGen.java:Linter_TextGen.java:Linter_functions.java:MissingTagCheck_TextGen.java:MisuseCheck_TextGen.java:Selector_TextGen.java:TextGenAspectDescriptor.java" />
 </product>
 

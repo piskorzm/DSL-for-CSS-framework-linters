@@ -154,6 +154,8 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("var duplicatedTags = [];");
+    tgs.newLine();
+    tgs.newLine();
 
     tgs.indent();
     tgs.append("applyTo.forEach(function(selector) {");
@@ -187,10 +189,152 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
     tgs.newLine();
 
-
     tgs.newLine();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2ae6L, "checks"))) {
       tgs.appendNode(item);
     }
+
+    tgs.append("function parentTypeCheck(name, id, applyTo, allowedDirectParents) {");
+    tgs.newLine();
+    tgs.newLine();
+
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var elementsWithInappropriateParents = [];");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("applyTo.forEach(function(selector) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("$(selector).forEach(function (element) {)");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var hasInappropriateParent = true;");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("allowedDirectParents.forEach(function (allowedParentSelector) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (element.parentElement.matches(allowedParentSelector)) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("hasInappropriateParents = false;");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (hasInappropriateParents) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("elementsWithInappropriateParents.push(element);");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("if (elementsWithInappropriateParents.length) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var message = name + ' {id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
+    tgs.append("'can anly be direct children of the following: ' + allowedDirectParents.join(, ) + '.'");
+    tgs.newLine();
+    tgs.append("console.warn(message, elementsWithInappropriateParents);");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.append("function parentTypeCheck(name, id, applyTo, requiredAttributes) {");
+    tgs.newLine();
+    tgs.newLine();
+
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var elementsMissingAttributes = [];");
+    tgs.newLine();
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("applyTo.forEach(function(selector) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("$(selector).forEach(function (element) {)");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var isMissingAttribute = false;");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("requiredAttributes.forEach(function (attribute) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (!element.matches(attribute)) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("isMissingAttribute = true;");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (isMissingAttribute) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("elementsMissingAttributes.push(element);");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+
   }
 }

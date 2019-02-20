@@ -82,20 +82,10 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="7hDm5c7zyFF" role="1TKVEl">
-      <property role="IQ2nx" value="8388332894586546923" />
-      <property role="TrG5h" value="description" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="1gpTSTB$mue" role="1TKVEl">
       <property role="IQ2nx" value="1448443353985279886" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="1gpTSTB$mu9" resolve="CheckType" />
-    </node>
-    <node concept="1TJgyi" id="1gpTSTB$mvd" role="1TKVEl">
-      <property role="IQ2nx" value="1448443353985279949" />
-      <property role="TrG5h" value="violationMessage" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="71cd7lYn2Zj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -110,14 +100,14 @@
   </node>
   <node concept="1TIwiD" id="72rEP0BaARa">
     <property role="EcuMT" value="8114267514380905930" />
-    <property role="TrG5h" value="ParentTypeCheck" />
-    <property role="34LRSv" value="parent type" />
+    <property role="TrG5h" value="AllowedParentCheck" />
+    <property role="34LRSv" value="allowed parent check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyj" id="1gpTSTB$w3v" role="1TKVEi">
       <property role="IQ2ns" value="1448443353985319135" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="allowedDirectParents" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
@@ -133,17 +123,6 @@
       <property role="1uS6qo" value="Warning" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1gpTSTB$ojl">
-    <property role="EcuMT" value="1448443353985287381" />
-    <property role="TrG5h" value="CustomCheck" />
-    <property role="34LRSv" value="custom" />
-    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
-    <node concept="1TJgyi" id="1gpTSTB$ojo" role="1TKVEl">
-      <property role="IQ2nx" value="1448443353985287384" />
-      <property role="TrG5h" value="codePath" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1gpTSTB$vZH">
     <property role="EcuMT" value="1448443353985318893" />
     <property role="TrG5h" value="Selector" />
@@ -157,7 +136,7 @@
   <node concept="1TIwiD" id="4sHsWRYdgY1">
     <property role="EcuMT" value="5128882879215243137" />
     <property role="TrG5h" value="MissingTagCheck" />
-    <property role="34LRSv" value="missing tag" />
+    <property role="34LRSv" value="missing tag check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyi" id="4sHsWRYdgY2" role="1TKVEl">
       <property role="IQ2nx" value="5128882879215243138" />
@@ -167,20 +146,13 @@
   </node>
   <node concept="1TIwiD" id="4sHsWRYdvnl">
     <property role="EcuMT" value="5128882879215302101" />
-    <property role="TrG5h" value="ChildrenTypeCheck" />
-    <property role="34LRSv" value="children type" />
+    <property role="TrG5h" value="AllowedChildrenCheck" />
+    <property role="34LRSv" value="children type check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyj" id="4sHsWRYdvno" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302104" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="allowed" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
-    </node>
-    <node concept="1TJgyj" id="4sHsWRYdvnq" role="1TKVEi">
-      <property role="IQ2ns" value="5128882879215302106" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="required" />
+      <property role="20kJfa" value="allowedChildren" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
@@ -196,29 +168,42 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4sHsWRYdvqG">
-    <property role="EcuMT" value="5128882879215302316" />
-    <property role="TrG5h" value="MissingAttributeCheck" />
-    <property role="34LRSv" value="missing attribute" />
-    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
-    <node concept="1TJgyj" id="4sHsWRYdvqH" role="1TKVEi">
-      <property role="IQ2ns" value="5128882879215302317" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requiredAttributes" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4sHsWRYdvsh">
     <property role="EcuMT" value="5128882879215302417" />
-    <property role="TrG5h" value="ClassMisuseCheck" />
-    <property role="34LRSv" value="class misuse" />
+    <property role="TrG5h" value="MisuseCheck" />
+    <property role="34LRSv" value="misuse check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyj" id="4sHsWRYdvsi" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302418" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="intendedTagTypes" />
+      <property role="20kJfa" value="requiredCharacteristisc" />
       <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7QtgnuK5PuT">
+    <property role="EcuMT" value="9051462808395798457" />
+    <property role="TrG5h" value="RequiredParentCheck" />
+    <property role="34LRSv" value="required parent check" />
+    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
+    <node concept="1TJgyj" id="7QtgnuK5PuU" role="1TKVEi">
+      <property role="IQ2ns" value="9051462808395798458" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="requiredParents" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7QtgnuK5Px8">
+    <property role="EcuMT" value="9051462808395798600" />
+    <property role="TrG5h" value="RequiredChildrenCheck" />
+    <property role="34LRSv" value="required children check" />
+    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
+    <node concept="1TJgyj" id="7QtgnuK5Px9" role="1TKVEi">
+      <property role="IQ2ns" value="9051462808395798601" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="requiredChildren" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
