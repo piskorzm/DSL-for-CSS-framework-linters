@@ -83,7 +83,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="72rEP0BaASf">
-    <ref role="1XX52x" to="izhu:72rEP0BaARa" resolve="AllowedParentCheck" />
+    <ref role="1XX52x" to="izhu:72rEP0BaARa" resolve="DirectParentCheck" />
     <node concept="3EZMnI" id="4sHsWRYcrCy" role="2wV5jI">
       <node concept="2iRkQZ" id="4sHsWRYcrCz" role="2iSdaV" />
       <node concept="3EZMnI" id="4sHsWRYcrCA" role="3EZMnx">
@@ -270,12 +270,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="4sHsWRYdvqB">
-    <ref role="1XX52x" to="izhu:4sHsWRYdvqr" resolve="Attribute" />
-    <node concept="3F0A7n" id="4sHsWRYdvqD" role="2wV5jI">
-      <ref role="1NtTu8" to="izhu:4sHsWRYdvqs" resolve="string" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4sHsWRYdvsy">
     <ref role="1XX52x" to="izhu:4sHsWRYdvsh" resolve="MisuseCheck" />
     <node concept="3EZMnI" id="4sHsWRYdvs$" role="2wV5jI">
@@ -321,78 +315,29 @@
           <node concept="3EZMnI" id="4sHsWRYdvsY" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYdvsZ" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYdvt0" role="3EZMnx">
-              <property role="3F0ifm" value="does not satisfy any selectors from the following list:" />
+              <property role="3F0ifm" value="does not satisfy at least one selector from the following list:" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYdvt1" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:4sHsWRYdvsi" resolve="requiredCharacteristisc" />
+              <ref role="1NtTu8" to="izhu:4sHsWRYdvsi" resolve="required" />
               <node concept="l2Vlx" id="4sHsWRYdvt2" role="2czzBx" />
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvt3" role="2iSdaV" />
           </node>
-          <node concept="3F0ifn" id="4sHsWRYdvt9" role="3EZMnx" />
+          <node concept="3EZMnI" id="6xJgnXxuUhg" role="3EZMnx">
+            <node concept="VPM3Z" id="6xJgnXxuUhi" role="3F10Kt" />
+            <node concept="3F0ifn" id="6xJgnXxuUhk" role="3EZMnx">
+              <property role="3F0ifm" value="or it matches any of the prohibited selectors:" />
+            </node>
+            <node concept="3F2HdR" id="6xJgnXxuUkn" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:6xJgnXxuUhB" resolve="prohibited" />
+              <node concept="l2Vlx" id="6xJgnXxuUkp" role="2czzBx" />
+            </node>
+            <node concept="l2Vlx" id="6xJgnXxuUhl" role="2iSdaV" />
+          </node>
+          <node concept="3F0ifn" id="6xJgnXxuUkt" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYdvta" role="2iSdaV" />
         </node>
         <node concept="l2Vlx" id="4sHsWRYdvtb" role="2iSdaV" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7QtgnuK5Pvb">
-    <ref role="1XX52x" to="izhu:7QtgnuK5PuT" resolve="RequiredParentCheck" />
-    <node concept="3EZMnI" id="7QtgnuK5Pvd" role="2wV5jI">
-      <node concept="2iRkQZ" id="7QtgnuK5Pve" role="2iSdaV" />
-      <node concept="3EZMnI" id="7QtgnuK5Pvf" role="3EZMnx">
-        <node concept="2iRfu4" id="7QtgnuK5Pvg" role="2iSdaV" />
-        <node concept="VPM3Z" id="7QtgnuK5Pvh" role="3F10Kt" />
-        <node concept="3F0ifn" id="7QtgnuK5Pvi" role="3EZMnx">
-          <property role="3F0ifm" value="required parent check" />
-        </node>
-        <node concept="3F0A7n" id="7QtgnuK5PwZ" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3F0ifn" id="7QtgnuK5Pvk" role="3EZMnx">
-          <property role="3F0ifm" value="with id" />
-        </node>
-        <node concept="3F0A7n" id="7QtgnuK5Pvl" role="3EZMnx">
-          <ref role="1NtTu8" to="izhu:7hDm5c7zyFM" resolve="id" />
-        </node>
-        <node concept="3F0ifn" id="7QtgnuK5Pvm" role="3EZMnx">
-          <property role="3F0ifm" value="rises" />
-        </node>
-        <node concept="3F0A7n" id="7QtgnuK5Pvn" role="3EZMnx">
-          <ref role="1NtTu8" to="izhu:1gpTSTB$mue" resolve="type" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="7QtgnuK5Pvo" role="3EZMnx">
-        <node concept="VPM3Z" id="7QtgnuK5Pvp" role="3F10Kt" />
-        <node concept="3XFhqQ" id="7QtgnuK5Pvq" role="3EZMnx" />
-        <node concept="3EZMnI" id="7QtgnuK5Pvr" role="3EZMnx">
-          <node concept="VPM3Z" id="7QtgnuK5Pvs" role="3F10Kt" />
-          <node concept="3EZMnI" id="7QtgnuK5Pvt" role="3EZMnx">
-            <node concept="VPM3Z" id="7QtgnuK5Pvu" role="3F10Kt" />
-            <node concept="3F0ifn" id="7QtgnuK5Pvv" role="3EZMnx">
-              <property role="3F0ifm" value="if an element that satisfies one of the following selectors:" />
-            </node>
-            <node concept="3F2HdR" id="7QtgnuK5Pvw" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:1gpTSTB$mvi" resolve="applyTo" />
-              <node concept="l2Vlx" id="7QtgnuK5Pvx" role="2czzBx" />
-            </node>
-            <node concept="l2Vlx" id="7QtgnuK5Pvy" role="2iSdaV" />
-          </node>
-          <node concept="3EZMnI" id="7QtgnuK5Pvz" role="3EZMnx">
-            <node concept="VPM3Z" id="7QtgnuK5Pv$" role="3F10Kt" />
-            <node concept="3F0ifn" id="7QtgnuK5Pv_" role="3EZMnx">
-              <property role="3F0ifm" value="does not have a direct/indirect parent which satisfies one of the following:" />
-            </node>
-            <node concept="3F2HdR" id="7QtgnuK5PvA" role="3EZMnx">
-              <ref role="1NtTu8" to="izhu:7QtgnuK5PuU" resolve="requiredParents" />
-              <node concept="l2Vlx" id="7QtgnuK5PvB" role="2czzBx" />
-            </node>
-            <node concept="l2Vlx" id="7QtgnuK5PvC" role="2iSdaV" />
-          </node>
-          <node concept="3F0ifn" id="7QtgnuK5PvD" role="3EZMnx" />
-          <node concept="2iRkQZ" id="7QtgnuK5PvE" role="2iSdaV" />
-        </node>
-        <node concept="l2Vlx" id="7QtgnuK5PvF" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -453,6 +398,66 @@
           <node concept="2iRkQZ" id="7QtgnuK5PAp" role="2iSdaV" />
         </node>
         <node concept="l2Vlx" id="7QtgnuK5PAq" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6xJgnXxuYcR">
+    <ref role="1XX52x" to="izhu:6xJgnXxuYcG" resolve="PredecesorsCheck" />
+    <node concept="3EZMnI" id="6xJgnXxuYcT" role="2wV5jI">
+      <node concept="2iRkQZ" id="6xJgnXxuYcU" role="2iSdaV" />
+      <node concept="3EZMnI" id="6xJgnXxuYcV" role="3EZMnx">
+        <node concept="2iRfu4" id="6xJgnXxuYcW" role="2iSdaV" />
+        <node concept="VPM3Z" id="6xJgnXxuYcX" role="3F10Kt" />
+        <node concept="3F0ifn" id="6xJgnXxuYcY" role="3EZMnx">
+          <property role="3F0ifm" value="predecesors check" />
+        </node>
+        <node concept="3F0A7n" id="6xJgnXxuYcZ" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="6xJgnXxuYd0" role="3EZMnx">
+          <property role="3F0ifm" value="with id" />
+        </node>
+        <node concept="3F0A7n" id="6xJgnXxuYd1" role="3EZMnx">
+          <ref role="1NtTu8" to="izhu:7hDm5c7zyFM" resolve="id" />
+        </node>
+        <node concept="3F0ifn" id="6xJgnXxuYd2" role="3EZMnx">
+          <property role="3F0ifm" value="rises" />
+        </node>
+        <node concept="3F0A7n" id="6xJgnXxuYd3" role="3EZMnx">
+          <ref role="1NtTu8" to="izhu:1gpTSTB$mue" resolve="type" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6xJgnXxuYd4" role="3EZMnx">
+        <node concept="VPM3Z" id="6xJgnXxuYd5" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6xJgnXxuYd6" role="3EZMnx" />
+        <node concept="3EZMnI" id="6xJgnXxuYd7" role="3EZMnx">
+          <node concept="VPM3Z" id="6xJgnXxuYd8" role="3F10Kt" />
+          <node concept="3EZMnI" id="6xJgnXxuYd9" role="3EZMnx">
+            <node concept="VPM3Z" id="6xJgnXxuYda" role="3F10Kt" />
+            <node concept="3F0ifn" id="6xJgnXxuYdb" role="3EZMnx">
+              <property role="3F0ifm" value="if an element that satisfies one of the following selectors:" />
+            </node>
+            <node concept="3F2HdR" id="6xJgnXxuYdc" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:1gpTSTB$mvi" resolve="applyTo" />
+              <node concept="l2Vlx" id="6xJgnXxuYdd" role="2czzBx" />
+            </node>
+            <node concept="l2Vlx" id="6xJgnXxuYde" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="6xJgnXxuYdf" role="3EZMnx">
+            <node concept="VPM3Z" id="6xJgnXxuYdg" role="3F10Kt" />
+            <node concept="3F0ifn" id="6xJgnXxuYdh" role="3EZMnx">
+              <property role="3F0ifm" value="does not have a direct or indirect parent which matches of the following:" />
+            </node>
+            <node concept="3F2HdR" id="6xJgnXxuYdi" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:6xJgnXxuYcH" resolve="requiredPredecesors" />
+              <node concept="l2Vlx" id="6xJgnXxuYdj" role="2czzBx" />
+            </node>
+            <node concept="l2Vlx" id="6xJgnXxuYdk" role="2iSdaV" />
+          </node>
+          <node concept="3F0ifn" id="6xJgnXxuYdl" role="3EZMnx" />
+          <node concept="2iRkQZ" id="6xJgnXxuYdm" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="6xJgnXxuYdn" role="2iSdaV" />
       </node>
     </node>
   </node>

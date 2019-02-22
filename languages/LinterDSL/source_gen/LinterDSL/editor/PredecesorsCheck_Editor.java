@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class RequiredParentCheck_Editor extends DefaultNodeEditor {
+public class PredecesorsCheck_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RequiredParentCheck_EditorBuilder_a(editorContext, node).createCell();
+    return new PredecesorsCheck_EditorBuilder_a(editorContext, node).createCell();
   }
 }

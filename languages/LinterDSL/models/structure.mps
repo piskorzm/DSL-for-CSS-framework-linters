@@ -100,8 +100,8 @@
   </node>
   <node concept="1TIwiD" id="72rEP0BaARa">
     <property role="EcuMT" value="8114267514380905930" />
-    <property role="TrG5h" value="AllowedParentCheck" />
-    <property role="34LRSv" value="allowed parent check" />
+    <property role="TrG5h" value="DirectParentCheck" />
+    <property role="34LRSv" value="direct parent check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyj" id="1gpTSTB$w3v" role="1TKVEi">
       <property role="IQ2ns" value="1448443353985319135" />
@@ -147,25 +147,14 @@
   <node concept="1TIwiD" id="4sHsWRYdvnl">
     <property role="EcuMT" value="5128882879215302101" />
     <property role="TrG5h" value="AllowedChildrenCheck" />
-    <property role="34LRSv" value="children type check" />
+    <property role="34LRSv" value="allowed children check" />
     <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
     <node concept="1TJgyj" id="4sHsWRYdvno" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302104" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="allowedChildren" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4sHsWRYdvqr">
-    <property role="EcuMT" value="5128882879215302299" />
-    <property role="TrG5h" value="Attribute" />
-    <property role="34LRSv" value="attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4sHsWRYdvqs" role="1TKVEl">
-      <property role="IQ2nx" value="5128882879215302300" />
-      <property role="TrG5h" value="string" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="4sHsWRYdvsh">
@@ -176,21 +165,15 @@
     <node concept="1TJgyj" id="4sHsWRYdvsi" role="1TKVEi">
       <property role="IQ2ns" value="5128882879215302418" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requiredCharacteristisc" />
+      <property role="20kJfa" value="required" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7QtgnuK5PuT">
-    <property role="EcuMT" value="9051462808395798457" />
-    <property role="TrG5h" value="RequiredParentCheck" />
-    <property role="34LRSv" value="required parent check" />
-    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
-    <node concept="1TJgyj" id="7QtgnuK5PuU" role="1TKVEi">
-      <property role="IQ2ns" value="9051462808395798458" />
+    <node concept="1TJgyj" id="6xJgnXxuUhB" role="1TKVEi">
+      <property role="IQ2ns" value="7525305517711533159" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requiredParents" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="prohibited" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
@@ -203,6 +186,19 @@
       <property role="IQ2ns" value="9051462808395798601" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="requiredChildren" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6xJgnXxuYcG">
+    <property role="EcuMT" value="7525305517711549228" />
+    <property role="TrG5h" value="PredecesorsCheck" />
+    <property role="34LRSv" value="predecesors check" />
+    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
+    <node concept="1TJgyj" id="6xJgnXxuYcH" role="1TKVEi">
+      <property role="IQ2ns" value="7525305517711549229" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="requiredPredecesors" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>

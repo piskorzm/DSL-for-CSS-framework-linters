@@ -51,14 +51,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="LinterDSL.editor.AllowedParentCheck_Editor">
-    <classNode dependClassName="LinterDSL.editor.AllowedParentCheck_EditorBuilder_a" />
+  <dependency className="LinterDSL.editor.DirectParentCheck_Editor">
+    <classNode dependClassName="LinterDSL.editor.DirectParentCheck_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="LinterDSL.editor.AllowedParentCheck_EditorBuilder_a">
+  <dependency className="LinterDSL.editor.DirectParentCheck_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
@@ -102,49 +102,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="LinterDSL.editor.Attribute_Editor">
-    <classNode dependClassName="LinterDSL.editor.Attribute_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="LinterDSL.editor.Attribute_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Iterable" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.Objects" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyOrNode" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.SPropertyAccessor" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.update.AttributeKind" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
   <dependency className="LinterDSL.editor.EditorAspectDescriptorImpl">
     <classNode dependClassName="LinterDSL.editor.AllowedChildrenCheck_Editor" />
-    <classNode dependClassName="LinterDSL.editor.AllowedParentCheck_Editor" />
-    <classNode dependClassName="LinterDSL.editor.Attribute_Editor" />
+    <classNode dependClassName="LinterDSL.editor.DirectParentCheck_Editor" />
     <classNode dependClassName="LinterDSL.editor.Linter_Editor" />
     <classNode dependClassName="LinterDSL.editor.MissingTagCheck_Editor" />
     <classNode dependClassName="LinterDSL.editor.MisuseCheck_Editor" />
+    <classNode dependClassName="LinterDSL.editor.PredecesorsCheck_Editor" />
     <classNode dependClassName="LinterDSL.editor.RequiredChildrenCheck_Editor" />
-    <classNode dependClassName="LinterDSL.editor.RequiredParentCheck_Editor" />
     <classNode dependClassName="LinterDSL.editor.Selector_Editor" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
@@ -309,14 +274,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="LinterDSL.editor.RequiredChildrenCheck_Editor">
-    <classNode dependClassName="LinterDSL.editor.RequiredChildrenCheck_EditorBuilder_a" />
+  <dependency className="LinterDSL.editor.PredecesorsCheck_Editor">
+    <classNode dependClassName="LinterDSL.editor.PredecesorsCheck_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="LinterDSL.editor.RequiredChildrenCheck_EditorBuilder_a">
+  <dependency className="LinterDSL.editor.PredecesorsCheck_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
@@ -360,14 +325,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="LinterDSL.editor.RequiredParentCheck_Editor">
-    <classNode dependClassName="LinterDSL.editor.RequiredParentCheck_EditorBuilder_a" />
+  <dependency className="LinterDSL.editor.RequiredChildrenCheck_Editor">
+    <classNode dependClassName="LinterDSL.editor.RequiredChildrenCheck_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="LinterDSL.editor.RequiredParentCheck_EditorBuilder_a">
+  <dependency className="LinterDSL.editor.RequiredChildrenCheck_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />

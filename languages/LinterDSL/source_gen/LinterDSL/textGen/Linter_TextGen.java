@@ -13,18 +13,21 @@ public class Linter_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("function classMisuseCheck(name, id, description, applyTo, intendedTagTypes, violationMessage) {");
+    tgs.append("function misuseCheck(name, id, description, applyTo, required, prohibited) {");
     tgs.newLine();
     tgs.newLine();
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("if (!disable.includes(id)) {");
+    tgs.append("if (!disabledChecks.includes(id)) {");
     tgs.newLine();
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var missuses = [];");
+    tgs.append("var missingRequired = [];");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("var withProhibited = [];");
     tgs.newLine();
     tgs.indent();
     tgs.append("applyTo.forEach(function(selector) {");
@@ -32,8 +35,10 @@ public class Linter_TextGen extends TextGenDescriptorBase {
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("missuses.push($(selector + ':not(' + intencedTagTypes.join(',') + ')');");
+    tgs.append("missingRequired.push($(selector).filter(':not(' + required.join(',') + ')'));");
     tgs.newLine();
+    tgs.indent();
+    tgs.append("withProhibited.push($(selector).filter(prohibited.join(',')));");
     ctx.getBuffer().area().decreaseIndent();
 
     tgs.indent();
@@ -41,11 +46,29 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("if (missuses.length) {");
+    tgs.append("if (missingRequired.length || withProhibited.length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("console.warn(violationMessage);");
+    tgs.append("var message = 'name + ' id = ' + id + ':';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("message += 'elements which satisfy [' + applyTo.join(' or ') + ']';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("if (required.length) message += 'must also satisfy [' + required.join(' or ') + ']';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("if (required.length && prohibited.length) message += ' and ';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("if (prohibited.length) message += 'can not match + [' prohibited.join(' or ') +  ']';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("message += '.';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("console.warn(message, missingRequired.concat(withProhibited));");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
 
@@ -335,6 +358,15 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("});");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    tgs.newLine();
+
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2ae6L, "checks"))) {
+      tgs.appendNode(item);
+    }
+
 
   }
 }

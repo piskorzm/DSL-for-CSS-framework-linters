@@ -11,7 +11,7 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
-  <dependency className="LinterDSL.textGen.AllowedParentCheck_TextGen">
+  <dependency className="LinterDSL.textGen.DirectParentCheck_TextGen">
     <classNode dependClassName="LinterDSL.textGen.Linter_functions" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
@@ -61,6 +61,28 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="LinterDSL.textGen.PredecesorsCheck_TextGen">
+    <classNode dependClassName="LinterDSL.textGen.Linter_functions" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="LinterDSL.textGen.RequiredChildrenCheck_TextGen">
+    <classNode dependClassName="LinterDSL.textGen.Linter_functions" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="LinterDSL.textGen.Selector_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -72,10 +94,12 @@
   <dependency className="LinterDSL.textGen.TextGenAspectDescriptor">
     <classNode dependClassName="LinterDSL.structure.LanguageConceptSwitch" />
     <classNode dependClassName="LinterDSL.textGen.AllowedChildrenCheck_TextGen" />
-    <classNode dependClassName="LinterDSL.textGen.AllowedParentCheck_TextGen" />
+    <classNode dependClassName="LinterDSL.textGen.DirectParentCheck_TextGen" />
     <classNode dependClassName="LinterDSL.textGen.Linter_TextGen" />
     <classNode dependClassName="LinterDSL.textGen.MissingTagCheck_TextGen" />
     <classNode dependClassName="LinterDSL.textGen.MisuseCheck_TextGen" />
+    <classNode dependClassName="LinterDSL.textGen.PredecesorsCheck_TextGen" />
+    <classNode dependClassName="LinterDSL.textGen.RequiredChildrenCheck_TextGen" />
     <classNode dependClassName="LinterDSL.textGen.Selector_TextGen" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

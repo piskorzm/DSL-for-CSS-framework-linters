@@ -24,14 +24,18 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.AllowedChildrenCheck:
         return new AllowedChildrenCheck_TextGen();
-      case LanguageConceptSwitch.AllowedParentCheck:
-        return new AllowedParentCheck_TextGen();
+      case LanguageConceptSwitch.DirectParentCheck:
+        return new DirectParentCheck_TextGen();
       case LanguageConceptSwitch.Linter:
         return new Linter_TextGen();
       case LanguageConceptSwitch.MissingTagCheck:
         return new MissingTagCheck_TextGen();
       case LanguageConceptSwitch.MisuseCheck:
         return new MisuseCheck_TextGen();
+      case LanguageConceptSwitch.PredecesorsCheck:
+        return new PredecesorsCheck_TextGen();
+      case LanguageConceptSwitch.RequiredChildrenCheck:
+        return new RequiredChildrenCheck_TextGen();
       case LanguageConceptSwitch.Selector:
         return new Selector_TextGen();
     }

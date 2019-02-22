@@ -10,27 +10,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int AllowedChildrenCheck = 0;
-  public static final int AllowedParentCheck = 1;
-  public static final int Attribute = 2;
-  public static final int Check = 3;
-  public static final int Linter = 4;
-  public static final int MissingTagCheck = 5;
-  public static final int MisuseCheck = 6;
+  public static final int Check = 1;
+  public static final int DirectParentCheck = 2;
+  public static final int Linter = 3;
+  public static final int MissingTagCheck = 4;
+  public static final int MisuseCheck = 5;
+  public static final int PredecesorsCheck = 6;
   public static final int RequiredChildrenCheck = 7;
-  public static final int RequiredParentCheck = 8;
-  public static final int Selector = 9;
+  public static final int Selector = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L);
     builder.put(0x472d73cdfe35f5d5L, AllowedChildrenCheck);
-    builder.put(0x709bab50272a6dcaL, AllowedParentCheck);
-    builder.put(0x472d73cdfe35f69bL, Attribute);
     builder.put(0x74695853078e2ae8L, Check);
+    builder.put(0x709bab50272a6dcaL, DirectParentCheck);
     builder.put(0x74695853078e2ad1L, Linter);
     builder.put(0x472d73cdfe350f81L, MissingTagCheck);
     builder.put(0x472d73cdfe35f711L, MisuseCheck);
+    builder.put(0x686f417f617be32cL, PredecesorsCheck);
     builder.put(0x7d9d4177b0175848L, RequiredChildrenCheck);
-    builder.put(0x7d9d4177b01757b9L, RequiredParentCheck);
     builder.put(0x1419e78e6791ffedL, Selector);
     myIndex = builder.seal();
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-2emtx4lt6nb04to4v18zpi94lmblnf7">
-  <files names="AllowedChildrenCheck_Editor.java:AllowedChildrenCheck_EditorBuilder_a.java:AllowedParentCheck_Editor.java:AllowedParentCheck_EditorBuilder_a.java:Attribute_Editor.java:Attribute_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Linter_Editor.java:Linter_EditorBuilder_a.java:MissingTagCheck_Editor.java:MissingTagCheck_EditorBuilder_a.java:MisuseCheck_Editor.java:MisuseCheck_EditorBuilder_a.java:RequiredChildrenCheck_Editor.java:RequiredChildrenCheck_EditorBuilder_a.java:RequiredParentCheck_Editor.java:RequiredParentCheck_EditorBuilder_a.java:Selector_Editor.java:Selector_EditorBuilder_a.java" />
+<product version="3" modelHash="98f6pip6rcargsgmafdvcprk676o40s">
+  <files names="AllowedChildrenCheck_Editor.java:AllowedChildrenCheck_EditorBuilder_a.java:DirectParentCheck_Editor.java:DirectParentCheck_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Linter_Editor.java:Linter_EditorBuilder_a.java:MissingTagCheck_Editor.java:MissingTagCheck_EditorBuilder_a.java:MisuseCheck_Editor.java:MisuseCheck_EditorBuilder_a.java:PredecesorsCheck_Editor.java:PredecesorsCheck_EditorBuilder_a.java:RequiredChildrenCheck_Editor.java:RequiredChildrenCheck_EditorBuilder_a.java:Selector_Editor.java:Selector_EditorBuilder_a.java" />
 </product>
 
