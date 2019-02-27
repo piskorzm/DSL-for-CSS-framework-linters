@@ -10,14 +10,21 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AllowedChildrenCheck;
+  private ConceptPresentation props_AttributeSelector;
   private ConceptPresentation props_Check;
+  private ConceptPresentation props_ClassSelector;
+  private ConceptPresentation props_CustomSelector;
   private ConceptPresentation props_DirectParentCheck;
+  private ConceptPresentation props_GroupSelector;
+  private ConceptPresentation props_InvalidElementCheck;
   private ConceptPresentation props_Linter;
-  private ConceptPresentation props_MissingTagCheck;
+  private ConceptPresentation props_MissingElementCheck;
   private ConceptPresentation props_MisuseCheck;
-  private ConceptPresentation props_PredecesorsCheck;
-  private ConceptPresentation props_RequiredChildrenCheck;
+  private ConceptPresentation props_PredecessorsCheck;
+  private ConceptPresentation props_RequiredChildCheck;
   private ConceptPresentation props_Selector;
+  private ConceptPresentation props_StandardSelector;
+  private ConceptPresentation props_TagSelector;
 
   @Override
   @Nullable
@@ -27,23 +34,58 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AllowedChildrenCheck:
         if (props_AllowedChildrenCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("allowed children check");
           props_AllowedChildrenCheck = cpb.create();
         }
         return props_AllowedChildrenCheck;
+      case LanguageConceptSwitch.AttributeSelector:
+        if (props_AttributeSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("attribute");
+          props_AttributeSelector = cpb.create();
+        }
+        return props_AttributeSelector;
       case LanguageConceptSwitch.Check:
         if (props_Check == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Check = cpb.create();
         }
         return props_Check;
+      case LanguageConceptSwitch.ClassSelector:
+        if (props_ClassSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("class");
+          props_ClassSelector = cpb.create();
+        }
+        return props_ClassSelector;
+      case LanguageConceptSwitch.CustomSelector:
+        if (props_CustomSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("matching");
+          props_CustomSelector = cpb.create();
+        }
+        return props_CustomSelector;
       case LanguageConceptSwitch.DirectParentCheck:
         if (props_DirectParentCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("direct parent check");
           props_DirectParentCheck = cpb.create();
         }
         return props_DirectParentCheck;
+      case LanguageConceptSwitch.GroupSelector:
+        if (props_GroupSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("group");
+          props_GroupSelector = cpb.create();
+        }
+        return props_GroupSelector;
+      case LanguageConceptSwitch.InvalidElementCheck:
+        if (props_InvalidElementCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("invalid element check");
+          props_InvalidElementCheck = cpb.create();
+        }
+        return props_InvalidElementCheck;
       case LanguageConceptSwitch.Linter:
         if (props_Linter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -51,41 +93,53 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Linter = cpb.create();
         }
         return props_Linter;
-      case LanguageConceptSwitch.MissingTagCheck:
-        if (props_MissingTagCheck == null) {
+      case LanguageConceptSwitch.MissingElementCheck:
+        if (props_MissingElementCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_MissingTagCheck = cpb.create();
+          cpb.rawPresentation("missing tag check");
+          props_MissingElementCheck = cpb.create();
         }
-        return props_MissingTagCheck;
+        return props_MissingElementCheck;
       case LanguageConceptSwitch.MisuseCheck:
         if (props_MisuseCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("misuse check");
           props_MisuseCheck = cpb.create();
         }
         return props_MisuseCheck;
-      case LanguageConceptSwitch.PredecesorsCheck:
-        if (props_PredecesorsCheck == null) {
+      case LanguageConceptSwitch.PredecessorsCheck:
+        if (props_PredecessorsCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_PredecesorsCheck = cpb.create();
+          cpb.rawPresentation("predecessors check");
+          props_PredecessorsCheck = cpb.create();
         }
-        return props_PredecesorsCheck;
-      case LanguageConceptSwitch.RequiredChildrenCheck:
-        if (props_RequiredChildrenCheck == null) {
+        return props_PredecessorsCheck;
+      case LanguageConceptSwitch.RequiredChildCheck:
+        if (props_RequiredChildCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_RequiredChildrenCheck = cpb.create();
+          cpb.rawPresentation("required child check");
+          props_RequiredChildCheck = cpb.create();
         }
-        return props_RequiredChildrenCheck;
+        return props_RequiredChildCheck;
       case LanguageConceptSwitch.Selector:
         if (props_Selector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Selector");
           props_Selector = cpb.create();
         }
         return props_Selector;
+      case LanguageConceptSwitch.StandardSelector:
+        if (props_StandardSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_StandardSelector = cpb.create();
+        }
+        return props_StandardSelector;
+      case LanguageConceptSwitch.TagSelector:
+        if (props_TagSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("tag");
+          props_TagSelector = cpb.create();
+        }
+        return props_TagSelector;
     }
     return null;
   }

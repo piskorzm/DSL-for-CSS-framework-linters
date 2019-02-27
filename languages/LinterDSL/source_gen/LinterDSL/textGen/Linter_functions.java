@@ -12,16 +12,16 @@ public abstract class Linter_functions {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     for (SNode child : Sequence.fromIterable(children)) {
       if (child == Sequence.fromIterable(children).first()) {
-        tgs.append("[");
+        tgs.append("['");
       }
       if (child != Sequence.fromIterable(children).first()) {
-        tgs.append(", ");
+        tgs.append("', '");
       }
 
       tgs.appendNode(child);
 
       if (child == Sequence.fromIterable(children).last()) {
-        tgs.append("]");
+        tgs.append("']");
       }
     }
   }

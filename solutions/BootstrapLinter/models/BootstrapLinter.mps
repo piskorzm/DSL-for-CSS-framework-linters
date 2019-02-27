@@ -7,27 +7,16 @@
   <imports />
   <registry>
     <language id="c400f415-6edc-4c5f-a0ce-ccbb04f551e6" name="LinterDSL">
-      <concept id="7525305517711549228" name="LinterDSL.structure.PredecesorsCheck" flags="ng" index="95a9j">
-        <child id="7525305517711549229" name="requiredPredecesors" index="95a9i" />
-      </concept>
-      <concept id="5128882879215243137" name="LinterDSL.structure.MissingTagCheck" flags="ng" index="2T67Lc">
-        <property id="5128882879215243138" name="unique" index="2T67Lf" />
-      </concept>
-      <concept id="5128882879215302417" name="LinterDSL.structure.MisuseCheck" flags="ng" index="2T68js">
-        <child id="7525305517711533159" name="prohibited" index="95eko" />
-        <child id="5128882879215302418" name="required" index="2T68jv" />
-      </concept>
       <concept id="5128882879215302101" name="LinterDSL.structure.AllowedChildrenCheck" flags="ng" index="2T68oo">
         <child id="5128882879215302104" name="allowedChildren" index="2T68ol" />
       </concept>
-      <concept id="9051462808395798600" name="LinterDSL.structure.RequiredChildrenCheck" flags="ng" index="3dyx$Z">
-        <child id="9051462808395798601" name="requiredChildren" index="3dyx$Y" />
+      <concept id="8088519030587650337" name="LinterDSL.structure.AttributeSelector" flags="ng" index="1Dqs0l" />
+      <concept id="8088519030587650326" name="LinterDSL.structure.GroupSelector" flags="ng" index="1Dqs0y">
+        <child id="8088519030587650327" name="selectors" index="1Dqs0z" />
       </concept>
-      <concept id="8114267514380905930" name="LinterDSL.structure.DirectParentCheck" flags="ng" index="1nGsqq">
-        <child id="1448443353985319135" name="allowedDirectParents" index="1NyYth" />
-      </concept>
-      <concept id="1448443353985318893" name="LinterDSL.structure.Selector" flags="ng" index="1Ny1xz">
-        <property id="1448443353985319133" name="string" index="1NyYtj" />
+      <concept id="8088519030587650323" name="LinterDSL.structure.ClassSelector" flags="ng" index="1Dqs0B" />
+      <concept id="8088519030587650334" name="LinterDSL.structure.StandardSelector" flags="ng" index="1Dqs0E">
+        <property id="8088519030587650335" name="string" index="1Dqs0F" />
       </concept>
       <concept id="8388332894586546897" name="LinterDSL.structure.Linter" flags="ng" index="1NTRa2">
         <property id="8388332894586546974" name="framework" index="1NTRdd" />
@@ -48,89 +37,22 @@
   <node concept="1NTRa2" id="7hDm5c7zOPZ">
     <property role="TrG5h" value="bootlint" />
     <property role="1NTRdd" value="Bootstrap" />
-    <node concept="1nGsqq" id="6xJgnXxuUjZ" role="1NTRaP">
-      <property role="TrG5h" value="parentcheck1" />
-      <property role="1NTRax" value="2" />
-      <property role="1Ny800" value="Error" />
-      <node concept="1Ny1xz" id="6xJgnXxuUk0" role="1NyYth">
-        <property role="1NyYtj" value=".row" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxuUk1" role="1Ny81s">
-        <property role="1NyYtj" value=".col .col-1" />
-      </node>
-    </node>
-    <node concept="2T68oo" id="6xJgnXxvXEz" role="1NTRaP">
-      <property role="TrG5h" value="childrencheck1" />
-      <property role="1NTRax" value="3" />
-      <node concept="1Ny1xz" id="6xJgnXxvXEL" role="2T68ol">
-        <property role="1NyYtj" value=".col" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXEN" role="2T68ol">
-        <property role="1NyYtj" value=".col-1" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXEQ" role="2T68ol">
-        <property role="1NyYtj" value=".col-2" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXEU" role="2T68ol">
-        <property role="1NyYtj" value=".col-3-sm" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXEA" role="1Ny81s">
-        <property role="1NyYtj" value=".row" />
-      </node>
-    </node>
-    <node concept="3dyx$Z" id="6xJgnXxvXFm" role="1NTRaP">
-      <property role="TrG5h" value="childrencheck2" />
-      <property role="1NTRax" value="4" />
-      <node concept="1Ny1xz" id="6xJgnXxvXFp" role="3dyx$Y">
-        <property role="1NyYtj" value=".card-heading" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXFs" role="1Ny81s">
-        <property role="1NyYtj" value=".card" />
-      </node>
-    </node>
-    <node concept="2T67Lc" id="6xJgnXxvXFZ" role="1NTRaP">
-      <property role="TrG5h" value="missingTag" />
-      <property role="1NTRax" value="5" />
-      <property role="2T67Lf" value="true" />
+    <node concept="2T68oo" id="710cjgpegHB" role="1NTRaP">
+      <property role="1NTRax" value="1" />
       <property role="1Ny800" value="Warning" />
-      <node concept="1Ny1xz" id="6xJgnXxvXG2" role="1Ny81s">
-        <property role="1NyYtj" value="head&gt;meta[http-equiv=&quot;Content-Type&quot;][content=&quot;text/html; charset=utf-8&quot;]" />
+      <node concept="1Dqs0B" id="710cjgpegHR" role="1Ny81s">
+        <property role="1Dqs0F" value="row" />
       </node>
-    </node>
-    <node concept="2T68js" id="6xJgnXxvXG_" role="1NTRaP">
-      <property role="TrG5h" value="classMisuse1" />
-      <property role="1NTRax" value="70" />
-      <node concept="1Ny1xz" id="6xJgnXxvXGC" role="1Ny81s">
-        <property role="1NyYtj" value=".row" />
+      <node concept="1Dqs0B" id="710cjgpegHY" role="2T68ol">
+        <property role="1Dqs0F" value="column" />
       </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXGV" role="2T68jv">
-        <property role="1NyYtj" value="div" />
+      <node concept="1Dqs0B" id="710cjgpegIa" role="2T68ol">
+        <property role="1Dqs0F" value="1" />
       </node>
-    </node>
-    <node concept="2T68js" id="6xJgnXxvXHi" role="1NTRaP">
-      <property role="TrG5h" value="invalidClassCheck" />
-      <property role="1NTRax" value="7" />
-      <node concept="1Ny1xz" id="6xJgnXxvXHl" role="1Ny81s">
-        <property role="1NyYtj" value=".col-0" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXHF" role="1Ny81s">
-        <property role="1NyYtj" value="col-sm-0" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXHI" role="95eko">
-        <property role="1NyYtj" value="*" />
-      </node>
-    </node>
-    <node concept="95a9j" id="6xJgnXxvXI9" role="1NTRaP">
-      <property role="TrG5h" value="rowsInsideContainers" />
-      <property role="1NTRax" value="10" />
-      <node concept="1Ny1xz" id="6xJgnXxvXIc" role="95a9i">
-        <property role="1NyYtj" value=".container" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXIE" role="95a9i">
-        <property role="1NyYtj" value=".container-fluid" />
-      </node>
-      <node concept="1Ny1xz" id="6xJgnXxvXIf" role="1Ny81s">
-        <property role="1NyYtj" value=".row" />
+      <node concept="1Dqs0y" id="710cjgpegIi" role="2T68ol">
+        <node concept="1Dqs0l" id="710cjgpegIq" role="1Dqs0z">
+          <property role="1Dqs0F" value="am=&quot;elo&quot;" />
+        </node>
       </node>
     </node>
   </node>

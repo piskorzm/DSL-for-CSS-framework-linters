@@ -1,3 +1,43 @@
+function childrenTypeCheck(id, type, applyTo, allowedChildrenSelectors) {
+
+  if (!disable.includes(id)) {
+    var elementsWithInappropriateChildren = [];
+    applyTo.forEach(function(selector) {
+      elementsWithInappropriateChildren.push($(selector + ' > :not(' + allowedChildrenSelectors.join(',') + ')').parent());
+    });
+    if (inappropriateChildren.length) {
+      var message = 'InappropriateChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' can only have children matching ' + allowedChildrenSelectors.join(' or ') + '. Elements with inappropriate children:';
+      if (type === 'Warning') {
+        console.warn(message, elementsWithInapropriateChildren);
+      }
+      if (type === 'Error') {
+        console.error(message, elementsWithInapropriateChildren);
+      }
+    }
+  }
+}
+
+function requiredChildCheck(name, id, type, applyTo, requiredChildSelectors) {
+
+  if (!disable.includes(id)) {
+    var elementsMissingChild = false;
+    applyTo.forEach(function(selector) {
+      $(selector).each(funciton(index, element) {
+        if (!element.children(':not(' + requiredChildSelectors.join(',') + ')').lenght) {
+          elementsMissingChildren.push(element);
+        }
+      });
+    });
+    if ($(elementsMissingChildren.length) {
+      var message = 'RequiredChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have at least one child matching ' + requiredChildSelectors.join(' or ') + '. Elements missing required children:';
+      if (type === 'Warning') {
+        console.warn(message, elementsMissingChildren);
+      }
+      if (type === 'Error') {
+        console.error(message, elementsMissingChildren);
+      }
+    }
+  }
 function misuseCheck(name, id, description, applyTo, required, prohibited) {
 
   if (!disabledChecks.includes(id)) {
@@ -18,27 +58,6 @@ function misuseCheck(name, id, description, applyTo, required, prohibited) {
   }
 }
 
-function childrenTypeCheck(name, id, description, applyTo, allow, prohibit, required, violationMessage) {
-
-  if (!disable.includes(id)) {
-    var inappropriateChildren = [];
-    var elementsMissingChildren = false;
-    applyTo.forEach(function(selector) {
-      inappropriateChildren.push($(selector + ' ~ :not(' + allowed.join(',') + ')'));
-      required.forEach(function(required) {
-        $(selector).forEach(funciton(element) {
-          if (!element.has(requiredChild).lenght) {
-            elementsMissingChildren.push(element);
-          }
-        });
-      });
-    });
-    if ($(elementsMissingChildren.length || $(inappropriateChildren).length) {
-      console.warn(violationMessage);
-    }
-  }
-}
-
 function missingTagCheck(name, id, description, applyTo, unique, violationMessage) {
 
   var missingTags = [];
@@ -50,12 +69,7 @@ function missingTagCheck(name, id, description, applyTo, unique, violationMessag
   });
 }
 
-parentTypeCheck('parentcheck1', 2, ['.col .col-1'], ['.row']);
-childrenTypeCheck('childrencheck1', 3, ['.row'], ['.col', '.col-1', '.col-2', '.col-3-sm']');
-requiredChildrenCheck('childrencheck2', 4, ['.card'], ['.card-heading']);missingTagCheck('missingTag', 5, ['head>meta[http-equiv="Content-Type"][content="text/html; charset=utf-8"]'], true);
-missuseCheck('classMisuse1', 70, ['.row'], ['div'], );
-missuseCheck('invalidClassCheck', 7, ['.col-0', 'col-sm-0'], , ['*']);
-predecesorTypeCheck('rowsInsideContainers', 10, ['.row'], ['.container', '.container-fluid']);
+childrenTypeCheck(1, 'Warning', ['.row'], ['.column', '.1', '[cośtam="elo"]']);
 function parentTypeCheck(name, id, applyTo, allowedDirectParents) {
 
   var elementsWithInappropriateParents = [];
@@ -97,9 +111,4 @@ function parentTypeCheck(name, id, applyTo, requiredAttributes) {
   });
 }
 
-parentTypeCheck('parentcheck1', 2, ['.col .col-1'], ['.row']);
-childrenTypeCheck('childrencheck1', 3, ['.row'], ['.col', '.col-1', '.col-2', '.col-3-sm']');
-requiredChildrenCheck('childrencheck2', 4, ['.card'], ['.card-heading']);missingTagCheck('missingTag', 5, ['head>meta[http-equiv="Content-Type"][content="text/html; charset=utf-8"]'], true);
-missuseCheck('classMisuse1', 70, ['.row'], ['div'], );
-missuseCheck('invalidClassCheck', 7, ['.col-0', 'col-sm-0'], , ['*']);
-predecesorTypeCheck('rowsInsideContainers', 10, ['.row'], ['.container', '.container-fluid']);
+childrenTypeCheck(1, 'Warning', ['.row'], ['.column', '.1', '[cośtam="elo"]']);
