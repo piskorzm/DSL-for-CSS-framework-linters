@@ -174,35 +174,9 @@
                 <node concept="1bpajm" id="7GUEhtgh69A" role="3cqZAp" />
                 <node concept="lc7rE" id="7GUEhtgh69B" role="3cqZAp">
                   <node concept="la8eA" id="7GUEhtgh69C" role="lcghm">
-                    <property role="lacIc" value="var elementsWithInappropriateChildren = [];" />
+                    <property role="lacIc" value="var elementsWithInappropriateChildren = $(applyTo.join(', ') + ' &gt; :not(' + allowedChildrenSelectors.join(', ') + ')').parent().toArray();" />
                   </node>
                   <node concept="l8MVK" id="7GUEhtgh69D" role="lcghm" />
-                </node>
-                <node concept="1bpajm" id="7GUEhtgh69E" role="3cqZAp" />
-                <node concept="lc7rE" id="7GUEhtgh69F" role="3cqZAp">
-                  <node concept="la8eA" id="7GUEhtgh69G" role="lcghm">
-                    <property role="lacIc" value="applyTo.forEach(function(selector) {" />
-                  </node>
-                  <node concept="l8MVK" id="7GUEhtgh69H" role="lcghm" />
-                </node>
-                <node concept="3clFbH" id="7GUEhtgh69I" role="3cqZAp" />
-                <node concept="3izx1p" id="7GUEhtgh69J" role="3cqZAp">
-                  <node concept="3clFbS" id="7GUEhtgh69K" role="3izTki">
-                    <node concept="1bpajm" id="7GUEhtgh69L" role="3cqZAp" />
-                    <node concept="lc7rE" id="7GUEhtgh69M" role="3cqZAp">
-                      <node concept="la8eA" id="1lrK057i9hf" role="lcghm">
-                        <property role="lacIc" value="elementsWithInappropriateChildren = elementsWithInappropriateChildren.concat($(selector + ' &gt; :not(' + allowedChildrenSelectors.join(', ') + ')').parent().toArray());" />
-                      </node>
-                      <node concept="l8MVK" id="7GUEhtgh69O" role="lcghm" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1bpajm" id="7GUEhtgh69Q" role="3cqZAp" />
-                <node concept="lc7rE" id="7GUEhtgh69R" role="3cqZAp">
-                  <node concept="la8eA" id="7GUEhtgh69S" role="lcghm">
-                    <property role="lacIc" value="});" />
-                  </node>
-                  <node concept="l8MVK" id="7GUEhtgh69T" role="lcghm" />
                 </node>
                 <node concept="3clFbH" id="7GUEhtgjrlG" role="3cqZAp" />
                 <node concept="1bpajm" id="7GUEhtgim_Y" role="3cqZAp" />
@@ -311,7 +285,7 @@
         <node concept="1bpajm" id="6c_w$hZCKn0" role="3cqZAp" />
         <node concept="lc7rE" id="6c_w$hZCJKE" role="3cqZAp">
           <node concept="la8eA" id="6c_w$hZCJKF" role="lcghm">
-            <property role="lacIc" value="function requiredChildCheck(name, id, type, applyTo, requiredChildSelectors) {" />
+            <property role="lacIc" value="function requiredChildCheck(id, type, applyTo, requiredChildSelectors) {" />
           </node>
           <node concept="l8MVK" id="6c_w$hZCJKG" role="lcghm" />
           <node concept="l8MVK" id="6c_w$hZCJKH" role="lcghm" />
@@ -329,74 +303,54 @@
             <node concept="3clFbH" id="6c_w$hZCKwI" role="3cqZAp" />
             <node concept="3izx1p" id="6c_w$hZCKwJ" role="3cqZAp">
               <node concept="3clFbS" id="6c_w$hZCKwK" role="3izTki">
-                <node concept="1bpajm" id="6c_w$hZCKwP" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZCKwQ" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZCKwR" role="lcghm">
-                    <property role="lacIc" value="var elementsMissingChild = false;" />
-                  </node>
-                  <node concept="l8MVK" id="6c_w$hZCKwS" role="lcghm" />
-                </node>
                 <node concept="1bpajm" id="6c_w$hZCKwT" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV4xdl" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV4xft" role="lcghm">
+                    <property role="lacIc" value="var elementsMissingChildren = [];" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV4xiG" role="lcghm" />
+                </node>
+                <node concept="1bpajm" id="55uVeLV4xj2" role="3cqZAp" />
                 <node concept="lc7rE" id="6c_w$hZCKwU" role="3cqZAp">
                   <node concept="la8eA" id="6c_w$hZCKwV" role="lcghm">
-                    <property role="lacIc" value="applyTo.forEach(function(selector) {" />
+                    <property role="lacIc" value="$(applyTo.join(', ')).each(function() {" />
                   </node>
                   <node concept="l8MVK" id="6c_w$hZCKwW" role="lcghm" />
                 </node>
-                <node concept="3clFbH" id="6c_w$hZCKwX" role="3cqZAp" />
-                <node concept="3izx1p" id="6c_w$hZCKwY" role="3cqZAp">
-                  <node concept="3clFbS" id="6c_w$hZCKwZ" role="3izTki">
-                    <node concept="1bpajm" id="6c_w$hZDqAp" role="3cqZAp" />
-                    <node concept="lc7rE" id="6c_w$hZDqGV" role="3cqZAp">
-                      <node concept="la8eA" id="6c_w$hZDqGW" role="lcghm">
-                        <property role="lacIc" value="$(selector).forEach(function(element) {" />
+                <node concept="3izx1p" id="55uVeLV4xkK" role="3cqZAp">
+                  <node concept="3clFbS" id="55uVeLV4xkM" role="3izTki">
+                    <node concept="1bpajm" id="55uVeLV4xmu" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV4xn4" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV4xnt" role="lcghm">
+                        <property role="lacIc" value="if (!$(this).children(':not(' + requiredChildSelectors.join(', ') +')').length) {" />
                       </node>
-                      <node concept="l8MVK" id="6c_w$hZDqGX" role="lcghm" />
+                      <node concept="l8MVK" id="55uVeLV4xE9" role="lcghm" />
                     </node>
-                    <node concept="3izx1p" id="6c_w$hZDqHX" role="3cqZAp">
-                      <node concept="3clFbS" id="6c_w$hZDqHY" role="3izTki">
-                        <node concept="1bpajm" id="6c_w$hZDqHZ" role="3cqZAp" />
-                        <node concept="lc7rE" id="6c_w$hZDqI0" role="3cqZAp">
-                          <node concept="la8eA" id="6c_w$hZDqI1" role="lcghm">
-                            <property role="lacIc" value="if (!$(this).children(':not(' + requiredChildSelectors.join(',') + ')').lenght) {" />
+                    <node concept="3izx1p" id="55uVeLV4xG2" role="3cqZAp">
+                      <node concept="3clFbS" id="55uVeLV4xG4" role="3izTki">
+                        <node concept="1bpajm" id="55uVeLV4xGE" role="3cqZAp" />
+                        <node concept="lc7rE" id="55uVeLV4xHg" role="3cqZAp">
+                          <node concept="la8eA" id="55uVeLV4xHD" role="lcghm">
+                            <property role="lacIc" value="elementsMissingChildren.push($(this).get(0));" />
                           </node>
-                          <node concept="l8MVK" id="6c_w$hZDqI2" role="lcghm" />
-                        </node>
-                        <node concept="3izx1p" id="6c_w$hZDqI3" role="3cqZAp">
-                          <node concept="3clFbS" id="6c_w$hZDqI4" role="3izTki">
-                            <node concept="1bpajm" id="6c_w$hZDqI5" role="3cqZAp" />
-                            <node concept="lc7rE" id="6c_w$hZDqI6" role="3cqZAp">
-                              <node concept="la8eA" id="6c_w$hZDqI7" role="lcghm">
-                                <property role="lacIc" value="elementsMissingChildren.push(element);" />
-                              </node>
-                              <node concept="l8MVK" id="6c_w$hZDqI8" role="lcghm" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1bpajm" id="6c_w$hZDqI9" role="3cqZAp" />
-                        <node concept="lc7rE" id="6c_w$hZDqIa" role="3cqZAp">
-                          <node concept="la8eA" id="6c_w$hZDqIb" role="lcghm">
-                            <property role="lacIc" value="}" />
-                          </node>
-                          <node concept="l8MVK" id="6c_w$hZDqIc" role="lcghm" />
+                          <node concept="l8MVK" id="55uVeLV4xMB" role="lcghm" />
                         </node>
                       </node>
                     </node>
-                    <node concept="1bpajm" id="6c_w$hZCKxz" role="3cqZAp" />
-                    <node concept="lc7rE" id="6c_w$hZCKx$" role="3cqZAp">
-                      <node concept="la8eA" id="6c_w$hZCKx_" role="lcghm">
-                        <property role="lacIc" value="});" />
+                    <node concept="1bpajm" id="55uVeLV5vav" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV5vbq" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV5vcy" role="lcghm">
+                        <property role="lacIc" value="}" />
                       </node>
-                      <node concept="l8MVK" id="6c_w$hZCKxA" role="lcghm" />
                     </node>
                   </node>
                 </node>
-                <node concept="1bpajm" id="6c_w$hZCKxB" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZCKxC" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZCKxD" role="lcghm">
+                <node concept="1bpajm" id="55uVeLV4xPw" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV4xAY" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV4xCL" role="lcghm">
                     <property role="lacIc" value="});" />
                   </node>
-                  <node concept="l8MVK" id="6c_w$hZCKxE" role="lcghm" />
+                  <node concept="l8MVK" id="55uVeLV4xDu" role="lcghm" />
                 </node>
                 <node concept="3clFbH" id="6c_w$hZCKxF" role="3cqZAp" />
                 <node concept="1bpajm" id="6c_w$hZCKxG" role="3cqZAp" />
@@ -523,45 +477,18 @@
             <node concept="3clFbH" id="1T6agG5P29r" role="3cqZAp" />
             <node concept="3izx1p" id="7QWIpZDzhDz" role="3cqZAp">
               <node concept="3clFbS" id="7QWIpZDzhD_" role="3izTki">
-                <node concept="1bpajm" id="7QWIpZDAEBW" role="3cqZAp" />
-                <node concept="lc7rE" id="7QWIpZDzhEN" role="3cqZAp">
-                  <node concept="la8eA" id="7QWIpZDzhF9" role="lcghm">
-                    <property role="lacIc" value="var missingRequiredSelectors = [];" />
-                  </node>
-                  <node concept="l8MVK" id="7QWIpZDzC7s" role="lcghm" />
-                </node>
                 <node concept="1bpajm" id="7QWIpZDBZCa" role="3cqZAp" />
                 <node concept="lc7rE" id="7QWIpZDzipn" role="3cqZAp">
                   <node concept="la8eA" id="7QWIpZDziqS" role="lcghm">
-                    <property role="lacIc" value="applyTo.forEach(function(selector) {" />
+                    <property role="lacIc" value="var missingRequiredSelectors = $(applyTo.join(', ')).filter(':not(' + requiredSelectors.join(', ') + ')').toArray();" />
                   </node>
                   <node concept="l8MVK" id="7QWIpZDzC87" role="lcghm" />
-                </node>
-                <node concept="3clFbH" id="7QWIpZDCE9g" role="3cqZAp" />
-                <node concept="3izx1p" id="7QWIpZDCEaJ" role="3cqZAp">
-                  <node concept="3clFbS" id="7QWIpZDCEaL" role="3izTki">
-                    <node concept="1bpajm" id="7QWIpZDCEbz" role="3cqZAp" />
-                    <node concept="lc7rE" id="7QWIpZDCEc9" role="3cqZAp">
-                      <node concept="la8eA" id="7QWIpZDCEcR" role="lcghm">
-                        <property role="lacIc" value="missingRequired.push($(selector).filter(':not(' + requiredSelectors.join(',') + ')'));" />
-                      </node>
-                      <node concept="l8MVK" id="7QWIpZDCEdL" role="lcghm" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="7QWIpZDCEmz" role="3cqZAp" />
-                <node concept="1bpajm" id="7QWIpZDCEo6" role="3cqZAp" />
-                <node concept="lc7rE" id="7QWIpZDCEpJ" role="3cqZAp">
-                  <node concept="la8eA" id="7QWIpZDCEqD" role="lcghm">
-                    <property role="lacIc" value="});" />
-                  </node>
-                  <node concept="l8MVK" id="7QWIpZDCErE" role="lcghm" />
                 </node>
                 <node concept="3clFbH" id="7QWIpZDDkTu" role="3cqZAp" />
                 <node concept="1bpajm" id="7QWIpZDDkUZ" role="3cqZAp" />
                 <node concept="lc7rE" id="7QWIpZDDkWM" role="3cqZAp">
                   <node concept="la8eA" id="7QWIpZDDkXL" role="lcghm">
-                    <property role="lacIc" value="if (missingRequired.length) {" />
+                    <property role="lacIc" value="if (missingRequiredSelectors.length) {" />
                   </node>
                   <node concept="l8MVK" id="7QWIpZDDl1H" role="lcghm" />
                 </node>
@@ -570,7 +497,7 @@
                     <node concept="1bpajm" id="6c_w$hZDIrf" role="3cqZAp" />
                     <node concept="lc7rE" id="6c_w$hZDIrg" role="3cqZAp">
                       <node concept="la8eA" id="6c_w$hZDIrh" role="lcghm">
-                        <property role="lacIc" value="var message = 'RequiredChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + " />
+                        <property role="lacIc" value="var message = 'ElementMissuse' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + " />
                       </node>
                     </node>
                     <node concept="lc7rE" id="6c_w$hZDIri" role="3cqZAp">
@@ -592,7 +519,7 @@
                         <node concept="1bpajm" id="6c_w$hZDIrs" role="3cqZAp" />
                         <node concept="lc7rE" id="6c_w$hZDIrt" role="3cqZAp">
                           <node concept="la8eA" id="6c_w$hZDIru" role="lcghm">
-                            <property role="lacIc" value="console.warn(message, elementsMissingChildren);" />
+                            <property role="lacIc" value="console.warn(message, missingRequiredSelectors);" />
                           </node>
                           <node concept="l8MVK" id="6c_w$hZDIrv" role="lcghm" />
                         </node>
@@ -618,7 +545,7 @@
                         <node concept="1bpajm" id="6c_w$hZDIrF" role="3cqZAp" />
                         <node concept="lc7rE" id="6c_w$hZDIrG" role="3cqZAp">
                           <node concept="la8eA" id="6c_w$hZDIrH" role="lcghm">
-                            <property role="lacIc" value="console.error(message, elementsMissingChildren);" />
+                            <property role="lacIc" value="console.error(message, missingRequiredSelectors);" />
                           </node>
                           <node concept="l8MVK" id="6c_w$hZDIrI" role="lcghm" />
                         </node>
@@ -813,7 +740,7 @@
                 <node concept="1bpajm" id="6c_w$hZEtmD" role="3cqZAp" />
                 <node concept="lc7rE" id="6c_w$hZEtC9" role="3cqZAp">
                   <node concept="la8eA" id="6c_w$hZEtFE" role="lcghm">
-                    <property role="lacIc" value="var invalidElements = ($(applyTo.join(', ')));" />
+                    <property role="lacIc" value="var invalidElements = ($(applyTo.join(', ')).toArray());" />
                   </node>
                   <node concept="l8MVK" id="6c_w$hZEtIT" role="lcghm" />
                 </node>
@@ -829,7 +756,7 @@
                     <node concept="1bpajm" id="6c_w$hZEtaL" role="3cqZAp" />
                     <node concept="lc7rE" id="6c_w$hZEtaM" role="3cqZAp">
                       <node concept="la8eA" id="6c_w$hZEtaN" role="lcghm">
-                        <property role="lacIc" value="var message = 'InvalidElement' + type + ' {check id: ' + id + '): element matching ' + applyTo.join(' or ') + " />
+                        <property role="lacIc" value="var message = 'InvalidElement' + type + ' {check id: ' + id + '): elements matching ' + applyTo.join(' or ') + " />
                       </node>
                     </node>
                     <node concept="lc7rE" id="6c_w$hZEtaO" role="3cqZAp">
@@ -934,71 +861,80 @@
         <node concept="1bpajm" id="6c_w$hZF8zB" role="3cqZAp" />
         <node concept="lc7rE" id="1inX5h2xkU6" role="3cqZAp">
           <node concept="la8eA" id="1inX5h2xkU7" role="lcghm">
-            <property role="lacIc" value="function parentTypeCheck(name, id, applyTo, allowedDirectParents) {" />
+            <property role="lacIc" value="function parentTypeCheck(id, type, applyTo, allowedDirectParents) {" />
           </node>
           <node concept="l8MVK" id="1inX5h2xl93" role="lcghm" />
           <node concept="l8MVK" id="1inX5h2xl9J" role="lcghm" />
         </node>
         <node concept="3izx1p" id="1inX5h2xlrU" role="3cqZAp">
           <node concept="3clFbS" id="1inX5h2xlrW" role="3izTki">
-            <node concept="1bpajm" id="1inX5h2xlxU" role="3cqZAp" />
-            <node concept="lc7rE" id="1inX5h2xlyw" role="3cqZAp">
-              <node concept="la8eA" id="1inX5h2xlyT" role="lcghm">
-                <property role="lacIc" value="var elementsWithInappropriateParents = [];" />
+            <node concept="1bpajm" id="55uVeLV588s" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV58a3" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV58a4" role="lcghm">
+                <property role="lacIc" value="if (!disabledChecks.includes(id)) {" />
               </node>
-              <node concept="l8MVK" id="1inX5h2xlEr" role="lcghm" />
-              <node concept="l8MVK" id="1inX5h2xlHq" role="lcghm" />
+              <node concept="l8MVK" id="55uVeLV58a5" role="lcghm" />
             </node>
-            <node concept="3clFbH" id="1inX5h2xlDM" role="3cqZAp" />
-            <node concept="1bpajm" id="1inX5h2xlIO" role="3cqZAp" />
-            <node concept="lc7rE" id="1inX5h2xlJB" role="3cqZAp">
-              <node concept="la8eA" id="1inX5h2xlK6" role="lcghm">
-                <property role="lacIc" value="var elements = $(applyTo.join(', '));" />
-              </node>
-              <node concept="l8MVK" id="1inX5h2xlPH" role="lcghm" />
-            </node>
-            <node concept="1bpajm" id="6c_w$hZEuII" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZEuFy" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZEuH0" role="lcghm">
-                <property role="lacIc" value="elements.forEach(function (element) {" />
-              </node>
-              <node concept="l8MVK" id="6c_w$hZEuOt" role="lcghm" />
-            </node>
-            <node concept="3izx1p" id="6c_w$hZEuQe" role="3cqZAp">
-              <node concept="3clFbS" id="6c_w$hZEuQg" role="3izTki">
-                <node concept="1bpajm" id="6c_w$hZEv4x" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZEuTB" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZEuUo" role="lcghm">
-                    <property role="lacIc" value="if (!element.parent().matches(allowedDirectParents.join(', '))) {" />
+            <node concept="3izx1p" id="55uVeLV58bL" role="3cqZAp">
+              <node concept="3clFbS" id="55uVeLV58bN" role="3izTki">
+                <node concept="1bpajm" id="1inX5h2xlxU" role="3cqZAp" />
+                <node concept="lc7rE" id="1inX5h2xlyw" role="3cqZAp">
+                  <node concept="la8eA" id="1inX5h2xlyT" role="lcghm">
+                    <property role="lacIc" value="var elementsWithInappropriateParents = [];" />
                   </node>
-                  <node concept="l8MVK" id="6c_w$hZEv39" role="lcghm" />
+                  <node concept="l8MVK" id="1inX5h2xlEr" role="lcghm" />
+                  <node concept="l8MVK" id="1inX5h2xlHq" role="lcghm" />
                 </node>
-                <node concept="3izx1p" id="6c_w$hZEv4V" role="3cqZAp">
-                  <node concept="3clFbS" id="6c_w$hZEv4X" role="3izTki">
-                    <node concept="1bpajm" id="6c_w$hZEv5l" role="3cqZAp" />
-                    <node concept="lc7rE" id="6c_w$hZEv5V" role="3cqZAp">
-                      <node concept="la8eA" id="6c_w$hZEv6F" role="lcghm">
-                        <property role="lacIc" value="elementsWithInappropriateParents.push(element);" />
+                <node concept="1bpajm" id="55uVeLV58uz" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV58vk" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV58vM" role="lcghm">
+                    <property role="lacIc" value="$(applyTo.join(', ')).each(function () {" />
+                  </node>
+                </node>
+                <node concept="3izx1p" id="55uVeLV58$u" role="3cqZAp">
+                  <node concept="3clFbS" id="55uVeLV58$w" role="3izTki">
+                    <node concept="1bpajm" id="55uVeLV58Bt" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV58C3" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV58Cs" role="lcghm">
+                        <property role="lacIc" value="if (!$(this).parent(allowedDirectParents.join(', ')).length) {" />
                       </node>
-                      <node concept="l8MVK" id="1lrK057f2c2" role="lcghm" />
+                      <node concept="l8MVK" id="55uVeLV5vdE" role="lcghm" />
+                    </node>
+                    <node concept="3izx1p" id="55uVeLV58JS" role="3cqZAp">
+                      <node concept="3clFbS" id="55uVeLV58JU" role="3izTki">
+                        <node concept="1bpajm" id="55uVeLV58Ll" role="3cqZAp" />
+                        <node concept="lc7rE" id="55uVeLV58LV" role="3cqZAp">
+                          <node concept="la8eA" id="55uVeLV58Mk" role="lcghm">
+                            <property role="lacIc" value="elementsWithInappropriateParents.push($(this).get(0));" />
+                          </node>
+                          <node concept="l8MVK" id="55uVeLV5vel" role="lcghm" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1bpajm" id="55uVeLV58R1" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV58RS" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV58Sp" role="lcghm">
+                        <property role="lacIc" value="}" />
+                      </node>
+                      <node concept="l8MVK" id="55uVeLV58T6" role="lcghm" />
                     </node>
                   </node>
                 </node>
-                <node concept="1bpajm" id="6c_w$hZEv9F" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZEvaA" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZEvb9" role="lcghm">
-                    <property role="lacIc" value="}" />
+                <node concept="1bpajm" id="55uVeLV58$W" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV58_R" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV58Aq" role="lcghm">
+                    <property role="lacIc" value="});" />
                   </node>
-                  <node concept="l8MVK" id="6c_w$hZEvc2" role="lcghm" />
+                  <node concept="l8MVK" id="55uVeLV58B7" role="lcghm" />
                 </node>
               </node>
             </node>
-            <node concept="1bpajm" id="6c_w$hZEvg8" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZEvld" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZEvn0" role="lcghm">
-                <property role="lacIc" value="});" />
+            <node concept="1bpajm" id="55uVeLV58f3" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV58io" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV58k8" role="lcghm">
+                <property role="lacIc" value="}" />
               </node>
-              <node concept="l8MVK" id="6c_w$hZEvnT" role="lcghm" />
+              <node concept="l8MVK" id="55uVeLV58kP" role="lcghm" />
             </node>
             <node concept="3clFbH" id="6c_w$hZENW9" role="3cqZAp" />
             <node concept="1bpajm" id="1inX5h2xnOY" role="3cqZAp" />
@@ -1018,7 +954,7 @@
                 </node>
                 <node concept="lc7rE" id="6c_w$hZEvAE" role="3cqZAp">
                   <node concept="la8eA" id="6c_w$hZEvAF" role="lcghm">
-                    <property role="lacIc" value="' can only be direct children of elements matchin: ' + allowedDirectParents.join(' or ') + '. Elements with inappropriate parents: '" />
+                    <property role="lacIc" value="' can only be direct children of elements matching: ' + allowedDirectParents.join(' or ') + '. Elements with inappropriate parents: '" />
                   </node>
                   <node concept="l8MVK" id="6c_w$hZEvAL" role="lcghm" />
                 </node>
@@ -1097,114 +1033,170 @@
         <node concept="1bpajm" id="6c_w$hZF8Jm" role="3cqZAp" />
         <node concept="lc7rE" id="6c_w$hZF96L" role="3cqZAp">
           <node concept="la8eA" id="6c_w$hZF96M" role="lcghm">
-            <property role="lacIc" value="function parentTypeCheck(name, id, applyTo, requiredPredecessorSelectors) {" />
+            <property role="lacIc" value="function predecessorsTypeCheck(id, type, applyTo, requiredPredecessorSelectors) {" />
           </node>
           <node concept="l8MVK" id="6c_w$hZF96N" role="lcghm" />
           <node concept="l8MVK" id="6c_w$hZF96O" role="lcghm" />
         </node>
-        <node concept="3izx1p" id="6c_w$hZF9iH" role="3cqZAp">
-          <node concept="3clFbS" id="6c_w$hZF9iI" role="3izTki">
-            <node concept="1bpajm" id="6c_w$hZF9iJ" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZF9iK" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZF9iL" role="lcghm">
-                <property role="lacIc" value="var elementsWithInappropriateParents = [];" />
+        <node concept="3izx1p" id="55uVeLV5aLH" role="3cqZAp">
+          <node concept="3clFbS" id="55uVeLV5aLI" role="3izTki">
+            <node concept="1bpajm" id="55uVeLV5aLJ" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV5aLK" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV5aLL" role="lcghm">
+                <property role="lacIc" value="if (!disabledChecks.includes(id)) {" />
               </node>
-              <node concept="l8MVK" id="6c_w$hZF9iM" role="lcghm" />
-              <node concept="l8MVK" id="6c_w$hZF9iN" role="lcghm" />
+              <node concept="l8MVK" id="55uVeLV5aLM" role="lcghm" />
             </node>
-            <node concept="3clFbH" id="6c_w$hZF9iO" role="3cqZAp" />
-            <node concept="1bpajm" id="6c_w$hZF9iP" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZF9iQ" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZF9iR" role="lcghm">
-                <property role="lacIc" value="var elementsWithoutRequiredPredecessor = $(applyTo.join(', ') + ' ' + requiredPredecessorSelectors.join(', '));" />
-              </node>
-              <node concept="l8MVK" id="6c_w$hZF9iS" role="lcghm" />
-            </node>
-            <node concept="1bpajm" id="6c_w$hZF9jh" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZF9ji" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZF9jj" role="lcghm">
-                <property role="lacIc" value="if (elementsWithoutRequiredPredecessor.length) {" />
-              </node>
-              <node concept="l8MVK" id="6c_w$hZF9jk" role="lcghm" />
-            </node>
-            <node concept="3izx1p" id="6c_w$hZF9jl" role="3cqZAp">
-              <node concept="3clFbS" id="6c_w$hZF9jm" role="3izTki">
-                <node concept="1bpajm" id="6c_w$hZF9jn" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZF9jo" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jp" role="lcghm">
-                    <property role="lacIc" value="var message = 'RequiredPredecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + " />
+            <node concept="3izx1p" id="55uVeLV5aLN" role="3cqZAp">
+              <node concept="3clFbS" id="55uVeLV5aLO" role="3izTki">
+                <node concept="1bpajm" id="55uVeLV5aLP" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aLQ" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aLR" role="lcghm">
+                    <property role="lacIc" value="var misplacedElements = [];" />
                   </node>
+                  <node concept="l8MVK" id="55uVeLV5aLS" role="lcghm" />
+                  <node concept="l8MVK" id="55uVeLV5aLT" role="lcghm" />
                 </node>
-                <node concept="lc7rE" id="6c_w$hZF9jq" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jr" role="lcghm">
-                    <property role="lacIc" value="' must be a direct or indirect child of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '" />
+                <node concept="1bpajm" id="55uVeLV5aLU" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aLV" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aLW" role="lcghm">
+                    <property role="lacIc" value="$(applyTo.join(', ')).each(function () {" />
                   </node>
-                  <node concept="l8MVK" id="6c_w$hZF9js" role="lcghm" />
+                  <node concept="l8MVK" id="55uVeLV5vf0" role="lcghm" />
                 </node>
-                <node concept="3clFbH" id="6c_w$hZF9jt" role="3cqZAp" />
-                <node concept="1bpajm" id="6c_w$hZF9ju" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZF9jv" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jw" role="lcghm">
-                    <property role="lacIc" value="if (type === 'Warning') {" />
-                  </node>
-                  <node concept="l8MVK" id="6c_w$hZF9jx" role="lcghm" />
-                </node>
-                <node concept="3izx1p" id="6c_w$hZF9jy" role="3cqZAp">
-                  <node concept="3clFbS" id="6c_w$hZF9jz" role="3izTki">
-                    <node concept="1bpajm" id="6c_w$hZF9j$" role="3cqZAp" />
-                    <node concept="lc7rE" id="6c_w$hZF9j_" role="3cqZAp">
-                      <node concept="la8eA" id="6c_w$hZF9jA" role="lcghm">
-                        <property role="lacIc" value="console.warn(message, elementsWithoutRequiredPredecessor);" />
+                <node concept="3izx1p" id="55uVeLV5aLX" role="3cqZAp">
+                  <node concept="3clFbS" id="55uVeLV5aLY" role="3izTki">
+                    <node concept="1bpajm" id="55uVeLV5aLZ" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV5aM0" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV5aM1" role="lcghm">
+                        <property role="lacIc" value="if (!$(this).parents(requiredPredecessorSelectors.join(', ')).length) {" />
                       </node>
-                      <node concept="l8MVK" id="6c_w$hZF9jB" role="lcghm" />
+                      <node concept="l8MVK" id="55uVeLV5vfF" role="lcghm" />
+                    </node>
+                    <node concept="3izx1p" id="55uVeLV5aM2" role="3cqZAp">
+                      <node concept="3clFbS" id="55uVeLV5aM3" role="3izTki">
+                        <node concept="1bpajm" id="55uVeLV5aM4" role="3cqZAp" />
+                        <node concept="lc7rE" id="55uVeLV5aM5" role="3cqZAp">
+                          <node concept="la8eA" id="55uVeLV5aM6" role="lcghm">
+                            <property role="lacIc" value="misplacedElements.push($(this).get(0));" />
+                          </node>
+                          <node concept="l8MVK" id="55uVeLV5vg7" role="lcghm" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1bpajm" id="55uVeLV5aM7" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV5aM8" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV5aM9" role="lcghm">
+                        <property role="lacIc" value="}" />
+                      </node>
+                      <node concept="l8MVK" id="55uVeLV5aMa" role="lcghm" />
                     </node>
                   </node>
                 </node>
-                <node concept="1bpajm" id="6c_w$hZF9jC" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZF9jD" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jE" role="lcghm">
-                    <property role="lacIc" value="}" />
+                <node concept="1bpajm" id="55uVeLV5aMb" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aMc" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMd" role="lcghm">
+                    <property role="lacIc" value="});" />
                   </node>
-                  <node concept="l8MVK" id="6c_w$hZF9jF" role="lcghm" />
-                </node>
-                <node concept="3clFbH" id="6c_w$hZF9jG" role="3cqZAp" />
-                <node concept="1bpajm" id="6c_w$hZF9jH" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZF9jI" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jJ" role="lcghm">
-                    <property role="lacIc" value="if (type === 'Error') {" />
-                  </node>
-                  <node concept="l8MVK" id="6c_w$hZF9jK" role="lcghm" />
-                </node>
-                <node concept="3izx1p" id="6c_w$hZF9jL" role="3cqZAp">
-                  <node concept="3clFbS" id="6c_w$hZF9jM" role="3izTki">
-                    <node concept="1bpajm" id="6c_w$hZF9jN" role="3cqZAp" />
-                    <node concept="lc7rE" id="6c_w$hZF9jO" role="3cqZAp">
-                      <node concept="la8eA" id="6c_w$hZF9jP" role="lcghm">
-                        <property role="lacIc" value="console.error(message, elementsWithoutRequiredPredecessor);" />
-                      </node>
-                      <node concept="l8MVK" id="6c_w$hZF9jQ" role="lcghm" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1bpajm" id="6c_w$hZF9jR" role="3cqZAp" />
-                <node concept="lc7rE" id="6c_w$hZF9jS" role="3cqZAp">
-                  <node concept="la8eA" id="6c_w$hZF9jT" role="lcghm">
-                    <property role="lacIc" value="}" />
-                  </node>
-                  <node concept="l8MVK" id="6c_w$hZF9jU" role="lcghm" />
+                  <node concept="l8MVK" id="55uVeLV5aMe" role="lcghm" />
                 </node>
               </node>
             </node>
-            <node concept="1bpajm" id="6c_w$hZF9jV" role="3cqZAp" />
-            <node concept="lc7rE" id="6c_w$hZF9jW" role="3cqZAp">
-              <node concept="la8eA" id="6c_w$hZF9jX" role="lcghm">
+            <node concept="1bpajm" id="55uVeLV5aMf" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV5aMg" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV5aMh" role="lcghm">
                 <property role="lacIc" value="}" />
               </node>
-              <node concept="l8MVK" id="6c_w$hZF9jY" role="lcghm" />
+              <node concept="l8MVK" id="55uVeLV5aMi" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="55uVeLV5aMj" role="3cqZAp" />
+            <node concept="1bpajm" id="55uVeLV5aMk" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV5aMl" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV5aMm" role="lcghm">
+                <property role="lacIc" value="if (misplacedElements.length) {" />
+              </node>
+              <node concept="l8MVK" id="55uVeLV5aMn" role="lcghm" />
+            </node>
+            <node concept="3izx1p" id="55uVeLV5aMo" role="3cqZAp">
+              <node concept="3clFbS" id="55uVeLV5aMp" role="3izTki">
+                <node concept="1bpajm" id="55uVeLV5aMq" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aMr" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMs" role="lcghm">
+                    <property role="lacIc" value="var message = 'Predecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + " />
+                  </node>
+                </node>
+                <node concept="lc7rE" id="55uVeLV5aMt" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMu" role="lcghm">
+                    <property role="lacIc" value="' must be descendants of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV5aMv" role="lcghm" />
+                </node>
+                <node concept="3clFbH" id="55uVeLV5aMw" role="3cqZAp" />
+                <node concept="1bpajm" id="55uVeLV5aMx" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aMy" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMz" role="lcghm">
+                    <property role="lacIc" value="if (type === 'Warning') {" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV5aM$" role="lcghm" />
+                </node>
+                <node concept="3izx1p" id="55uVeLV5aM_" role="3cqZAp">
+                  <node concept="3clFbS" id="55uVeLV5aMA" role="3izTki">
+                    <node concept="1bpajm" id="55uVeLV5aMB" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV5aMC" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV5aMD" role="lcghm">
+                        <property role="lacIc" value="console.warn(message, misplacedElements);" />
+                      </node>
+                      <node concept="l8MVK" id="55uVeLV5aME" role="lcghm" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1bpajm" id="55uVeLV5aMF" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aMG" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMH" role="lcghm">
+                    <property role="lacIc" value="}" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV5aMI" role="lcghm" />
+                </node>
+                <node concept="3clFbH" id="55uVeLV5aMJ" role="3cqZAp" />
+                <node concept="1bpajm" id="55uVeLV5aMK" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aML" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMM" role="lcghm">
+                    <property role="lacIc" value="if (type === 'Error') {" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV5aMN" role="lcghm" />
+                </node>
+                <node concept="3izx1p" id="55uVeLV5aMO" role="3cqZAp">
+                  <node concept="3clFbS" id="55uVeLV5aMP" role="3izTki">
+                    <node concept="1bpajm" id="55uVeLV5aMQ" role="3cqZAp" />
+                    <node concept="lc7rE" id="55uVeLV5aMR" role="3cqZAp">
+                      <node concept="la8eA" id="55uVeLV5aMS" role="lcghm">
+                        <property role="lacIc" value="console.error(message, misplacedElements);" />
+                      </node>
+                      <node concept="l8MVK" id="55uVeLV5aMT" role="lcghm" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1bpajm" id="55uVeLV5aMU" role="3cqZAp" />
+                <node concept="lc7rE" id="55uVeLV5aMV" role="3cqZAp">
+                  <node concept="la8eA" id="55uVeLV5aMW" role="lcghm">
+                    <property role="lacIc" value="}" />
+                  </node>
+                  <node concept="l8MVK" id="55uVeLV5aMX" role="lcghm" />
+                </node>
+              </node>
+            </node>
+            <node concept="1bpajm" id="55uVeLV5aMY" role="3cqZAp" />
+            <node concept="lc7rE" id="55uVeLV5aMZ" role="3cqZAp">
+              <node concept="la8eA" id="55uVeLV5aN0" role="lcghm">
+                <property role="lacIc" value="}" />
+              </node>
+              <node concept="l8MVK" id="55uVeLV5aN1" role="lcghm" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="6c_w$hZF8V5" role="3cqZAp" />
+        <node concept="3clFbH" id="55uVeLV5atm" role="3cqZAp" />
+        <node concept="3clFbH" id="55uVeLV5a_Q" role="3cqZAp" />
         <node concept="1bpajm" id="6xJgnXxvFJ9" role="3cqZAp" />
         <node concept="lc7rE" id="6xJgnXxvG1g" role="3cqZAp">
           <node concept="la8eA" id="6xJgnXxvGap" role="lcghm">
@@ -1248,7 +1240,6 @@
               <node concept="l8MVK" id="1lrK057c_a4" role="lcghm" />
             </node>
             <node concept="3clFbH" id="1lrK057c$T8" role="3cqZAp" />
-            <node concept="1bpajm" id="1lrK057c_k5" role="3cqZAp" />
             <node concept="lc7rE" id="6xJgnXxvGBC" role="3cqZAp">
               <node concept="l9S2W" id="6xJgnXxvGKR" role="lcghm">
                 <node concept="2OqwBi" id="6xJgnXxvGRm" role="lbANJ">
@@ -1273,9 +1264,10 @@
     <ref role="WuzLi" to="izhu:4sHsWRYdvsh" resolve="MisuseCheck" />
     <node concept="11bSqf" id="1T6agG5P2ji" role="11c4hB">
       <node concept="3clFbS" id="1T6agG5P2jj" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4znU" role="3cqZAp" />
         <node concept="lc7rE" id="1T6agG5P2jA" role="3cqZAp">
           <node concept="la8eA" id="1T6agG5P2kl" role="lcghm">
-            <property role="lacIc" value="missuseCheck(" />
+            <property role="lacIc" value="misuseCheck(" />
           </node>
         </node>
         <node concept="lc7rE" id="7GUEhtgh0Fi" role="3cqZAp">
@@ -1440,6 +1432,7 @@
     <ref role="WuzLi" to="izhu:4sHsWRYdvnl" resolve="AllowedChildrenCheck" />
     <node concept="11bSqf" id="7GUEhtggA0$" role="11c4hB">
       <node concept="3clFbS" id="7GUEhtggA0_" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4yeP" role="3cqZAp" />
         <node concept="lc7rE" id="7GUEhtggCSb" role="3cqZAp">
           <node concept="la8eA" id="7GUEhtggCSx" role="lcghm">
             <property role="lacIc" value="childrenTypeCheck(" />
@@ -1511,6 +1504,7 @@
     <ref role="WuzLi" to="izhu:4sHsWRYdgY1" resolve="MissingElementCheck" />
     <node concept="11bSqf" id="4Jlejzb$7RK" role="11c4hB">
       <node concept="3clFbS" id="4Jlejzb$7RL" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4yZz" role="3cqZAp" />
         <node concept="lc7rE" id="4Jlejzb$83P" role="3cqZAp">
           <node concept="la8eA" id="4Jlejzb$84b" role="lcghm">
             <property role="lacIc" value="missingElementCheck(" />
@@ -1568,6 +1562,7 @@
     <ref role="WuzLi" to="izhu:72rEP0BaARa" resolve="DirectParentCheck" />
     <node concept="11bSqf" id="1inX5h2xhTL" role="11c4hB">
       <node concept="3clFbS" id="1inX5h2xhTM" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4yBB" role="3cqZAp" />
         <node concept="lc7rE" id="1inX5h2xi0l" role="3cqZAp">
           <node concept="la8eA" id="1inX5h2xi0F" role="lcghm">
             <property role="lacIc" value="parentTypeCheck(" />
@@ -1587,7 +1582,7 @@
             </node>
           </node>
           <node concept="la8eA" id="1inX5h2xiQu" role="lcghm">
-            <property role="lacIc" value=", " />
+            <property role="lacIc" value=", '" />
           </node>
         </node>
         <node concept="lc7rE" id="6c_w$hZDoyT" role="3cqZAp">
@@ -1639,6 +1634,7 @@
     <ref role="WuzLi" to="izhu:7QtgnuK5Px8" resolve="RequiredChildCheck" />
     <node concept="11bSqf" id="6xJgnXxuHxr" role="11c4hB">
       <node concept="3clFbS" id="6xJgnXxuHxs" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4$9u" role="3cqZAp" />
         <node concept="lc7rE" id="6xJgnXxuHyk" role="3cqZAp">
           <node concept="la8eA" id="6xJgnXxuHyE" role="lcghm">
             <property role="lacIc" value="requiredChildCheck(" />
@@ -1710,6 +1706,7 @@
     <ref role="WuzLi" to="izhu:6xJgnXxuYcG" resolve="PredecessorsCheck" />
     <node concept="11bSqf" id="6xJgnXxwetk" role="11c4hB">
       <node concept="3clFbS" id="6xJgnXxwetl" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV4zKG" role="3cqZAp" />
         <node concept="lc7rE" id="6xJgnXxweOC" role="3cqZAp">
           <node concept="la8eA" id="6xJgnXxweOD" role="lcghm">
             <property role="lacIc" value="predecessorsTypeCheck(" />
@@ -1875,9 +1872,10 @@
     <ref role="WuzLi" to="izhu:3P8nfCCANXR" resolve="InvalidElementCheck" />
     <node concept="11bSqf" id="6c_w$hZCERF" role="11c4hB">
       <node concept="3clFbS" id="6c_w$hZCERG" role="2VODD2">
+        <node concept="1bpajm" id="55uVeLV78sZ" role="3cqZAp" />
         <node concept="lc7rE" id="6c_w$hZCEWJ" role="3cqZAp">
           <node concept="la8eA" id="6c_w$hZCEX5" role="lcghm">
-            <property role="lacIc" value="invalidElementChekc(" />
+            <property role="lacIc" value="invalidElementCheck(" />
           </node>
         </node>
         <node concept="lc7rE" id="6c_w$hZCEZL" role="3cqZAp">
@@ -1921,8 +1919,9 @@
             </node>
           </node>
           <node concept="la8eA" id="6c_w$hZCF3N" role="lcghm">
-            <property role="lacIc" value="};" />
+            <property role="lacIc" value=");" />
           </node>
+          <node concept="l8MVK" id="55uVeLV6Od2" role="lcghm" />
         </node>
       </node>
     </node>

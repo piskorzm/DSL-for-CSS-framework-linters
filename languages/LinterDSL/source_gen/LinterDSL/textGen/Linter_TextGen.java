@@ -29,19 +29,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var elementsWithInappropriateChildren = [];");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("applyTo.forEach(function(selector) {");
-    tgs.newLine();
-
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("elementsWithInappropriateChildren = elementsWithInappropriateChildren.concat($(selector + ' > :not(' + allowedChildrenSelectors.join(', ') + ')').parent().toArray());");
-    tgs.newLine();
-    ctx.getBuffer().area().decreaseIndent();
-    tgs.indent();
-    tgs.append("});");
+    tgs.append("var elementsWithInappropriateChildren = $(applyTo.join(', ') + ' > :not(' + allowedChildrenSelectors.join(', ') + ')').parent().toArray();");
     tgs.newLine();
 
     tgs.indent();
@@ -92,7 +80,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("function requiredChildCheck(name, id, type, applyTo, requiredChildSelectors) {");
+    tgs.append("function requiredChildCheck(id, type, applyTo, requiredChildSelectors) {");
     tgs.newLine();
     tgs.newLine();
 
@@ -103,32 +91,22 @@ public class Linter_TextGen extends TextGenDescriptorBase {
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var elementsMissingChild = false;");
+    tgs.append("var elementsMissingChildren = [];");
     tgs.newLine();
     tgs.indent();
-    tgs.append("applyTo.forEach(function(selector) {");
-    tgs.newLine();
-
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("$(selector).forEach(function(element) {");
+    tgs.append("$(applyTo.join(', ')).each(function() {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("if (!$(this).children(':not(' + requiredChildSelectors.join(',') + ')').lenght) {");
+    tgs.append("if (!$(this).children(':not(' + requiredChildSelectors.join(', ') +')').length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("elementsMissingChildren.push(element);");
+    tgs.append("elementsMissingChildren.push($(this).get(0));");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");
-    tgs.newLine();
-    ctx.getBuffer().area().decreaseIndent();
-    tgs.indent();
-    tgs.append("});");
-    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("});");
@@ -191,28 +169,15 @@ public class Linter_TextGen extends TextGenDescriptorBase {
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var missingRequiredSelectors = [];");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("applyTo.forEach(function(selector) {");
-    tgs.newLine();
-
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("missingRequired.push($(selector).filter(':not(' + requiredSelectors.join(',') + ')'));");
-    tgs.newLine();
-    ctx.getBuffer().area().decreaseIndent();
-
-    tgs.indent();
-    tgs.append("});");
+    tgs.append("var missingRequiredSelectors = $(applyTo.join(', ')).filter(':not(' + requiredSelectors.join(', ') + ')').toArray();");
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("if (missingRequired.length) {");
+    tgs.append("if (missingRequiredSelectors.length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var message = 'RequiredChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
+    tgs.append("var message = 'ElementMissuse' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
     tgs.append("' must also match ' + requiredSelectors.join(' or ') + '. Misused elements:';");
     tgs.newLine();
 
@@ -221,7 +186,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("console.warn(message, elementsMissingChildren);");
+    tgs.append("console.warn(message, missingRequiredSelectors);");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -233,7 +198,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("console.error(message, elementsMissingChildren);");
+    tgs.append("console.error(message, missingRequiredSelectors);");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -319,14 +284,14 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var invalidElements = ($(applyTo.join(', ')));");
+    tgs.append("var invalidElements = ($(applyTo.join(', ')).toArray());");
     tgs.newLine();
     tgs.indent();
     tgs.append("if (invalidElements.length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var message = 'InvalidElement' + type + ' {check id: ' + id + '): element matching ' + applyTo.join(' or ') + ");
+    tgs.append("var message = 'InvalidElement' + type + ' {check id: ' + id + '): elements matching ' + applyTo.join(' or ') + ");
     tgs.append("' are not valid in ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "framework")));
     tgs.append(". InvalidElements: ';");
@@ -371,28 +336,27 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("function parentTypeCheck(name, id, applyTo, allowedDirectParents) {");
+    tgs.append("function parentTypeCheck(id, type, applyTo, allowedDirectParents) {");
     tgs.newLine();
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (!disabledChecks.includes(id)) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("var elementsWithInappropriateParents = [];");
     tgs.newLine();
     tgs.newLine();
-
     tgs.indent();
-    tgs.append("var elements = $(applyTo.join(', '));");
-    tgs.newLine();
+    tgs.append("$(applyTo.join(', ')).each(function () {");
+    ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("elements.forEach(function (element) {");
+    tgs.append("if (!$(this).parent(allowedDirectParents.join(', ')).length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("if (!element.parent().matches(allowedDirectParents.join(', '))) {");
-    tgs.newLine();
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("elementsWithInappropriateParents.push(element);");
+    tgs.append("elementsWithInappropriateParents.push($(this).get(0));");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -402,6 +366,10 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("});");
     tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
 
     tgs.indent();
     tgs.append("if (elementsWithInappropriateParents.length) {");
@@ -409,7 +377,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("var message = 'DirectParent' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
-    tgs.append("' can only be direct children of elements matchin: ' + allowedDirectParents.join(' or ') + '. Elements with inappropriate parents: '");
+    tgs.append("' can only be direct children of elements matching: ' + allowedDirectParents.join(' or ') + '. Elements with inappropriate parents: '");
     tgs.newLine();
 
     tgs.indent();
@@ -446,25 +414,49 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("function parentTypeCheck(name, id, applyTo, requiredPredecessorSelectors) {");
+    tgs.append("function predecessorsTypeCheck(id, type, applyTo, requiredPredecessorSelectors) {");
     tgs.newLine();
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var elementsWithInappropriateParents = [];");
+    tgs.append("if (!disabledChecks.includes(id)) {");
     tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("var misplacedElements = [];");
+    tgs.newLine();
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("$(applyTo.join(', ')).each(function () {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("if (!$(this).parents(requiredPredecessorSelectors.join(', ')).length) {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("misplacedElements.push($(this).get(0));");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("});");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
     tgs.newLine();
 
     tgs.indent();
-    tgs.append("var elementsWithoutRequiredPredecessor = $(applyTo.join(', ') + ' ' + requiredPredecessorSelectors.join(', '));");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("if (elementsWithoutRequiredPredecessor.length) {");
+    tgs.append("if (misplacedElements.length) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("var message = 'RequiredPredecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
-    tgs.append("' must be a direct or indirect child of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '");
+    tgs.append("var message = 'Predecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
+    tgs.append("' must be descendants of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '");
     tgs.newLine();
 
     tgs.indent();
@@ -472,7 +464,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("console.warn(message, elementsWithoutRequiredPredecessor);");
+    tgs.append("console.warn(message, misplacedElements);");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -484,7 +476,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("console.error(message, elementsWithoutRequiredPredecessor);");
+    tgs.append("console.error(message, misplacedElements);");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
@@ -495,6 +487,8 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
+
+
 
     tgs.indent();
     tgs.append("}");
@@ -513,7 +507,6 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.newLine();
 
-    tgs.indent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2ae6L, "checks"))) {
       tgs.appendNode(item);
     }
