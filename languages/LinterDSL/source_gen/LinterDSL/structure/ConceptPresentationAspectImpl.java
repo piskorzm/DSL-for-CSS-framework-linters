@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AllowedChildrenCheck;
   private ConceptPresentation props_AttributeSelector;
   private ConceptPresentation props_Check;
+  private ConceptPresentation props_ClassPatternSelector;
   private ConceptPresentation props_ClassSelector;
   private ConceptPresentation props_CustomSelector;
   private ConceptPresentation props_DirectParentCheck;
@@ -21,8 +22,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MissingElementCheck;
   private ConceptPresentation props_MisuseCheck;
   private ConceptPresentation props_PredecessorsCheck;
+  private ConceptPresentation props_ReferenceSelector;
   private ConceptPresentation props_RequiredChildCheck;
   private ConceptPresentation props_Selector;
+  private ConceptPresentation props_SelectorDefinition;
   private ConceptPresentation props_StandardSelector;
   private ConceptPresentation props_TagSelector;
 
@@ -51,6 +54,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Check = cpb.create();
         }
         return props_Check;
+      case LanguageConceptSwitch.ClassPatternSelector:
+        if (props_ClassPatternSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("pattern");
+          props_ClassPatternSelector = cpb.create();
+        }
+        return props_ClassPatternSelector;
       case LanguageConceptSwitch.ClassSelector:
         if (props_ClassSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -61,7 +71,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.CustomSelector:
         if (props_CustomSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("matching");
+          cpb.rawPresentation("custom");
           props_CustomSelector = cpb.create();
         }
         return props_CustomSelector;
@@ -114,6 +124,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PredecessorsCheck = cpb.create();
         }
         return props_PredecessorsCheck;
+      case LanguageConceptSwitch.ReferenceSelector:
+        if (props_ReferenceSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("reference");
+          props_ReferenceSelector = cpb.create();
+        }
+        return props_ReferenceSelector;
       case LanguageConceptSwitch.RequiredChildCheck:
         if (props_RequiredChildCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -127,6 +144,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Selector = cpb.create();
         }
         return props_Selector;
+      case LanguageConceptSwitch.SelectorDefinition:
+        if (props_SelectorDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SelectorDefinition = cpb.create();
+        }
+        return props_SelectorDefinition;
       case LanguageConceptSwitch.StandardSelector:
         if (props_StandardSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

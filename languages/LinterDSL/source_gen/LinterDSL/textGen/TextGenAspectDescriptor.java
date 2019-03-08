@@ -26,6 +26,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new AllowedChildrenCheck_TextGen();
       case LanguageConceptSwitch.AttributeSelector:
         return new AttributeSelector_TextGen();
+      case LanguageConceptSwitch.ClassPatternSelector:
+        return new ClassPatternSelector_TextGen();
       case LanguageConceptSwitch.ClassSelector:
         return new ClassSelector_TextGen();
       case LanguageConceptSwitch.CustomSelector:

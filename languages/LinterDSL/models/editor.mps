@@ -23,7 +23,12 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -62,12 +67,31 @@
         <node concept="3F0A7n" id="4sHsWRYcwER" role="3EZMnx">
           <ref role="1NtTu8" to="izhu:7hDm5c7zyGu" resolve="framework" />
         </node>
-        <node concept="3F0ifn" id="4sHsWRYcwF3" role="3EZMnx">
-          <property role="3F0ifm" value="checks:" />
-        </node>
+        <node concept="3F0ifn" id="4sHsWRYcwF3" role="3EZMnx" />
         <node concept="2iRfu4" id="4sHsWRYcwEt" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="4sHsWRYcwFm" role="3EZMnx" />
+      <node concept="3F0ifn" id="4LKXwqVSc1Y" role="3EZMnx">
+        <property role="3F0ifm" value="reusable selector definitions:" />
+      </node>
+      <node concept="3EZMnI" id="4LKXwqVSc2F" role="3EZMnx">
+        <node concept="VPM3Z" id="4LKXwqVSc2G" role="3F10Kt" />
+        <node concept="3XFhqQ" id="4LKXwqVSc2H" role="3EZMnx" />
+        <node concept="3EZMnI" id="4LKXwqVSc2I" role="3EZMnx">
+          <node concept="VPM3Z" id="4LKXwqVSc2J" role="3F10Kt" />
+          <node concept="3F2HdR" id="4LKXwqVSc2K" role="3EZMnx">
+            <ref role="1NtTu8" to="izhu:4LKXwqVRFJ2" resolve="selectorDefinitions" />
+            <node concept="2iRkQZ" id="4LKXwqVSc2L" role="2czzBx" />
+          </node>
+          <node concept="2iRkQZ" id="4LKXwqVSc2M" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="4LKXwqVSc2N" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="4LKXwqVSc1D" role="3EZMnx" />
+      <node concept="3F0ifn" id="4LKXwqVSc1l" role="3EZMnx">
+        <property role="3F0ifm" value="validation checks:" />
+      </node>
+      <node concept="3F0ifn" id="4LKXwqVSNBW" role="3EZMnx" />
       <node concept="3EZMnI" id="4sHsWRYc_Mr" role="3EZMnx">
         <node concept="VPM3Z" id="4sHsWRYc_Mt" role="3F10Kt" />
         <node concept="3XFhqQ" id="4sHsWRYc_MN" role="3EZMnx" />
@@ -515,12 +539,63 @@
     <ref role="1XX52x" to="izhu:710cjgpav4y" resolve="CustomSelector" />
     <node concept="3EZMnI" id="710cjgpav6O" role="2wV5jI">
       <node concept="3F0ifn" id="710cjgpav6V" role="3EZMnx">
-        <property role="3F0ifm" value="matching" />
+        <property role="3F0ifm" value="matching custom selector" />
       </node>
       <node concept="3F0A7n" id="710cjgpav71" role="3EZMnx">
         <ref role="1NtTu8" to="izhu:710cjgpav4z" resolve="string" />
       </node>
       <node concept="l2Vlx" id="710cjgpav6R" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4LKXwqVQzNZ">
+    <ref role="1XX52x" to="izhu:4LKXwqVQzNI" resolve="ClassPatternSelector" />
+    <node concept="3EZMnI" id="4LKXwqVQzO1" role="2wV5jI">
+      <node concept="3F0ifn" id="4LKXwqVQzO2" role="3EZMnx">
+        <property role="3F0ifm" value="with class matching pattern" />
+      </node>
+      <node concept="3F0A7n" id="4LKXwqVQzO3" role="3EZMnx">
+        <ref role="1NtTu8" to="izhu:710cjgpav4v" resolve="string" />
+      </node>
+      <node concept="l2Vlx" id="4LKXwqVQzO4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4LKXwqVRFKb">
+    <ref role="1XX52x" to="izhu:4LKXwqVRFIm" resolve="SelectorDefinition" />
+    <node concept="3EZMnI" id="4LKXwqVRFKd" role="2wV5jI">
+      <node concept="3F0ifn" id="4LKXwqVRFKu" role="3EZMnx">
+        <property role="3F0ifm" value="selector" />
+      </node>
+      <node concept="3F0A7n" id="4LKXwqVRFKL" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="VPM3Z" id="4LKXwqVRFKe" role="3F10Kt" />
+      <node concept="3F0ifn" id="4LKXwqVRFKf" role="3EZMnx">
+        <property role="3F0ifm" value="filters elements" />
+      </node>
+      <node concept="3F2HdR" id="4LKXwqVRFKg" role="3EZMnx">
+        <property role="2czwfO" value=" or" />
+        <ref role="1NtTu8" to="izhu:4LKXwqVRFJ5" resolve="slectors" />
+        <node concept="l2Vlx" id="4LKXwqVRFKh" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="4LKXwqVRFKi" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4LKXwqVRFL3">
+    <ref role="1XX52x" to="izhu:4LKXwqVRFKS" resolve="ReferenceSelector" />
+    <node concept="3EZMnI" id="4LKXwqVRFL5" role="2wV5jI">
+      <node concept="3F0ifn" id="4LKXwqVRFLF" role="3EZMnx">
+        <property role="3F0ifm" value="matching" />
+      </node>
+      <node concept="1iCGBv" id="4LKXwqVRFLq" role="3EZMnx">
+        <ref role="1NtTu8" to="izhu:4LKXwqVRFKT" resolve="selector" />
+        <node concept="1sVBvm" id="4LKXwqVRFLs" role="1sWHZn">
+          <node concept="3F0A7n" id="4LKXwqVSvGW" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4LKXwqVRFL8" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAllowedChildrenCheck = createDescriptorForAllowedChildrenCheck();
   /*package*/ final ConceptDescriptor myConceptAttributeSelector = createDescriptorForAttributeSelector();
   /*package*/ final ConceptDescriptor myConceptCheck = createDescriptorForCheck();
+  /*package*/ final ConceptDescriptor myConceptClassPatternSelector = createDescriptorForClassPatternSelector();
   /*package*/ final ConceptDescriptor myConceptClassSelector = createDescriptorForClassSelector();
   /*package*/ final ConceptDescriptor myConceptCustomSelector = createDescriptorForCustomSelector();
   /*package*/ final ConceptDescriptor myConceptDirectParentCheck = createDescriptorForDirectParentCheck();
@@ -28,8 +29,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMissingElementCheck = createDescriptorForMissingElementCheck();
   /*package*/ final ConceptDescriptor myConceptMisuseCheck = createDescriptorForMisuseCheck();
   /*package*/ final ConceptDescriptor myConceptPredecessorsCheck = createDescriptorForPredecessorsCheck();
+  /*package*/ final ConceptDescriptor myConceptReferenceSelector = createDescriptorForReferenceSelector();
   /*package*/ final ConceptDescriptor myConceptRequiredChildCheck = createDescriptorForRequiredChildCheck();
   /*package*/ final ConceptDescriptor myConceptSelector = createDescriptorForSelector();
+  /*package*/ final ConceptDescriptor myConceptSelectorDefinition = createDescriptorForSelectorDefinition();
   /*package*/ final ConceptDescriptor myConceptStandardSelector = createDescriptorForStandardSelector();
   /*package*/ final ConceptDescriptor myConceptTagSelector = createDescriptorForTagSelector();
   /*package*/ final EnumerationDescriptor myEnumerationCheckType = new EnumerationDescriptor_CheckType();
@@ -41,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptPredecessorsCheck, myConceptRequiredChildCheck, myConceptSelector, myConceptStandardSelector, myConceptTagSelector);
+    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptStandardSelector, myConceptTagSelector);
   }
 
   @Override
@@ -54,6 +57,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAttributeSelector;
       case LanguageConceptSwitch.Check:
         return myConceptCheck;
+      case LanguageConceptSwitch.ClassPatternSelector:
+        return myConceptClassPatternSelector;
       case LanguageConceptSwitch.ClassSelector:
         return myConceptClassSelector;
       case LanguageConceptSwitch.CustomSelector:
@@ -72,10 +77,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMisuseCheck;
       case LanguageConceptSwitch.PredecessorsCheck:
         return myConceptPredecessorsCheck;
+      case LanguageConceptSwitch.ReferenceSelector:
+        return myConceptReferenceSelector;
       case LanguageConceptSwitch.RequiredChildCheck:
         return myConceptRequiredChildCheck;
       case LanguageConceptSwitch.Selector:
         return myConceptSelector;
+      case LanguageConceptSwitch.SelectorDefinition:
+        return myConceptSelectorDefinition;
       case LanguageConceptSwitch.StandardSelector:
         return myConceptStandardSelector;
       case LanguageConceptSwitch.TagSelector:
@@ -123,6 +132,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("applyTo", 0x1419e78e679167d2L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("1448443353985279954").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForClassPatternSelector() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ClassPatternSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbda3ceeL);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118");
+    b.version(2);
+    b.alias("pattern");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForClassSelector() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ClassSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f113L);
     b.class_(false, false, false);
@@ -139,7 +157,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650338");
     b.version(2);
     b.property("string", 0x704031341929f123L).type(PrimitiveTypeId.STRING).origin("8088519030587650339").done();
-    b.alias("matching");
+    b.alias("custom");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDirectParentCheck() {
@@ -178,7 +196,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8388332894586546897");
     b.version(2);
     b.property("framework", 0x74695853078e2b1eL).type(PrimitiveTypeId.STRING).origin("8388332894586546974").done();
+    b.aggregate("selectorDefinitions", 0x4c70f606bbdebbc2L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L).optional(true).ordered(true).multiple(true).origin("5508172853056289730").done();
     b.aggregate("checks", 0x74695853078e2ae6L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L).optional(true).ordered(true).multiple(true).origin("8388332894586546918").done();
+    b.alias("linter");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMissingElementCheck() {
@@ -210,6 +230,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("predecessors check");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForReferenceSelector() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ReferenceSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebc38L);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853056289848");
+    b.version(2);
+    b.associate("selector", 0x4c70f606bbdebc39L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L).optional(false).origin("5508172853056289849").done();
+    b.alias("reference");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRequiredChildCheck() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "RequiredChildCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L);
     b.class_(false, false, false);
@@ -225,6 +255,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/1448443353985318893");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSelectorDefinition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "SelectorDefinition", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853056289686");
+    b.version(2);
+    b.aggregate("slectors", 0x4c70f606bbdebbc5L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5508172853056289733").done();
+    b.alias("selector");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStandardSelector() {

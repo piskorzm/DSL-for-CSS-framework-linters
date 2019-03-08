@@ -58,7 +58,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "matching");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "matching custom selector");
     editorCell.setCellId("Constant_gs277y_a0");
     editorCell.setDefaultText("");
     return editorCell;

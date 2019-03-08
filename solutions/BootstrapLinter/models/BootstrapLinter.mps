@@ -36,11 +36,18 @@
       <concept id="8388332894586546897" name="LinterDSL.structure.Linter" flags="ng" index="1NTRa2">
         <property id="8388332894586546974" name="framework" index="1NTRdd" />
         <child id="8388332894586546918" name="checks" index="1NTRaP" />
+        <child id="5508172853056289730" name="selectorDefinitions" index="3RF$R4" />
       </concept>
       <concept id="8388332894586546920" name="LinterDSL.structure.Check" flags="ng" index="1NTRaV">
         <property id="1448443353985279886" name="type" index="1Ny800" />
         <property id="8388332894586546930" name="id" index="1NTRax" />
         <child id="1448443353985279954" name="applyTo" index="1Ny81s" />
+      </concept>
+      <concept id="5508172853056289848" name="LinterDSL.structure.ReferenceSelector" flags="ng" index="3RF$CY">
+        <reference id="5508172853056289849" name="selector" index="3RF$CZ" />
+      </concept>
+      <concept id="5508172853056289686" name="LinterDSL.structure.SelectorDefinition" flags="ng" index="3RF$Qg">
+        <child id="5508172853056289733" name="slectors" index="3RF$R3" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -82,7 +89,7 @@
     <node concept="1nGsqq" id="55uVeLV67dO" role="1NTRaP">
       <property role="1NTRax" value="3" />
       <node concept="1Dqs0B" id="55uVeLV67ec" role="1NyYth">
-        <property role="1Dqs0F" value="row" />
+        <property role="1Dqs0F" value="row " />
       </node>
       <node concept="1Dqs0B" id="55uVeLV67e9" role="1Ny81s">
         <property role="1Dqs0F" value="grid" />
@@ -121,6 +128,21 @@
       </node>
       <node concept="1Dqs0l" id="55uVeLV67kc" role="2T68jv">
         <property role="1Dqs0F" value="id=&quot;3&quot;" />
+      </node>
+    </node>
+    <node concept="1nGsqq" id="4LKXwqVSvBE" role="1NTRaP">
+      <property role="1NTRax" value="8" />
+      <node concept="1Dqs0J" id="4LKXwqVTesQ" role="1NyYth">
+        <property role="1Dqs0F" value="div" />
+      </node>
+      <node concept="3RF$CY" id="4LKXwqVSvEC" role="1Ny81s">
+        <ref role="3RF$CZ" node="4LKXwqVSvB6" resolve="testConst" />
+      </node>
+    </node>
+    <node concept="3RF$Qg" id="4LKXwqVSvB6" role="3RF$R4">
+      <property role="TrG5h" value="testConst" />
+      <node concept="1Dqs0l" id="4LKXwqVSNBj" role="3RF$R3">
+        <property role="1Dqs0F" value="e" />
       </node>
     </node>
   </node>

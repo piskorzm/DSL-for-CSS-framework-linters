@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="15,0,73,0" name="LinterDSL.textGen.TextGenAspectDescriptor" />
+      <unit at="15,0,75,0" name="LinterDSL.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318320">
@@ -38,8 +38,8 @@
       <unit id="1483923244972318320" at="12,0,29,0" name="LinterDSL.textGen.DirectParentCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1483923244972318320" at="33,51,34,47" concept="6" />
-      <scope id="1483923244972318320" at="33,51,34,47" />
+      <node id="1483923244972318320" at="35,51,36,47" concept="6" />
+      <scope id="1483923244972318320" at="35,51,36,47" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752209">
@@ -66,8 +66,8 @@
       <unit id="2181476196826752209" at="12,0,29,0" name="LinterDSL.textGen.MisuseCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="2181476196826752209" at="43,45,44,41" concept="6" />
-      <scope id="2181476196826752209" at="43,45,44,41" />
+      <node id="2181476196826752209" at="45,45,46,41" concept="6" />
+      <scope id="2181476196826752209" at="45,45,46,41" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827194186">
@@ -123,8 +123,28 @@
       <unit id="5464336638980161007" at="12,0,27,0" name="LinterDSL.textGen.MissingElementCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5464336638980161007" at="41,53,42,49" concept="6" />
-      <scope id="5464336638980161007" at="41,53,42,49" />
+      <node id="5464336638980161007" at="43,53,44,49" concept="6" />
+      <scope id="5464336638980161007" at="43,53,44,49" />
+    </file>
+  </root>
+  <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056005887">
+    <file name="ClassPatternSelector_TextGen.java">
+      <node id="5508172853056005887" at="13,54,14,55" concept="5" />
+      <node id="5508172853056005909" at="14,55,15,32" concept="1" />
+      <node id="5508172853056005910" at="15,32,16,195" concept="1" />
+      <node id="5508172853056006335" at="16,195,17,20" concept="1" />
+      <node id="5508172853056005887" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5508172853056005887" at="13,54,17,20">
+        <var name="tgs" id="5508172853056005887" />
+      </scope>
+      <scope id="5508172853056005887" at="12,0,19,0">
+        <var name="ctx" id="5508172853056005887" />
+      </scope>
+      <unit id="5508172853056005887" at="11,0,20,0" name="LinterDSL.textGen.ClassPatternSelector_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5508172853056005887" at="29,54,30,50" concept="6" />
+      <scope id="5508172853056005887" at="29,54,30,50" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906231">
@@ -141,8 +161,8 @@
       <unit id="7144259614603906231" at="11,0,18,0" name="LinterDSL.textGen.CustomSelector_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7144259614603906231" at="31,48,32,44" concept="6" />
-      <scope id="7144259614603906231" at="31,48,32,44" />
+      <node id="7144259614603906231" at="33,48,34,44" concept="6" />
+      <scope id="7144259614603906231" at="33,48,34,44" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603908898">
@@ -159,8 +179,8 @@
       <unit id="7144259614603908898" at="11,0,18,0" name="LinterDSL.textGen.TagSelector_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7144259614603908898" at="49,45,50,41" concept="6" />
-      <scope id="7144259614603908898" at="49,45,50,41" />
+      <node id="7144259614603908898" at="51,45,52,41" concept="6" />
+      <scope id="7144259614603908898" at="51,45,52,41" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909291">
@@ -198,8 +218,8 @@
       <unit id="7144259614603910420" at="11,0,19,0" name="LinterDSL.textGen.ClassSelector_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7144259614603910420" at="29,47,30,43" concept="6" />
-      <scope id="7144259614603910420" at="29,47,30,43" />
+      <node id="7144259614603910420" at="31,47,32,43" concept="6" />
+      <scope id="7144259614603910420" at="31,47,32,43" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910995">
@@ -221,8 +241,8 @@
       <unit id="7144259614603910995" at="12,0,21,0" name="LinterDSL.textGen.GroupSelector_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7144259614603910995" at="35,47,36,43" concept="6" />
-      <scope id="7144259614603910995" at="35,47,36,43" />
+      <node id="7144259614603910995" at="37,47,38,43" concept="6" />
+      <scope id="7144259614603910995" at="37,47,38,43" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914730">
@@ -247,8 +267,8 @@
       <unit id="7144259614603914730" at="12,0,27,0" name="LinterDSL.textGen.InvalidElementCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7144259614603914730" at="37,53,38,49" concept="6" />
-      <scope id="7144259614603914730" at="37,53,38,49" />
+      <node id="7144259614603914730" at="39,53,40,49" concept="6" />
+      <scope id="7144259614603914730" at="39,53,40,49" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480922">
@@ -275,8 +295,8 @@
       <unit id="7525305517711480922" at="12,0,29,0" name="LinterDSL.textGen.RequiredChildCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7525305517711480922" at="47,52,48,48" concept="6" />
-      <scope id="7525305517711480922" at="47,52,48,48" />
+      <node id="7525305517711480922" at="49,52,50,48" concept="6" />
+      <scope id="7525305517711480922" at="49,52,50,48" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877971">
@@ -303,8 +323,8 @@
       <unit id="7525305517711877971" at="12,0,29,0" name="LinterDSL.textGen.PredecessorsCheck_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7525305517711877971" at="45,51,46,47" concept="6" />
-      <scope id="7525305517711877971" at="45,51,46,47" />
+      <node id="7525305517711877971" at="47,51,48,47" concept="6" />
+      <scope id="7525305517711877971" at="47,51,48,47" />
     </file>
   </root>
   <root nodeRef="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223395">
@@ -849,26 +869,26 @@
       <unit id="9060320646831620253" at="13,0,517,0" name="LinterDSL.textGen.Linter_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="9060320646831620253" at="39,40,40,36" concept="6" />
-      <node id="9060320646831620253" at="58,161,59,48" concept="5" />
-      <node id="9060320646831620253" at="59,48,60,51" concept="5" />
-      <node id="9060320646831620253" at="60,51,61,84" concept="1" />
-      <node id="9060320646831620253" at="61,84,62,17" concept="0" />
-      <node id="9060320646831620253" at="66,56,67,26" concept="6" />
-      <node id="9060320646831636125" at="69,61,70,16" concept="6" />
-      <node id="9060320646831620253" at="66,0,69,0" concept="8" trace="getFileName_Linter#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="9060320646831620253" at="69,0,72,0" concept="8" trace="getFileExtension_Linter#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="9060320646831620253" at="57,58,63,7" concept="3" />
-      <scope id="9060320646831620253" at="39,40,40,36" />
-      <scope id="9060320646831620253" at="66,56,67,26" />
-      <scope id="9060320646831620253" at="69,61,70,16" />
-      <scope id="9060320646831620253" at="66,0,69,0">
+      <node id="9060320646831620253" at="41,40,42,36" concept="6" />
+      <node id="9060320646831620253" at="60,161,61,48" concept="5" />
+      <node id="9060320646831620253" at="61,48,62,51" concept="5" />
+      <node id="9060320646831620253" at="62,51,63,84" concept="1" />
+      <node id="9060320646831620253" at="63,84,64,17" concept="0" />
+      <node id="9060320646831620253" at="68,56,69,26" concept="6" />
+      <node id="9060320646831636125" at="71,61,72,16" concept="6" />
+      <node id="9060320646831620253" at="68,0,71,0" concept="8" trace="getFileName_Linter#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="9060320646831620253" at="71,0,74,0" concept="8" trace="getFileExtension_Linter#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="9060320646831620253" at="59,58,65,7" concept="3" />
+      <scope id="9060320646831620253" at="41,40,42,36" />
+      <scope id="9060320646831620253" at="68,56,69,26" />
+      <scope id="9060320646831620253" at="71,61,72,16" />
+      <scope id="9060320646831620253" at="68,0,71,0">
         <var name="node" id="9060320646831620253" />
       </scope>
-      <scope id="9060320646831620253" at="69,0,72,0">
+      <scope id="9060320646831620253" at="71,0,74,0">
         <var name="node" id="9060320646831620253" />
       </scope>
-      <scope id="9060320646831620253" at="58,161,62,17">
+      <scope id="9060320646831620253" at="60,161,64,17">
         <var name="ext" id="9060320646831620253" />
         <var name="fname" id="9060320646831620253" />
       </scope>

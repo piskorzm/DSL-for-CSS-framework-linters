@@ -55,7 +55,15 @@
     <property role="EcuMT" value="8388332894586546897" />
     <property role="TrG5h" value="Linter" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="linter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4LKXwqVRFJ2" role="1TKVEi">
+      <property role="IQ2ns" value="5508172853056289730" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selectorDefinitions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4LKXwqVRFIm" resolve="SelectorDefinition" />
+    </node>
     <node concept="1TJgyi" id="7hDm5c7zyGu" role="1TKVEl">
       <property role="IQ2nx" value="8388332894586546974" />
       <property role="TrG5h" value="framework" />
@@ -235,12 +243,47 @@
   <node concept="1TIwiD" id="710cjgpav4y">
     <property role="EcuMT" value="8088519030587650338" />
     <property role="TrG5h" value="CustomSelector" />
-    <property role="34LRSv" value="matching" />
+    <property role="34LRSv" value="custom" />
     <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
     <node concept="1TJgyi" id="710cjgpav4z" role="1TKVEl">
       <property role="IQ2nx" value="8088519030587650339" />
       <property role="TrG5h" value="string" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4LKXwqVQzNI">
+    <property role="EcuMT" value="5508172853055995118" />
+    <property role="TrG5h" value="ClassPatternSelector" />
+    <property role="34LRSv" value="pattern" />
+    <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
+  </node>
+  <node concept="1TIwiD" id="4LKXwqVRFIm">
+    <property role="EcuMT" value="5508172853056289686" />
+    <property role="TrG5h" value="SelectorDefinition" />
+    <property role="34LRSv" value="selector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4LKXwqVRFIn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4LKXwqVRFJ5" role="1TKVEi">
+      <property role="IQ2ns" value="5508172853056289733" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="slectors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4LKXwqVRFKS">
+    <property role="EcuMT" value="5508172853056289848" />
+    <property role="TrG5h" value="ReferenceSelector" />
+    <property role="34LRSv" value="reference" />
+    <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
+    <node concept="1TJgyj" id="4LKXwqVRFKT" role="1TKVEi">
+      <property role="IQ2ns" value="5508172853056289849" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="selector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4LKXwqVRFIm" resolve="SelectorDefinition" />
     </node>
   </node>
 </model>
