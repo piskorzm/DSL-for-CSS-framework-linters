@@ -19,8 +19,9 @@ public class MissingElementCheck_TextGen extends TextGenDescriptorBase {
     tgs.append(", '");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L, 0x1419e78e6791678eL, "type")));
     tgs.append("', ");
-    Linter_functions.toStringArray(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L, 0x1419e78e679167d2L, "applyTo")), ctx);
-    tgs.append(") ");
+    tgs.append("['");
+    Linter_functions.toStringList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L, 0x1419e78e679167d2L, "applyTo")), ctx);
+    tgs.append("']);");
     tgs.newLine();
   }
 }

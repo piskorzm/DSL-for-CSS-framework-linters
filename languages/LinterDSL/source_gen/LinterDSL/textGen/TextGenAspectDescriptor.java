@@ -46,8 +46,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new MisuseCheck_TextGen();
       case LanguageConceptSwitch.PredecessorsCheck:
         return new PredecessorsCheck_TextGen();
+      case LanguageConceptSwitch.ReferenceSelector:
+        return new ReferenceSelector_TextGen();
       case LanguageConceptSwitch.RequiredChildCheck:
         return new RequiredChildCheck_TextGen();
+      case LanguageConceptSwitch.SelectorDefinition:
+        return new SelectorDefinition_TextGen();
       case LanguageConceptSwitch.TagSelector:
         return new TagSelector_TextGen();
     }

@@ -8,21 +8,14 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public abstract class Linter_functions {
-  public static void toStringArray(Iterable<SNode> children, final TextGenContext ctx) {
+  public static void toStringList(Iterable<SNode> sequence, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode child : Sequence.fromIterable(children)) {
-      if (child == Sequence.fromIterable(children).first()) {
-        tgs.append("['");
-      }
-      if (child != Sequence.fromIterable(children).first()) {
+    for (SNode element : Sequence.fromIterable(sequence)) {
+      if (element != Sequence.fromIterable(sequence).first()) {
         tgs.append("', '");
       }
 
-      tgs.appendNode(child);
-
-      if (child == Sequence.fromIterable(children).last()) {
-        tgs.append("']");
-      }
+      tgs.appendNode(element);
     }
   }
 }

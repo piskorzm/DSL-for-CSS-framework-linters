@@ -5,62 +5,59 @@
       <TreeState />
     </option>
   </component>
+  <component name="BreakpointManager">
+    <breakpoint kind="JAVA_LINE_BREAKPOINT">
+      <JavaBreakpointInfo>
+        <option name="location" value="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5863384265304353901" />
+        <option name="mySuspendPolicy" value="2" />
+        <option name="myIsLogMessage" value="false" />
+        <option name="myCreationTime" value="1552398658333" />
+        <option name="myIsEnabled" value="true" />
+      </JavaBreakpointInfo>
+    </breakpoint>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4b9e72-5288-4486-be7d-b7e9274ce3ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/ClassPatternSelector_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/ClassPatternSelector_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/ReferenceSelector_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/ReferenceSelector_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/SelectorDefinition_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/SelectorDefinition_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/ClassPatternSelector_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/LinterDSL/generator/template/main@generator.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/GroupSelector_Constraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/constraints/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/CustomSelector_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/CustomSelector_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/Linter_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/LanguageConceptSwitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/StructureAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/AllowedChildrenCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/AllowedChildrenCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/DirectParentCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/DirectParentCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/InvalidElementCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/InvalidElementCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/Linter_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/Linter_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/Linter_functions.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/Linter_functions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/MissingElementCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/MissingElementCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/MisuseCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/MisuseCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/PredecessorsCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/PredecessorsCheck_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/RequiredChildCheck_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/RequiredChildCheck_TextGen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/TextGenAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/classes_gen/LinterDSL/textGen/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/models/constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/models/constraints.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/models/structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/models/textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/models/textGen.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/constraints/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/constraints/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/structure/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/textGen/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen.caches/LinterDSL/textGen/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/GroupSelector_Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/GroupSelector_Constraints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/constraints/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/CustomSelector_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/CustomSelector_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/Linter_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/Linter_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/LanguageConceptSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/StructureAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/AllowedChildrenCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/AllowedChildrenCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/DirectParentCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/DirectParentCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/InvalidElementCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/InvalidElementCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/Linter_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/Linter_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/Linter_functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/Linter_functions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/MissingElementCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/MissingElementCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/MisuseCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/MisuseCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/PredecessorsCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/PredecessorsCheck_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/RequiredChildCheck_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/RequiredChildCheck_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/TextGenAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/BootstrapLinter/models/BootstrapLinter.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/BootstrapLinter/models/BootstrapLinter.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/BootstrapLinter/source_gen.caches/BootstrapLinter/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/BootstrapLinter/source_gen.caches/BootstrapLinter/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/BootstrapLinter/source_gen/BootstrapLinter/bootlint.js" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/BootstrapLinter/source_gen/BootstrapLinter/bootlint.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="755dea6c-cbf8-472b-a275-7c14710dd2dc/r:f7f64308-6f1a-46af-be10-9fedff81e820(TempModule755dea6c-cbf8-472b-a275-7c14710dd2dc/TempModel_187620938709319)">
+            <model ref="312eb4ca-e0a8-489e-a4e2-28cf4b7b352d/r:7194f3e1-7e15-41ac-bba1-96ff2541c67f(TempModule312eb4ca-e0a8-489e-a4e2-28cf4b7b352d/TempModel_869558012191)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -94,11 +91,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="4LKXwqVQzMM">
-                <node concept="3balQm" id="4LKXwqVQzMN" role="aymYE" />
-                <node concept="2Clz$F" id="4LKXwqVQzMO" role="aymYO" />
-                <node concept="2_V_lH" id="4LKXwqVQzMP" role="1PhJh3">
-                  <ref role="2_V_lI" node="4LKXwqVQzMO" resolve="CommandHolder" />
+              <node concept="aymSD" id="7czdzpXJjqQ">
+                <node concept="3balQm" id="7czdzpXJjqR" role="aymYE" />
+                <node concept="2Clz$F" id="7czdzpXJjqS" role="aymYO" />
+                <node concept="2_V_lH" id="7czdzpXJjqT" role="1PhJh3">
+                  <ref role="2_V_lI" node="7czdzpXJjqS" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -122,19 +119,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://BootstrapLinter/BootstrapLinter/bootlint">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="86">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="175" />
-                    <property name="caretXRelative" value="72" />
+                    <property name="caretX" value="239" />
+                    <property name="caretXRelative" value="32" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" />
+                    <cellInfo cellId="property_string">
+                      <node node_reference="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5863384265304601481" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -143,7 +140,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -156,18 +153,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="previewBootstrapLinter@0/bootlint.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1581" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="mps://node://LinterDSL/LinterDSL.structure/Linter">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="6028">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="135" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="199" />
+                    <property name="caretXRelative" value="16" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_tc2pit_a0">
-                      <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056702826" />
+                    <cellInfo cellId="Constant_moyyqd_a0">
+                      <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -193,7 +197,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -236,6 +240,10 @@
   <component name="NodeEditorSearchHistory">
     <option name="searches">
       <list>
+        <option value="missing" />
+        <option value="length()" />
+        <option value=":" />
+        <option value="filter" />
         <option value="directparent'" />
         <option value="invalidelement'" />
         <option value="requiredChildren" />
@@ -326,10 +334,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -340,7 +352,41 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:c1fc544c-4269-48c3-9c98-32c439aa6a1e(LinterDSL.editor) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/languages/LinterDSL/models/editor.mps]" />
+              <option name="myItemId" value="all models" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d35645a-9e68-4fd2-9a5e-03c6e16d72a9" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/solutions/BootstrapLinter/models/BootstrapLinter.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c400f415-6edc-4c5f-a0ce-ccbb04f551e6(LinterDSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d35645a-9e68-4fd2-9a5e-03c6e16d72a9" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,50 +401,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/languages/LinterDSL/models/textGen.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c400f415-6edc-4c5f-a0ce-ccbb04f551e6(LinterDSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/languages/LinterDSL/models/constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c400f415-6edc-4c5f-a0ce-ccbb04f551e6(LinterDSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/languages/LinterDSL/models/structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c400f415-6edc-4c5f-a0ce-ccbb04f551e6(LinterDSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,17 +413,11 @@
               <option name="myItemId" value="c400f415-6edc-4c5f-a0ce-ccbb04f551e6(LinterDSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen) in IdeaFile[file://H:/Internet Explorer/999 Code/DSL-for-CSS-framework-linters/languages/LinterDSL/models/textGen.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9060320646831620253" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,8 +441,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13752665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -482,6 +479,43 @@
       <window_info anchor="right" id="Supertypes" order="5" />
       <window_info anchor="right" id="Context Actions" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13752665" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Model Checker" order="7" sideWeight="0.49626866" weight="0.3277487" />
+      <window_info anchor="bottom" id="Bookmarks" order="8" />
+      <window_info anchor="bottom" id="Migration" order="9" />
+      <window_info anchor="bottom" id="Menu Trace" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50479746" side_tool="true" weight="0.28062826" />
+      <window_info anchor="bottom" id="Classpath Explorer" order="13" />
+      <window_info anchor="bottom" id="Usages" order="14" />
+      <window_info anchor="bottom" id="Node Explorer" order="15" weight="0.32984293" />
+      <window_info anchor="bottom" id="Module Dependencies" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="17" />
+      <window_info anchor="bottom" id="Generation Tracer" order="18" />
+      <window_info anchor="bottom" id="Cell Explorer" order="19" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="20" sideWeight="0.49520257" visible="true" weight="0.28586388" />
+      <window_info anchor="bottom" id="Typechecker State" order="21" />
+      <window_info anchor="bottom" id="Console" order="22" weight="0.32984293" />
+      <window_info anchor="bottom" id="RefactoringView" order="23" sideWeight="0.49946696" weight="0.32984293" />
+      <window_info anchor="bottom" id="Inspector" order="24" sideWeight="0.5042644" side_tool="true" weight="0.28062826" />
+      <window_info anchor="bottom" id="Dependencies Viewer" order="25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Class Hierarchy" order="3" />
+      <window_info anchor="right" id="Typesystem Trace" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Supertypes" order="5" />
+      <window_info anchor="right" id="Context Actions" order="6" />
+    </layout-to-restore>
   </component>
   <component name="UsagesViewTool">
     <version id="1" />
@@ -500,7 +534,6 @@
     <entry file="mps://node://LinterDSL/LinterDSL.structure/ChildrenTypeCheck" />
     <entry file="mps://node://LinterDSL/LinterDSL.structure/ParentTypeCheck" />
     <entry file="mps://node://LinterDSL/LinterDSL.structure/InvalidElement" />
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]" />
     <entry file="mps://node://LinterDSL/LinterDSL.structure/Check">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -601,211 +634,18 @@
     <entry file="mps://node://LinterDSL/LinterDSL.structure/MissingTagCheck" />
     <entry file="mps://node://LinterDSL/LinterDSL.structure/PredecesorsCheck" />
     <entry file="mps://node://LinterDSL/LinterDSL.structure/RequiredChildrenCheck" />
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/CustomSelector">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="263" />
-                <property name="caretXRelative" value="192" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_text">
-                  <node node_reference="r:c1fc544c-4269-48c3-9c98-32c439aa6a1e(LinterDSL.editor)/8088519030587650491" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:c1fc544c-4269-48c3-9c98-32c439aa6a1e(LinterDSL.editor)/8088519030587650491" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:c1fc544c-4269-48c3-9c98-32c439aa6a1e(LinterDSL.editor)/8088519030587650482" />
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]" />
+    <entry file="file://$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/Linter_TextGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/GroupSelector">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="775" />
-                <property name="selectionEnd" value="20" />
-                <property name="caretXRelative" value="160" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/5508172853056277000" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="ClassPatternSelector" modelText="AttributeSelector" propertyCell="true" cellId="property_name">
-                <node node_reference="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/5508172853056277000" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/8088519030587650603" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/8088519030587650603" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/5508172853056277000" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/8088519030587650602" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
+    <entry file="file://$PROJECT_DIR$/languages/LinterDSL/source_gen/LinterDSL/textGen/ReferenceSelector_TextGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -816,11 +656,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="79" />
-                <property name="caretXRelative" value="32" />
+                <property name="caretX" value="111" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_yuehr3_a0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910441" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910802" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -841,7 +681,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056673959" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546212282544" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -853,18 +693,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/AttributeSelector">
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/SelectorDefinition">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="399" />
-                <property name="caretXRelative" value="136" />
+                <property name="caretX" value="407" />
+                <property name="caretXRelative" value="144" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909291" />
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691285" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -873,13 +713,13 @@
             <foldable>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909292" />
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691286" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056673959" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5464336638980161007" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -887,22 +727,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909291" />
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691285" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/ClassPatternSelector">
+    <entry file="mps://node://LinterDSL/LinterDSL.textGen/Linter_functions">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="367" />
+                <property name="caretX" value="199" />
                 <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056006335" />
+                <cellInfo cellId="Constant_jdqktq_c0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827341775" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -910,20 +750,20 @@
             <transactionalProperties />
             <foldable>
               <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056005888" />
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827194187" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
             <restoreAlways>
               <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056005888" />
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827194187" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056006335" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827341775" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -931,286 +771,21 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056005887" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/AllowedChildrenCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="439" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910327467" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223396" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223396" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910327467" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/InvalidElementCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="103" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_tc2pit_a0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056673959" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914731" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914731" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056673959" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914730" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/DirectParentCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="479" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972323361" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972323361" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/MisuseCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="375" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910338523" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752210" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752210" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910338523" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/RequiredChildCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="127" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_tc2pit_c0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056682899" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480923" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480923" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056682899" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480922" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/PredecessorsCheck">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="471" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711882069" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877972" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877972" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711882069" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877971" />
         </state>
       </provider>
     </entry>
     <entry file="mps://node://LinterDSL/LinterDSL.structure/ReferenceSelector">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="64" />
+                <property name="caretX" value="231" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_role">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056690808" />
+                <cellInfo cellId="Constant_jdqktq_c0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546212282544" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1231,7 +806,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056690808" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546212282544" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1243,6 +818,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/CustomSelector">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="48" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_yuehr3_a0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906252" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906232" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906232" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906252" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603906231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/ClassPatternSelector">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/GroupSelector">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="367" />
+                <property name="caretXRelative" value="104" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910995" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910996" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910995" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603910995" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://LinterDSL/LinterDSL.structure/MissingElementCheck">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1250,11 +939,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="152" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5464336638980161007" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5464336638980195951" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1267,9 +956,15 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5464336638980161008" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056693902" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056683825" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1281,61 +976,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.textGen/Linter_functions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_7h2wce_a">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827249494" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827194187" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196827194187" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/9060320646831620253" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/SelectorDefinition">
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/PredecessorsCheck">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="327" />
-                <property name="caretXRelative" value="64" />
+                <property name="caretX" value="127" />
+                <property name="caretXRelative" value="16" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_role">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056693902" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056683825" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1344,19 +996,19 @@
             <foldable>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691286" />
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877972" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
             <restoreAlways>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691286" />
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877972" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056693902" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056683825" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1364,22 +1016,408 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056691285" />
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711877971" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://LinterDSL/LinterDSL.structure/Linter">
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/RequiredChildCheck">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711492295" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480923" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480923" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711492295" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7525305517711480922" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/InvalidElementCheck">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603915507" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914731" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914731" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5863384265304601690" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603914730" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/MisuseCheck">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="127" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056684329" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752210" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752210" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056684329" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/2181476196826752209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/AttributeSelector">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="111" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_tc2pit_a0">
-                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/5508172853056702826" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909673" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909292" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909292" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5863384265304601690" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/7144259614603909291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/AllowedChildrenCheck">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910265982" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223396" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223396" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910265982" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8879595532910223395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/DirectParentCheck">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="39" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_trik0f_c1a">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318321" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/1483923244972318320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.textGen/null_TextGen">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_conceptDeclaration">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213109121" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="false" cellId="empty_conceptDeclaration">
+                <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213109121" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213109121" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.textGen/null">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213232574" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="property_name">
+                <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213232573" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546213232574" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL#8296534546213232576/main@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BootstrapLinter/BootstrapLinter/bootlint">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="32" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_string">
+                  <node node_reference="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5863384265304601481" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://LinterDSL/LinterDSL.structure/Linter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="6028">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="199" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_moyyqd_a0">
+                  <node node_reference="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1405,7 +1443,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/8296534546214464984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1414,37 +1452,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:58833661-9963-42ce-a93b-7cf810c12f06(LinterDSL.textGen)/9060320646831620253" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BootstrapLinter/BootstrapLinter/bootlint">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="86">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="175" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:76f4df00-798b-4b7a-b38e-297ce9fab961(BootstrapLinter)/5508172853056502214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
