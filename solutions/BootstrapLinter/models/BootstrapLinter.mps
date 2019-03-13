@@ -24,15 +24,17 @@
       <concept id="8114267514380905930" name="LinterDSL.structure.DirectParentCheck" flags="ng" index="1nGsqq">
         <child id="1448443353985319135" name="allowedDirectParents" index="1NyYth" />
       </concept>
-      <concept id="8088519030587650337" name="LinterDSL.structure.AttributeSelector" flags="ng" index="1Dqs0l" />
+      <concept id="8088519030587650337" name="LinterDSL.structure.AttributeSelector" flags="ng" index="1Dqs0l">
+        <property id="5315534328556407706" name="attributeName" index="1tePBl" />
+      </concept>
       <concept id="8088519030587650326" name="LinterDSL.structure.GroupSelector" flags="ng" index="1Dqs0y">
         <child id="8088519030587650327" name="selectors" index="1Dqs0z" />
       </concept>
       <concept id="8088519030587650323" name="LinterDSL.structure.ClassSelector" flags="ng" index="1Dqs0B" />
       <concept id="8088519030587650334" name="LinterDSL.structure.StandardSelector" flags="ng" index="1Dqs0E">
-        <property id="8088519030587650335" name="string" index="1Dqs0F" />
+        <property id="8088519030587650335" name="value" index="1Dqs0F" />
       </concept>
-      <concept id="8088519030587650331" name="LinterDSL.structure.TagSelector" flags="ng" index="1Dqs0J" />
+      <concept id="8088519030587650331" name="LinterDSL.structure.TypeSelector" flags="ng" index="1Dqs0J" />
       <concept id="8388332894586546897" name="LinterDSL.structure.Linter" flags="ng" index="1NTRa2">
         <property id="8388332894586546974" name="framework" index="1NTRdd" />
         <child id="8388332894586546918" name="checks" index="1NTRaP" />
@@ -70,7 +72,8 @@
       </node>
       <node concept="1Dqs0y" id="710cjgpegIi" role="2T68ol">
         <node concept="1Dqs0l" id="710cjgpegIq" role="1Dqs0z">
-          <property role="1Dqs0F" value="am=&quot;elo&quot;" />
+          <property role="1Dqs0F" value="&quot;hehe&quot;" />
+          <property role="1tePBl" value="elo" />
         </node>
       </node>
       <node concept="1Dqs0J" id="55uVeLV7KOM" role="1Ny81s">
@@ -90,6 +93,9 @@
       <property role="1NTRax" value="3" />
       <node concept="1Dqs0B" id="55uVeLV67ec" role="1NyYth">
         <property role="1Dqs0F" value="row" />
+      </node>
+      <node concept="3RF$CY" id="4B4$$Wl2q0L" role="1NyYth">
+        <ref role="3RF$CZ" node="4LKXwqVSvB6" resolve="testConst" />
       </node>
       <node concept="1Dqs0B" id="55uVeLV67e9" role="1Ny81s">
         <property role="1Dqs0F" value="grid" />
@@ -127,7 +133,8 @@
         <property role="1Dqs0F" value="div" />
       </node>
       <node concept="1Dqs0l" id="55uVeLV67kc" role="2T68jv">
-        <property role="1Dqs0F" value="id=&quot;3&quot;" />
+        <property role="1Dqs0F" value="true" />
+        <property role="1tePBl" value="elo" />
       </node>
     </node>
     <node concept="1nGsqq" id="4LKXwqVSvBE" role="1NTRaP">

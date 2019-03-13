@@ -34,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSelector = createDescriptorForSelector();
   /*package*/ final ConceptDescriptor myConceptSelectorDefinition = createDescriptorForSelectorDefinition();
   /*package*/ final ConceptDescriptor myConceptStandardSelector = createDescriptorForStandardSelector();
-  /*package*/ final ConceptDescriptor myConceptTagSelector = createDescriptorForTagSelector();
+  /*package*/ final ConceptDescriptor myConceptTypeSelector = createDescriptorForTypeSelector();
   /*package*/ final EnumerationDescriptor myEnumerationCheckType = new EnumerationDescriptor_CheckType();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -44,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptStandardSelector, myConceptTagSelector);
+    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptStandardSelector, myConceptTypeSelector);
   }
 
   @Override
@@ -87,8 +87,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSelectorDefinition;
       case LanguageConceptSwitch.StandardSelector:
         return myConceptStandardSelector;
-      case LanguageConceptSwitch.TagSelector:
-        return myConceptTagSelector;
+      case LanguageConceptSwitch.TypeSelector:
+        return myConceptTypeSelector;
       default:
         return null;
     }
@@ -119,6 +119,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650337");
     b.version(2);
+    b.property("attributeName", 0x49c4924f14ffcb9aL).type(PrimitiveTypeId.STRING).origin("5315534328556407706").done();
     b.alias("attribute");
     return b.create();
   }
@@ -273,16 +274,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650334");
     b.version(2);
-    b.property("string", 0x704031341929f11fL).type(PrimitiveTypeId.STRING).origin("8088519030587650335").done();
+    b.property("value", 0x704031341929f11fL).type(PrimitiveTypeId.STRING).origin("8088519030587650335").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTagSelector() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "TagSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL);
+  private static ConceptDescriptor createDescriptorForTypeSelector() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "TypeSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL);
     b.class_(false, false, false);
     b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650331");
     b.version(2);
-    b.alias("tag");
+    b.alias("type");
     return b.create();
   }
 }

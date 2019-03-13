@@ -43,11 +43,11 @@ public class GroupSelector_Constraints extends BaseConstraintsDescriptor {
 
     boolean validChild = true;
 
-    if (childConcept.equals(MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL, "LinterDSL.structure.TagSelector")) && ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors"))).isNotEmpty() && (childNode == null)) {
+    if (childConcept.equals(MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL, "LinterDSL.structure.TypeSelector")) && ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors"))).isNotEmpty() && (childNode == null)) {
       validChild = false;
     }
 
-    if (SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL, "LinterDSL.structure.TagSelector")) && SNodeOperations.getIndexInParent(childNode) != 0) {
+    if (SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL, "LinterDSL.structure.TypeSelector")) && SNodeOperations.getIndexInParent(childNode) != 0) {
       validChild = false;
     }
 

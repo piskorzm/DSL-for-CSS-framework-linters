@@ -219,8 +219,8 @@
   </node>
   <node concept="1TIwiD" id="710cjgpav4r">
     <property role="EcuMT" value="8088519030587650331" />
-    <property role="TrG5h" value="TagSelector" />
-    <property role="34LRSv" value="tag" />
+    <property role="TrG5h" value="TypeSelector" />
+    <property role="34LRSv" value="type" />
     <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
   </node>
   <node concept="1TIwiD" id="710cjgpav4u">
@@ -230,7 +230,7 @@
     <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
     <node concept="1TJgyi" id="710cjgpav4v" role="1TKVEl">
       <property role="IQ2nx" value="8088519030587650335" />
-      <property role="TrG5h" value="string" />
+      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -239,6 +239,11 @@
     <property role="TrG5h" value="AttributeSelector" />
     <property role="34LRSv" value="attribute" />
     <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
+    <node concept="1TJgyi" id="4B4$$WkZWIq" role="1TKVEl">
+      <property role="IQ2nx" value="5315534328556407706" />
+      <property role="TrG5h" value="attributeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="710cjgpav4y">
     <property role="EcuMT" value="8088519030587650338" />

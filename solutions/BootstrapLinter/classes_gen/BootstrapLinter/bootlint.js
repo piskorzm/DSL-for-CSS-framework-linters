@@ -1,34 +1,36 @@
+//import * from 'jquery.min'; 
+
+jQuery.expr[':'].regex = function(elem, index, match) {
+  var matchParams = match[3].split(','), validLabels = /^(data|css):/,
+    attr = {method: matchParams[0].match(validLabels) ?  matchParams[0].split(':')[0] : 'attr', property: matchParams.shift().replace(validLabels,'')},
+    regexFlags = 'ig', regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
+  return regex.test(jQuery(elem)[attr.method](attr.property));}
+
 function childrenTypeCheck(id, type, applyTo, allowedChildrenSelectors) {
 
-  if (!disable.includes(id)) {
-    var elementsWithInappropriateChildren = [];
-    applyTo.forEach(function(selector) {
-      elementsWithInappropriateChildren.push($(selector + ' > :not(' + allowedChildrenSelectors.join(',') + ')').parent());
-    });
-    if (inappropriateChildren.length) {
+  if (!disabledChecks.includes(id)) {
+    var elementsWithInappropriateChildren = $(applyTo.join(', ') + ' > :not(' + allowedChildrenSelectors.join(', ') + ')').parent().toArray();
+    if (elementsWithInappropriateChildren.length) {
       var message = 'InappropriateChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' can only have children matching ' + allowedChildrenSelectors.join(' or ') + '. Elements with inappropriate children:';
       if (type === 'Warning') {
-        console.warn(message, elementsWithInapropriateChildren);
+        console.warn(message, elementsWithInappropriateChildren);
       }
       if (type === 'Error') {
-        console.error(message, elementsWithInapropriateChildren);
+        console.error(message, elementsWithInappropriateChildren);
       }
     }
   }
 }
 
-function requiredChildCheck(name, id, type, applyTo, requiredChildSelectors) {
+function requiredChildCheck(id, type, applyTo, requiredChildSelectors) {
 
-  if (!disable.includes(id)) {
-    var elementsMissingChild = false;
-    applyTo.forEach(function(selector) {
-      $(selector).each(funciton(index, element) {
-        if (!element.children(':not(' + requiredChildSelectors.join(',') + ')').lenght) {
-          elementsMissingChildren.push(element);
-        }
-      });
-    });
-    if ($(elementsMissingChildren.length) {
+  if (!disabledChecks.includes(id)) {
+    var elementsMissingChildren = [];
+    $(applyTo.join(', ')).each(function() {
+      if (!$(this).children(':not(' + requiredChildSelectors.join(', ') +')').length) {
+        elementsMissingChildren.push($(this).get(0));
+      }    });
+    if ($(elementsMissingChildren.length)) {
       var message = 'RequiredChildren' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have at least one child matching ' + requiredChildSelectors.join(' or ') + '. Elements missing required children:';
       if (type === 'Warning') {
         console.warn(message, elementsMissingChildren);
@@ -38,77 +40,109 @@ function requiredChildCheck(name, id, type, applyTo, requiredChildSelectors) {
       }
     }
   }
-function misuseCheck(name, id, description, applyTo, required, prohibited) {
+}
+
+function misuseCheck(id, type, applyTo, requiredSelectors) {
 
   if (!disabledChecks.includes(id)) {
-    var missingRequired = [];
-    var withProhibited = [];
-    applyTo.forEach(function(selector) {
-      missingRequired.push($(selector).filter(':not(' + required.join(',') + ')'));
-      withProhibited.push($(selector).filter(prohibited.join(',')));    });
-    if (missingRequired.length || withProhibited.length) {
-      var message = 'name + ' id = ' + id + ':';
-      message += 'elements which satisfy [' + applyTo.join(' or ') + ']';
-      if (required.length) message += 'must also satisfy [' + required.join(' or ') + ']';
-      if (required.length && prohibited.length) message += ' and ';
-      if (prohibited.length) message += 'can not match + [' prohibited.join(' or ') +  ']';
-      message += '.';
-      console.warn(message, missingRequired.concat(withProhibited));
+    var missingRequiredSelectors = $(applyTo.join(', ')).filter(':not(' + requiredSelectors.join(', ') + ')').toArray();
+    if (missingRequiredSelectors.length) {
+      var message = 'ElementMissuse' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must also match ' + requiredSelectors.join(' or ') + '. Misused elements:';
+      if (type === 'Warning') {
+        console.warn(message, missingRequiredSelectors);
+      }
+      if (type === 'Error') {
+        console.error(message, missingRequiredSelectors);
+      }
     }
   }
 }
 
-function missingTagCheck(name, id, description, applyTo, unique, violationMessage) {
+function missingElementCheck(id, type, applyTo) {
 
-  var missingTags = [];
-  var duplicatedTags = [];
-
-  applyTo.forEach(function(selector) {
-    if (!$(selector).length) {      missingTags.push(selector);    }
-    if ($(selector).length) > 1 && unique) {      duplicatedTags.concat($(selector));    }
-  });
+if (!disabledChecks.includes(id)) {
+    if (!$(applyTo.join(', ')).length) {
+      var message = 'MissingElement' + type + ' {check id: ' + id + '): presence of an element matching ' + applyTo.join(' or ') + ' is required by Bootstrap.';
+      if (type === 'Warning') {
+        console.warn(message);
+      }
+      if (type === 'Error') {
+        console.error(message);
+      }
+    }
+  }
 }
 
-childrenTypeCheck(1, 'Warning', ['.row'], ['.column', '.1', '[cośtam="elo"]']);
-function parentTypeCheck(name, id, applyTo, allowedDirectParents) {
+function invalidElementCheck(id, type, applyTo) {
 
-  var elementsWithInappropriateParents = [];
+if (!disabledChecks.includes(id)) {
+    var invalidElements = ($(applyTo.join(', ')).toArray());
+    if (invalidElements.length) {
+      var message = 'InvalidElement' + type + ' {check id: ' + id + '): elements matching ' + applyTo.join(' or ') + ' are not valid in Bootstrap. InvalidElements: ';
+      if (type === 'Warning') {
+        console.warn(message, invalidElements);
+      }
+      if (type === 'Error') {
+        console.error(message, invalidElements);
+      }
+    }
+  }
+}
 
-  applyTo.forEach(function(selector) {
-    $(selector).forEach(function (element) {)
-      var hasInappropriateParent = true;
-      allowedDirectParents.forEach(function (allowedParentSelector) {
-        if (element.parentElement.matches(allowedParentSelector)) {
-          hasInappropriateParents = false;
-        }
-        if (hasInappropriateParents) {
-          elementsWithInappropriateParents.push(element);
-        }
-      });
+function parentTypeCheck(id, type, applyTo, allowedDirectParents) {
+
+  if (!disabledChecks.includes(id)) {
+    var elementsWithInappropriateParents = [];
+
+    $(applyTo.join(', ')).each(function () {      if (!$(this).parent(allowedDirectParents.join(', ')).length) {
+        elementsWithInappropriateParents.push($(this).get(0));
+      }
     });
-  });
-if (elementsWithInappropriateParents.length) {
-  var message = name + ' {id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + 'can anly be direct children of the following: ' + allowedDirectParents.join(, ) + '.'
-console.warn(message, elementsWithInappropriateParents);
+  }
+  if (elementsWithInappropriateParents.length) {
+    var message = 'DirectParent' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' can only be direct children of elements matching: ' + allowedDirectParents.join(' or ') + '. Elements with inappropriate parents: '
+    if (type === 'Warning') {
+      console.warn(message, elementsWithInappropriateParents);
+    }
+    if (type === 'Error') {
+      console.error(message, elementsWithInappropriateParents);
+    }
+  }
 }
 
-function parentTypeCheck(name, id, applyTo, requiredAttributes) {
+function predecessorsTypeCheck(id, type, applyTo, requiredPredecessorSelectors) {
 
-  var elementsMissingAttributes = [];
+  if (!disabledChecks.includes(id)) {
+    var misplacedElements = [];
 
-  applyTo.forEach(function(selector) {
-    $(selector).forEach(function (element) {)
-      var isMissingAttribute = false;
-      requiredAttributes.forEach(function (attribute) {
-        if (!element.matches(attribute)) {
-          isMissingAttribute = true;
-        }
-        if (isMissingAttribute) {
-          elementsMissingAttributes.push(element);
-        }
-      });
+    $(applyTo.join(', ')).each(function () {
+      if (!$(this).parents(requiredPredecessorSelectors.join(', ')).length) {
+        misplacedElements.push($(this).get(0));
+      }
     });
-  });
+  }
+  if (misplacedElements.length) {
+    var message = 'Predecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must be descendants of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '
+    if (type === 'Warning') {
+      console.warn(message, misplacedElements);
+    }
+    if (type === 'Error') {
+      console.error(message, misplacedElements);
+    }
+  }
 }
 
-childrenTypeCheck(1, 'Warning', ['.row'], ['.column', '.1', '[cośtam="elo"]']);
+var disabledChecks = [];
+
+function bootlint(disable) {
+  disabledChecks = disable;
+
+  childrenTypeCheck(1, 'Warning', ['div'], ['.column', '.1', '[am="elo"]']);
+  requiredChildCheck(2, 'Error', ['div'], ['a']);
+  parentTypeCheck(3, 'Error', ['.grid'], ['.row']);
+  predecessorsTypeCheck(4, 'Error', ['div'], ['a']);
+  missingElementCheck(5, 'Error', ['div.col']);
+  invalidElementCheck(6, 'Error', ['.grid']);
+  misuseCheck(7, 'Error', ['div'], ['[id="3"]']);
+  parentTypeCheck(8, 'Error', ['div', '.eee', '.elo'], ['div']);
+}

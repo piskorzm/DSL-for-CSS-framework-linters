@@ -48,7 +48,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 14:
         return Collections.<ConceptEditor>singletonList(new SelectorDefinition_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new TagSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new TypeSelector_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();

@@ -428,6 +428,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("} else {");
@@ -706,6 +707,9 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");
@@ -803,7 +807,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("var message = 'Predecessor' + type + ' {check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
-    tgs.append("' must be descendants of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Elements with inappropriate parents: '");
+    tgs.append("' must be descendants of an element matching: ' + requiredPredecessorSelectors.join(' or ') + '. Misplaced elements: '");
     tgs.newLine();
 
     tgs.indent();
@@ -830,6 +834,9 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");

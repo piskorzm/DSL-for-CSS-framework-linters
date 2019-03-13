@@ -973,7 +973,7 @@
                 <node concept="liA8E" id="58" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="35c_gC" id="5c" role="37wK5m">
-                    <ref role="35c_gD" to="izhu:710cjgpav4r" resolve="TagSelector" />
+                    <ref role="35c_gD" to="izhu:710cjgpav4r" resolve="TypeSelector" />
                     <node concept="cd27G" id="5e" role="lGtFl">
                       <node concept="3u3nmq" id="5f" role="cd27D">
                         <property role="3u3nmv" value="7144259614602662244" />
@@ -1125,7 +1125,7 @@
               </node>
               <node concept="1mIQ4w" id="62" role="2OqNvi">
                 <node concept="chp4Y" id="66" role="cj9EA">
-                  <ref role="cht4Q" to="izhu:710cjgpav4r" resolve="TagSelector" />
+                  <ref role="cht4Q" to="izhu:710cjgpav4r" resolve="TypeSelector" />
                   <node concept="cd27G" id="68" role="lGtFl">
                     <node concept="3u3nmq" id="69" role="cd27D">
                       <property role="3u3nmv" value="7144259614602784612" />

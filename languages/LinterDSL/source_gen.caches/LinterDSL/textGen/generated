@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="77k3hgm7hx7smjg51qkjxbfnypme9xm">
-  <files names="AllowedChildrenCheck_TextGen.java:AttributeSelector_TextGen.java:ClassPatternSelector_TextGen.java:ClassSelector_TextGen.java:CustomSelector_TextGen.java:DirectParentCheck_TextGen.java:GroupSelector_TextGen.java:InvalidElementCheck_TextGen.java:Linter_TextGen.java:Linter_functions.java:MissingElementCheck_TextGen.java:MisuseCheck_TextGen.java:PredecessorsCheck_TextGen.java:ReferenceSelector_TextGen.java:RequiredChildCheck_TextGen.java:SelectorDefinition_TextGen.java:TagSelector_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="672wipb3ei3f825mfxogxmaa28gj8sc">
+  <files names="AllowedChildrenCheck_TextGen.java:AttributeSelector_TextGen.java:ClassPatternSelector_TextGen.java:ClassSelector_TextGen.java:CustomSelector_TextGen.java:DirectParentCheck_TextGen.java:GroupSelector_TextGen.java:InvalidElementCheck_TextGen.java:Linter_TextGen.java:Linter_functions.java:MissingElementCheck_TextGen.java:MisuseCheck_TextGen.java:PredecessorsCheck_TextGen.java:ReferenceSelector_TextGen.java:RequiredChildCheck_TextGen.java:SelectorDefinition_TextGen.java:TextGenAspectDescriptor.java:TypeSelector_TextGen.java" />
 </product>
 

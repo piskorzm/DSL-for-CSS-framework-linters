@@ -27,7 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Selector;
   private ConceptPresentation props_SelectorDefinition;
   private ConceptPresentation props_StandardSelector;
-  private ConceptPresentation props_TagSelector;
+  private ConceptPresentation props_TypeSelector;
 
   @Override
   @Nullable
@@ -157,13 +157,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_StandardSelector = cpb.create();
         }
         return props_StandardSelector;
-      case LanguageConceptSwitch.TagSelector:
-        if (props_TagSelector == null) {
+      case LanguageConceptSwitch.TypeSelector:
+        if (props_TypeSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("tag");
-          props_TagSelector = cpb.create();
+          cpb.rawPresentation("type");
+          props_TypeSelector = cpb.create();
         }
-        return props_TagSelector;
+        return props_TypeSelector;
     }
     return null;
   }

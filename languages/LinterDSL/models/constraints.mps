@@ -157,7 +157,7 @@
                 <node concept="liA8E" id="6c_w$hZzS9z" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="35c_gC" id="6c_w$hZzT5$" role="37wK5m">
-                    <ref role="35c_gD" to="izhu:710cjgpav4r" resolve="TagSelector" />
+                    <ref role="35c_gD" to="izhu:710cjgpav4r" resolve="TypeSelector" />
                   </node>
                 </node>
               </node>
@@ -194,7 +194,7 @@
               <node concept="2H4GUG" id="6c_w$hZ$fEm" role="2Oq$k0" />
               <node concept="1mIQ4w" id="6c_w$hZ$lZc" role="2OqNvi">
                 <node concept="chp4Y" id="6c_w$hZ$mX$" role="cj9EA">
-                  <ref role="cht4Q" to="izhu:710cjgpav4r" resolve="TagSelector" />
+                  <ref role="cht4Q" to="izhu:710cjgpav4r" resolve="TypeSelector" />
                 </node>
               </node>
             </node>
