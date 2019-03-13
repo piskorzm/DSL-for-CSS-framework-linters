@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -12,55 +14,223 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,29,0" name="LinterDSL.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,39,0" name="LinterDSL.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/3458556220705499381">
+    <file name="AttributeSelector_Constraints.java">
+      <node id="3458556220705499381" at="17,42,18,145" concept="11" />
+      <node id="3458556220705499381" at="22,84,23,119" concept="6" />
+      <node id="3458556220705499382" at="26,40,27,20" concept="7" />
+      <node id="3458556220705499382" at="30,70,31,38" concept="6" />
+      <node id="3458556220705514619" at="31,38,32,113" concept="7" />
+      <node id="3458556220705730417" at="37,40,38,20" concept="7" />
+      <node id="3458556220705730417" at="41,70,42,46" concept="6" />
+      <node id="3458556220707297263" at="42,46,43,91" concept="7" />
+      <node id="3458556220705499381" at="45,7,46,22" concept="7" />
+      <node id="3458556220705499381" at="17,0,20,0" concept="1" trace="AttributeSelector_Constraints#()V" />
+      <node id="3458556220705499382" at="25,0,29,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3458556220705730417" at="36,0,40,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3458556220705499382" at="29,0,34,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3458556220705730417" at="40,0,45,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3458556220705499382" at="23,119,34,7" concept="2" />
+      <node id="3458556220705730417" at="34,7,45,7" concept="2" />
+      <node id="3458556220705499381" at="21,0,48,0" concept="5" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="3458556220705499381" at="17,42,18,145" />
+      <scope id="3458556220705499382" at="26,40,27,20" />
+      <scope id="3458556220705730417" at="37,40,38,20" />
+      <scope id="3458556220705499382" at="30,70,32,113">
+        <var name="propertyName" id="3458556220705499382" />
+      </scope>
+      <scope id="3458556220705730417" at="41,70,43,91">
+        <var name="propertyName" id="3458556220705730417" />
+      </scope>
+      <scope id="3458556220705499381" at="17,0,20,0" />
+      <scope id="3458556220705499382" at="25,0,29,0" />
+      <scope id="3458556220705730417" at="36,0,40,0" />
+      <scope id="3458556220705499382" at="29,0,34,0">
+        <var name="node" id="3458556220705499382" />
+        <var name="propertyValue" id="3458556220705499382" />
+      </scope>
+      <scope id="3458556220705730417" at="40,0,45,0">
+        <var name="node" id="3458556220705730417" />
+        <var name="propertyValue" id="3458556220705730417" />
+      </scope>
+      <scope id="3458556220705499381" at="22,84,46,22">
+        <var name="properties" id="3458556220705499381" />
+      </scope>
+      <scope id="3458556220705499381" at="21,0,48,0" />
+      <unit id="3458556220705499382" at="24,148,34,5" name="LinterDSL.constraints.AttributeSelector_Constraints$1" />
+      <unit id="3458556220705730417" at="35,156,45,5" name="LinterDSL.constraints.AttributeSelector_Constraints$2" />
+      <unit id="3458556220705499381" at="16,0,49,0" name="LinterDSL.constraints.AttributeSelector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/3458556220707303469">
+    <file name="ClassSelector_Constraints.java">
+      <node id="3458556220707303469" at="17,38,18,141" concept="11" />
+      <node id="3458556220707303469" at="22,84,23,119" concept="6" />
+      <node id="3458556220707303470" at="26,40,27,20" concept="7" />
+      <node id="3458556220707303470" at="30,70,31,38" concept="6" />
+      <node id="3458556220707303946" at="31,38,32,91" concept="7" />
+      <node id="3458556220707303469" at="34,7,35,22" concept="7" />
+      <node id="3458556220707303469" at="17,0,20,0" concept="1" trace="ClassSelector_Constraints#()V" />
+      <node id="3458556220707303470" at="25,0,29,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3458556220707303470" at="29,0,34,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3458556220707303470" at="23,119,34,7" concept="2" />
+      <node id="3458556220707303469" at="21,0,37,0" concept="5" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="3458556220707303469" at="17,38,18,141" />
+      <scope id="3458556220707303470" at="26,40,27,20" />
+      <scope id="3458556220707303470" at="30,70,32,91">
+        <var name="propertyName" id="3458556220707303470" />
+      </scope>
+      <scope id="3458556220707303469" at="17,0,20,0" />
+      <scope id="3458556220707303470" at="25,0,29,0" />
+      <scope id="3458556220707303470" at="29,0,34,0">
+        <var name="node" id="3458556220707303470" />
+        <var name="propertyValue" id="3458556220707303470" />
+      </scope>
+      <scope id="3458556220707303469" at="22,84,35,22">
+        <var name="properties" id="3458556220707303469" />
+      </scope>
+      <scope id="3458556220707303469" at="21,0,37,0" />
+      <unit id="3458556220707303470" at="24,148,34,5" name="LinterDSL.constraints.ClassSelector_Constraints$1" />
+      <unit id="3458556220707303469" at="16,0,38,0" name="LinterDSL.constraints.ClassSelector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/3458556220707308000">
+    <file name="TypeSelector_Constraints.java">
+      <node id="3458556220707308000" at="17,37,18,140" concept="11" />
+      <node id="3458556220707308000" at="22,84,23,119" concept="6" />
+      <node id="3458556220707308001" at="26,40,27,20" concept="7" />
+      <node id="3458556220707308001" at="30,70,31,38" concept="6" />
+      <node id="3458556220707308473" at="31,38,32,110" concept="7" />
+      <node id="3458556220707308000" at="34,7,35,22" concept="7" />
+      <node id="3458556220707308000" at="17,0,20,0" concept="1" trace="TypeSelector_Constraints#()V" />
+      <node id="3458556220707308001" at="25,0,29,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3458556220707308001" at="29,0,34,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3458556220707308001" at="23,119,34,7" concept="2" />
+      <node id="3458556220707308000" at="21,0,37,0" concept="5" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="3458556220707308000" at="17,37,18,140" />
+      <scope id="3458556220707308001" at="26,40,27,20" />
+      <scope id="3458556220707308001" at="30,70,32,110">
+        <var name="propertyName" id="3458556220707308001" />
+      </scope>
+      <scope id="3458556220707308000" at="17,0,20,0" />
+      <scope id="3458556220707308001" at="25,0,29,0" />
+      <scope id="3458556220707308001" at="29,0,34,0">
+        <var name="node" id="3458556220707308001" />
+        <var name="propertyValue" id="3458556220707308001" />
+      </scope>
+      <scope id="3458556220707308000" at="22,84,35,22">
+        <var name="properties" id="3458556220707308000" />
+      </scope>
+      <scope id="3458556220707308000" at="21,0,37,0" />
+      <unit id="3458556220707308001" at="24,148,34,5" name="LinterDSL.constraints.TypeSelector_Constraints$1" />
+      <unit id="3458556220707308000" at="16,0,38,0" name="LinterDSL.constraints.TypeSelector_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/3458556220707782740">
+    <file name="Check_Constraints.java">
+      <node id="3458556220707782740" at="19,30,20,133" concept="11" />
+      <node id="3458556220707782740" at="24,84,25,119" concept="6" />
+      <node id="3458556220708209444" at="28,40,29,20" concept="7" />
+      <node id="3458556220708209444" at="32,70,33,35" concept="6" />
+      <node id="3458556220708213495" at="34,9,35,33" concept="6" />
+      <node id="3458556220708213977" at="35,33,36,0" concept="8" />
+      <node id="3458556220708214925" at="38,231,39,30" concept="2" />
+      <node id="3458556220708220535" at="41,11,42,0" concept="8" />
+      <node id="3458556220708216888" at="42,0,43,25" concept="7" />
+      <node id="3458556220707782740" at="46,7,47,22" concept="7" />
+      <node id="3458556220707782740" at="19,0,22,0" concept="1" trace="Check_Constraints#()V" />
+      <node id="3458556220708214923" at="37,251,40,13" concept="4" />
+      <node id="3458556220708209444" at="27,0,31,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3458556220708214920" at="36,0,41,11" concept="3" />
+      <node id="3458556220708209444" at="33,35,44,9" concept="0" />
+      <node id="3458556220708209444" at="31,0,46,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3458556220708209444" at="25,119,46,7" concept="2" />
+      <node id="3458556220707782740" at="23,0,49,0" concept="5" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="3458556220707782740" at="19,30,20,133" />
+      <scope id="3458556220708209444" at="28,40,29,20" />
+      <scope id="3458556220708214924" at="38,231,39,30" />
+      <scope id="3458556220707782740" at="19,0,22,0" />
+      <scope id="3458556220708214922" at="37,251,40,13" />
+      <scope id="3458556220708209444" at="27,0,31,0" />
+      <scope id="3458556220708214920" at="36,0,41,11">
+        <var name="sibling" id="3458556220708214921" />
+      </scope>
+      <scope id="3458556220708213027" at="34,9,43,25">
+        <var name="validId" id="3458556220708213498" />
+      </scope>
+      <scope id="3458556220708209444" at="32,70,44,9">
+        <var name="propertyName" id="3458556220708209444" />
+      </scope>
+      <scope id="3458556220708209444" at="31,0,46,0">
+        <var name="node" id="3458556220708209444" />
+        <var name="propertyValue" id="3458556220708209444" />
+      </scope>
+      <scope id="3458556220707782740" at="24,84,47,22">
+        <var name="properties" id="3458556220707782740" />
+      </scope>
+      <scope id="3458556220707782740" at="23,0,49,0" />
+      <unit id="3458556220708209444" at="26,145,46,5" name="LinterDSL.constraints.Check_Constraints$1" />
+      <unit id="3458556220707782740" at="18,0,50,0" name="LinterDSL.constraints.Check_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/3458556220708456751">
+    <file name="ReferenceSelector_Constraints.java">
+      <node id="3458556220708456751" at="9,42,10,145" concept="11" />
+      <node id="3458556220708456751" at="9,0,12,0" concept="1" trace="ReferenceSelector_Constraints#()V" />
+      <scope id="3458556220708456751" at="9,42,10,145" />
+      <scope id="3458556220708456751" at="9,0,12,0" />
+      <unit id="3458556220708456751" at="8,0,14,0" name="LinterDSL.constraints.ReferenceSelector_Constraints" />
     </file>
   </root>
   <root nodeRef="r:6a35baca-83d5-490d-a803-4014c498d48f(LinterDSL.constraints)/8088519030587650602">
     <file name="GroupSelector_Constraints.java">
-      <node id="8088519030587650602" at="23,38,24,141" concept="9" />
-      <node id="8088519030587650602" at="31,128,32,133" concept="4" />
-      <node id="8088519030587650602" at="32,133,33,0" concept="6" />
-      <node id="8088519030587650602" at="34,55,35,72" concept="1" />
-      <node id="8088519030587650602" at="36,9,37,0" concept="6" />
-      <node id="8088519030587650602" at="37,0,38,22" concept="5" />
-      <node id="7144259614602597968" at="42,128,43,0" concept="6" />
-      <node id="7144259614602605751" at="43,0,44,30" concept="4" />
-      <node id="7144259614602636329" at="44,30,45,0" concept="6" />
-      <node id="7144259614602721256" at="46,392,47,25" concept="1" />
-      <node id="7144259614602742721" at="48,5,49,0" concept="6" />
-      <node id="7144259614602846591" at="50,232,51,25" concept="1" />
-      <node id="7144259614602861046" at="52,5,53,0" concept="6" />
-      <node id="5508172853056050110" at="53,0,54,0" concept="6" />
-      <node id="7144259614602976593" at="55,931,56,25" concept="1" />
-      <node id="7144259614602991275" at="57,5,58,0" concept="6" />
-      <node id="7144259614603371362" at="60,39,61,183" concept="5" />
-      <node id="5508172853056276996" at="64,39,65,183" concept="5" />
-      <node id="7144259614603450141" at="67,11,68,25" concept="1" />
-      <node id="5508172853056033369" at="69,5,70,0" concept="6" />
-      <node id="5508172853056047027" at="70,0,71,0" concept="6" />
-      <node id="5508172853056035092" at="72,562,73,25" concept="1" />
-      <node id="5508172853056037900" at="74,5,75,0" concept="6" />
-      <node id="5508172853056040814" at="77,39,78,186" concept="5" />
-      <node id="5508172853056040797" at="80,10,81,25" concept="1" />
-      <node id="5508172853056033486" at="82,5,83,0" concept="6" />
-      <node id="7144259614602734841" at="83,0,84,22" concept="5" />
-      <node id="7144259614600484189" at="84,22,85,0" concept="6" />
-      <node id="8088519030587650602" at="87,0,88,0" concept="7" trace="canBeParentBreakingPoint" />
-      <node id="8088519030587650602" at="23,0,26,0" concept="0" trace="GroupSelector_Constraints#()V" />
-      <node id="8088519030587650602" at="33,0,36,9" concept="2" />
-      <node id="7144259614602644121" at="45,0,48,5" concept="2" />
-      <node id="7144259614602750705" at="49,0,52,5" concept="2" />
-      <node id="7144259614602869640" at="54,0,57,5" concept="2" />
-      <node id="7144259614603365787" at="60,0,63,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056276994" at="64,0,67,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056035090" at="71,0,74,5" concept="2" />
-      <node id="5508172853056040812" at="77,0,80,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056040795" at="75,0,82,5" concept="2" />
-      <node id="8088519030587650602" at="30,0,40,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
-      <node id="7144259614603000125" at="58,0,69,5" concept="2" />
-      <node id="8088519030587650602" at="28,105,40,6" concept="5" />
-      <node id="8088519030587650602" at="27,0,42,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
-      <node id="8088519030587650602" at="42,0,87,0" concept="8" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="8088519030587650602" at="23,38,24,141" concept="11" />
+      <node id="8088519030587650602" at="31,128,32,133" concept="6" />
+      <node id="8088519030587650602" at="32,133,33,0" concept="8" />
+      <node id="8088519030587650602" at="34,55,35,72" concept="2" />
+      <node id="8088519030587650602" at="36,9,37,0" concept="8" />
+      <node id="8088519030587650602" at="37,0,38,22" concept="7" />
+      <node id="7144259614602597968" at="42,128,43,0" concept="8" />
+      <node id="7144259614602605751" at="43,0,44,30" concept="6" />
+      <node id="7144259614602636329" at="44,30,45,0" concept="8" />
+      <node id="7144259614602721256" at="46,392,47,25" concept="2" />
+      <node id="7144259614602742721" at="48,5,49,0" concept="8" />
+      <node id="7144259614602846591" at="50,232,51,25" concept="2" />
+      <node id="7144259614602861046" at="52,5,53,0" concept="8" />
+      <node id="5508172853056050110" at="53,0,54,0" concept="8" />
+      <node id="7144259614602976593" at="55,931,56,25" concept="2" />
+      <node id="7144259614602991275" at="57,5,58,0" concept="8" />
+      <node id="7144259614603371362" at="60,39,61,183" concept="7" />
+      <node id="5508172853056276996" at="64,39,65,183" concept="7" />
+      <node id="7144259614603450141" at="67,11,68,25" concept="2" />
+      <node id="5508172853056033369" at="69,5,70,0" concept="8" />
+      <node id="5508172853056047027" at="70,0,71,0" concept="8" />
+      <node id="5508172853056035092" at="72,562,73,25" concept="2" />
+      <node id="5508172853056037900" at="74,5,75,0" concept="8" />
+      <node id="5508172853056040814" at="77,39,78,186" concept="7" />
+      <node id="5508172853056040797" at="80,10,81,25" concept="2" />
+      <node id="5508172853056033486" at="82,5,83,0" concept="8" />
+      <node id="7144259614602734841" at="83,0,84,22" concept="7" />
+      <node id="7144259614600484189" at="84,22,85,0" concept="8" />
+      <node id="8088519030587650602" at="87,0,88,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="8088519030587650602" at="23,0,26,0" concept="1" trace="GroupSelector_Constraints#()V" />
+      <node id="8088519030587650602" at="33,0,36,9" concept="4" />
+      <node id="7144259614602644121" at="45,0,48,5" concept="4" />
+      <node id="7144259614602750705" at="49,0,52,5" concept="4" />
+      <node id="7144259614602869640" at="54,0,57,5" concept="4" />
+      <node id="7144259614603365787" at="60,0,63,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056276994" at="64,0,67,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056035090" at="71,0,74,5" concept="4" />
+      <node id="5508172853056040812" at="77,0,80,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056040795" at="75,0,82,5" concept="4" />
+      <node id="8088519030587650602" at="30,0,40,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7144259614603000125" at="58,0,69,5" concept="4" />
+      <node id="8088519030587650602" at="28,105,40,6" concept="7" />
+      <node id="8088519030587650602" at="27,0,42,0" concept="5" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="8088519030587650602" at="42,0,87,0" concept="10" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
       <scope id="8088519030587650602" at="23,38,24,141" />
       <scope id="8088519030587650602" at="34,55,35,72" />
       <scope id="7144259614602644123" at="46,392,47,25" />
