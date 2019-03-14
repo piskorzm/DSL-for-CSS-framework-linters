@@ -75,7 +75,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "attribute");
     editorCell.setCellId("Constant_4fg4iw_b0");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(13369344)));
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(14496512)));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

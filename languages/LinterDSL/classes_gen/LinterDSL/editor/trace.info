@@ -3052,83 +3052,87 @@
       <unit id="8088519030587650482" at="10,0,15,0" name="LinterDSL.editor.CustomSelector_Editor" />
     </file>
     <file name="CustomSelector_EditorBuilder_a.java">
-      <node id="8088519030587650482" at="36,94,37,19" concept="8" />
-      <node id="8088519030587650482" at="37,19,38,18" concept="1" />
-      <node id="8088519030587650482" at="43,26,44,18" concept="6" />
-      <node id="8088519030587650482" at="47,39,48,32" concept="6" />
-      <node id="8088519030587650482" at="51,43,52,118" concept="5" />
-      <node id="8088519030587650482" at="52,118,53,48" concept="1" />
-      <node id="8088519030587650482" at="53,48,54,28" concept="1" />
-      <node id="8088519030587650482" at="54,28,55,31" concept="1" />
-      <node id="8088519030587650491" at="55,31,56,49" concept="1" />
-      <node id="8088519030587650497" at="56,49,57,49" concept="1" />
-      <node id="8088519030587650482" at="57,49,58,22" concept="6" />
-      <node id="8088519030587650491" at="60,41,61,117" concept="5" />
-      <node id="8088519030587650491" at="61,117,62,47" concept="1" />
-      <node id="8088519030587650491" at="62,47,63,34" concept="1" />
-      <node id="8088519030587650491" at="63,34,64,22" concept="6" />
-      <node id="8088519030587650497" at="66,41,67,39" concept="1" />
-      <node id="8088519030587650497" at="68,9,69,158" concept="5" />
-      <node id="8088519030587650497" at="69,158,70,76" concept="1" />
-      <node id="8088519030587650497" at="70,76,71,149" concept="5" />
-      <node id="8088519030587650497" at="71,149,72,47" concept="1" />
-      <node id="8088519030587650497" at="72,47,73,153" concept="1" />
-      <node id="8088519030587650497" at="73,153,74,157" concept="1" />
-      <node id="8088519030587650497" at="74,157,75,46" concept="1" />
-      <node id="8088519030587650497" at="75,46,76,86" concept="1" />
-      <node id="8088519030587650497" at="76,86,77,33" concept="1" />
-      <node id="8088519030587650497" at="77,33,78,306" concept="5" />
-      <node id="8088519030587650497" at="80,41,81,118" concept="6" />
-      <node id="8088519030587650497" at="84,74,85,89" concept="5" />
-      <node id="8088519030587650497" at="85,89,86,145" concept="6" />
-      <node id="8088519030587650497" at="87,12,88,24" concept="6" />
-      <node id="8088519030587650497" at="89,15,90,40" concept="1" />
-      <node id="8088519030587650482" at="33,0,35,0" concept="2" trace="myNode" />
-      <node id="8088519030587650482" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8088519030587650497" at="80,0,83,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8088519030587650482" at="36,0,40,0" concept="0" trace="CustomSelector_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8088519030587650482" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8088519030587650497" at="78,306,83,9" concept="5" />
-      <node id="8088519030587650497" at="83,9,88,24" concept="3" />
-      <node id="8088519030587650491" at="60,0,66,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8088519030587650482" at="51,0,60,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8088519030587650497" at="67,39,91,5" concept="9" />
-      <node id="8088519030587650497" at="66,0,93,0" concept="4" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8088519030587650482" at="43,26,44,18" />
-      <scope id="8088519030587650482" at="47,39,48,32" />
-      <scope id="8088519030587650497" at="80,41,81,118" />
-      <scope id="8088519030587650497" at="89,15,90,40" />
-      <scope id="8088519030587650482" at="36,94,38,18" />
-      <scope id="8088519030587650497" at="84,74,86,145">
+      <node id="8088519030587650482" at="41,94,42,19" concept="8" />
+      <node id="8088519030587650482" at="42,19,43,18" concept="1" />
+      <node id="8088519030587650482" at="48,26,49,18" concept="6" />
+      <node id="8088519030587650482" at="52,39,53,32" concept="6" />
+      <node id="8088519030587650482" at="56,43,57,118" concept="5" />
+      <node id="8088519030587650482" at="57,118,58,48" concept="1" />
+      <node id="8088519030587650482" at="58,48,59,28" concept="1" />
+      <node id="8088519030587650482" at="59,28,60,31" concept="1" />
+      <node id="8088519030587650491" at="60,31,61,49" concept="1" />
+      <node id="8088519030587650497" at="61,49,62,49" concept="1" />
+      <node id="8088519030587650482" at="62,49,63,22" concept="6" />
+      <node id="8088519030587650491" at="65,41,66,101" concept="5" />
+      <node id="8088519030587650491" at="66,101,67,47" concept="1" />
+      <node id="8088519030587650491" at="67,47,68,34" concept="5" />
+      <node id="8012796813120730159" at="68,34,69,104" concept="1" />
+      <node id="8088519030587650491" at="69,104,70,40" concept="1" />
+      <node id="8088519030587650491" at="70,40,71,34" concept="1" />
+      <node id="8088519030587650491" at="71,34,72,22" concept="6" />
+      <node id="8088519030587650497" at="74,41,75,39" concept="1" />
+      <node id="8088519030587650497" at="76,9,77,158" concept="5" />
+      <node id="8088519030587650497" at="77,158,78,76" concept="1" />
+      <node id="8088519030587650497" at="78,76,79,149" concept="5" />
+      <node id="8088519030587650497" at="79,149,80,47" concept="1" />
+      <node id="8088519030587650497" at="80,47,81,153" concept="1" />
+      <node id="8088519030587650497" at="81,153,82,157" concept="1" />
+      <node id="8088519030587650497" at="82,157,83,46" concept="1" />
+      <node id="8088519030587650497" at="83,46,84,86" concept="1" />
+      <node id="8088519030587650497" at="84,86,85,33" concept="1" />
+      <node id="8088519030587650497" at="85,33,86,306" concept="5" />
+      <node id="8088519030587650497" at="88,41,89,118" concept="6" />
+      <node id="8088519030587650497" at="92,74,93,89" concept="5" />
+      <node id="8088519030587650497" at="93,89,94,145" concept="6" />
+      <node id="8088519030587650497" at="95,12,96,24" concept="6" />
+      <node id="8088519030587650497" at="97,15,98,40" concept="1" />
+      <node id="8088519030587650482" at="38,0,40,0" concept="2" trace="myNode" />
+      <node id="8088519030587650482" at="52,0,55,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8088519030587650497" at="88,0,91,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8088519030587650482" at="41,0,45,0" concept="0" trace="CustomSelector_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8088519030587650482" at="46,0,51,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8088519030587650497" at="86,306,91,9" concept="5" />
+      <node id="8088519030587650497" at="91,9,96,24" concept="3" />
+      <node id="8088519030587650482" at="56,0,65,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8088519030587650491" at="65,0,74,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8088519030587650497" at="75,39,99,5" concept="9" />
+      <node id="8088519030587650497" at="74,0,101,0" concept="4" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="8088519030587650482" at="48,26,49,18" />
+      <scope id="8088519030587650482" at="52,39,53,32" />
+      <scope id="8088519030587650497" at="88,41,89,118" />
+      <scope id="8088519030587650497" at="97,15,98,40" />
+      <scope id="8088519030587650482" at="41,94,43,18" />
+      <scope id="8088519030587650497" at="92,74,94,145">
         <var name="manager" id="8088519030587650497" />
       </scope>
-      <scope id="8088519030587650482" at="47,0,50,0" />
-      <scope id="8088519030587650497" at="80,0,83,0">
+      <scope id="8088519030587650482" at="52,0,55,0" />
+      <scope id="8088519030587650497" at="88,0,91,0">
         <var name="it" id="8088519030587650497" />
       </scope>
-      <scope id="8088519030587650482" at="36,0,40,0">
+      <scope id="8088519030587650482" at="41,0,45,0">
         <var name="context" id="8088519030587650482" />
         <var name="node" id="8088519030587650482" />
       </scope>
-      <scope id="8088519030587650491" at="60,41,64,22">
-        <var name="editorCell" id="8088519030587650491" />
-      </scope>
-      <scope id="8088519030587650482" at="41,0,46,0" />
-      <scope id="8088519030587650491" at="60,0,66,0" />
-      <scope id="8088519030587650482" at="51,43,58,22">
+      <scope id="8088519030587650482" at="46,0,51,0" />
+      <scope id="8088519030587650482" at="56,43,63,22">
         <var name="editorCell" id="8088519030587650482" />
       </scope>
-      <scope id="8088519030587650482" at="51,0,60,0" />
-      <scope id="8088519030587650497" at="68,9,88,24">
+      <scope id="8088519030587650491" at="65,41,72,22">
+        <var name="editorCell" id="8088519030587650491" />
+        <var name="style" id="8088519030587650491" />
+      </scope>
+      <scope id="8088519030587650482" at="56,0,65,0" />
+      <scope id="8088519030587650491" at="65,0,74,0" />
+      <scope id="8088519030587650497" at="76,9,96,24">
         <var name="currentPropertyAttributes" id="8088519030587650497" />
         <var name="editorCell" id="8088519030587650497" />
         <var name="property" id="8088519030587650497" />
         <var name="propertyAttributes" id="8088519030587650497" />
       </scope>
-      <scope id="8088519030587650497" at="66,41,91,5" />
-      <scope id="8088519030587650497" at="66,0,93,0" />
-      <unit id="8088519030587650497" at="79,102,83,7" name="LinterDSL.editor.CustomSelector_EditorBuilder_a$1" />
-      <unit id="8088519030587650482" at="32,0,94,0" name="LinterDSL.editor.CustomSelector_EditorBuilder_a" />
+      <scope id="8088519030587650497" at="74,41,99,5" />
+      <scope id="8088519030587650497" at="74,0,101,0" />
+      <unit id="8088519030587650497" at="87,102,91,7" name="LinterDSL.editor.CustomSelector_EditorBuilder_a$1" />
+      <unit id="8088519030587650482" at="37,0,102,0" name="LinterDSL.editor.CustomSelector_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:c1fc544c-4269-48c3-9c98-32c439aa6a1e(LinterDSL.editor)/8114267514380905999">

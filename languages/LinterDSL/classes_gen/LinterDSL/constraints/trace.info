@@ -201,55 +201,51 @@
       <node id="7144259614602846591" at="50,232,51,25" concept="2" />
       <node id="7144259614602861046" at="52,5,53,0" concept="8" />
       <node id="5508172853056050110" at="53,0,54,0" concept="8" />
-      <node id="7144259614602976593" at="55,931,56,25" concept="2" />
-      <node id="7144259614602991275" at="57,5,58,0" concept="8" />
-      <node id="7144259614603371362" at="60,39,61,183" concept="7" />
-      <node id="5508172853056276996" at="64,39,65,183" concept="7" />
-      <node id="7144259614603450141" at="67,11,68,25" concept="2" />
-      <node id="5508172853056033369" at="69,5,70,0" concept="8" />
-      <node id="5508172853056047027" at="70,0,71,0" concept="8" />
-      <node id="5508172853056035092" at="72,562,73,25" concept="2" />
-      <node id="5508172853056037900" at="74,5,75,0" concept="8" />
-      <node id="5508172853056040814" at="77,39,78,186" concept="7" />
-      <node id="5508172853056040797" at="80,10,81,25" concept="2" />
-      <node id="5508172853056033486" at="82,5,83,0" concept="8" />
-      <node id="7144259614602734841" at="83,0,84,22" concept="7" />
-      <node id="7144259614600484189" at="84,22,85,0" concept="8" />
-      <node id="8088519030587650602" at="87,0,88,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="7144259614602991275" at="56,5,57,0" concept="8" />
+      <node id="7144259614603371362" at="59,39,60,183" concept="7" />
+      <node id="5508172853056276996" at="63,39,64,183" concept="7" />
+      <node id="5508172853056033369" at="67,5,68,0" concept="8" />
+      <node id="5508172853056047027" at="68,0,69,0" concept="8" />
+      <node id="5508172853056037900" at="71,5,72,0" concept="8" />
+      <node id="5508172853056040814" at="74,39,75,186" concept="7" />
+      <node id="5508172853056033486" at="78,5,79,0" concept="8" />
+      <node id="7144259614602734841" at="79,0,80,22" concept="7" />
+      <node id="7144259614600484189" at="80,22,81,0" concept="8" />
+      <node id="8088519030587650602" at="83,0,84,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="7144259614602869640" at="54,0,56,5" concept="4" />
+      <node id="5508172853056035090" at="69,0,71,5" concept="4" />
       <node id="8088519030587650602" at="23,0,26,0" concept="1" trace="GroupSelector_Constraints#()V" />
       <node id="8088519030587650602" at="33,0,36,9" concept="4" />
       <node id="7144259614602644121" at="45,0,48,5" concept="4" />
       <node id="7144259614602750705" at="49,0,52,5" concept="4" />
-      <node id="7144259614602869640" at="54,0,57,5" concept="4" />
-      <node id="7144259614603365787" at="60,0,63,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056276994" at="64,0,67,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056035090" at="71,0,74,5" concept="4" />
-      <node id="5508172853056040812" at="77,0,80,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5508172853056040795" at="75,0,82,5" concept="4" />
+      <node id="7144259614603365787" at="59,0,62,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056276994" at="63,0,66,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056040812" at="74,0,77,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5508172853056040795" at="72,0,78,5" concept="4" />
       <node id="8088519030587650602" at="30,0,40,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
-      <node id="7144259614603000125" at="58,0,69,5" concept="4" />
+      <node id="7144259614603000125" at="57,0,67,5" concept="4" />
       <node id="8088519030587650602" at="28,105,40,6" concept="7" />
       <node id="8088519030587650602" at="27,0,42,0" concept="5" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
-      <node id="8088519030587650602" at="42,0,87,0" concept="10" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="8088519030587650602" at="42,0,83,0" concept="10" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <scope id="7144259614602869642" at="55,931,55,931" />
+      <scope id="7144259614603000127" at="66,11,66,11" />
+      <scope id="5508172853056035091" at="70,562,70,562" />
+      <scope id="5508172853056040796" at="77,10,77,10" />
       <scope id="8088519030587650602" at="23,38,24,141" />
       <scope id="8088519030587650602" at="34,55,35,72" />
       <scope id="7144259614602644123" at="46,392,47,25" />
       <scope id="7144259614602750707" at="50,232,51,25" />
-      <scope id="7144259614602869642" at="55,931,56,25" />
-      <scope id="7144259614603365788" at="60,39,61,183" />
-      <scope id="5508172853056276995" at="64,39,65,183" />
-      <scope id="7144259614603000127" at="67,11,68,25" />
-      <scope id="5508172853056035091" at="72,562,73,25" />
-      <scope id="5508172853056040813" at="77,39,78,186" />
-      <scope id="5508172853056040796" at="80,10,81,25" />
+      <scope id="7144259614603365788" at="59,39,60,183" />
+      <scope id="5508172853056276995" at="63,39,64,183" />
+      <scope id="5508172853056040813" at="74,39,75,186" />
       <scope id="8088519030587650602" at="23,0,26,0" />
-      <scope id="7144259614603365787" at="60,0,63,0">
+      <scope id="7144259614603365787" at="59,0,62,0">
         <var name="it" id="7144259614603365787" />
       </scope>
-      <scope id="5508172853056276994" at="64,0,67,0">
+      <scope id="5508172853056276994" at="63,0,66,0">
         <var name="it" id="5508172853056276994" />
       </scope>
-      <scope id="5508172853056040812" at="77,0,80,0">
+      <scope id="5508172853056040812" at="74,0,77,0">
         <var name="it" id="5508172853056040812" />
       </scope>
       <scope id="8088519030587650602" at="31,128,38,22">
@@ -261,20 +257,20 @@
       </scope>
       <scope id="8088519030587650602" at="28,105,40,6" />
       <scope id="8088519030587650602" at="27,0,42,0" />
-      <scope id="8088519030587650604" at="42,128,85,0">
+      <scope id="8088519030587650604" at="42,128,81,0">
         <var name="validChild" id="7144259614602605754" />
       </scope>
-      <scope id="8088519030587650602" at="42,0,87,0">
+      <scope id="8088519030587650602" at="42,0,83,0">
         <var name="childConcept" id="8088519030587650602" />
         <var name="childNode" id="8088519030587650602" />
         <var name="link" id="8088519030587650602" />
         <var name="node" id="8088519030587650602" />
       </scope>
-      <unit id="7144259614603365787" at="59,1216,63,5" name="LinterDSL.constraints.GroupSelector_Constraints$2" />
-      <unit id="5508172853056276994" at="63,297,67,5" name="LinterDSL.constraints.GroupSelector_Constraints$3" />
-      <unit id="5508172853056040812" at="76,846,80,5" name="LinterDSL.constraints.GroupSelector_Constraints$4" />
+      <unit id="7144259614603365787" at="58,1216,62,5" name="LinterDSL.constraints.GroupSelector_Constraints$2" />
+      <unit id="5508172853056276994" at="62,297,66,5" name="LinterDSL.constraints.GroupSelector_Constraints$3" />
+      <unit id="5508172853056040812" at="73,846,77,5" name="LinterDSL.constraints.GroupSelector_Constraints$4" />
       <unit id="8088519030587650602" at="29,15,40,5" name="LinterDSL.constraints.GroupSelector_Constraints$1" />
-      <unit id="8088519030587650602" at="22,0,89,0" name="LinterDSL.constraints.GroupSelector_Constraints" />
+      <unit id="8088519030587650602" at="22,0,85,0" name="LinterDSL.constraints.GroupSelector_Constraints" />
     </file>
   </root>
 </debug-info>

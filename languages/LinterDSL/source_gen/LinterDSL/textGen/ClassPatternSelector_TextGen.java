@@ -12,7 +12,7 @@ public class ClassPatternSelector_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append(":regex.exec(.");
+    tgs.append(":regex(class, ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL, 0x704031341929f11fL, "value")));
     tgs.append(")");
   }

@@ -675,7 +675,7 @@
         <property role="3F0ifm" value="attribute" />
         <node concept="VechU" id="4B4$$Wl18TF" role="3F10Kt">
           <node concept="1iSF2X" id="4B4$$Wl18TI" role="VblUZ">
-            <property role="1iTho6" value="cc0000" />
+            <property role="1iTho6" value="dd3300" />
           </node>
         </node>
       </node>
@@ -735,7 +735,12 @@
     <ref role="1XX52x" to="izhu:710cjgpav4y" resolve="CustomSelector" />
     <node concept="3EZMnI" id="710cjgpav6O" role="2wV5jI">
       <node concept="3F0ifn" id="710cjgpav6V" role="3EZMnx">
-        <property role="3F0ifm" value="matching custom selector" />
+        <property role="3F0ifm" value="matching" />
+        <node concept="VechU" id="6WNb3XRsngJ" role="3F10Kt">
+          <node concept="1iSF2X" id="6WNb3XRsngQ" role="VblUZ">
+            <property role="1iTho6" value="00cccc" />
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="710cjgpav71" role="3EZMnx">
         <ref role="1NtTu8" to="izhu:710cjgpav4z" resolve="string" />
