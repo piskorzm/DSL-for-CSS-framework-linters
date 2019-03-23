@@ -87,7 +87,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "element missuse check");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "element misuse check");
     editorCell.setCellId("Constant_wo9hei_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(187)));
@@ -197,7 +197,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "elements");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "all elements");
     editorCell.setCellId("Constant_wo9hei_a0b1a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -284,7 +284,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_4() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "must also be an element");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "must also be elements");
     editorCell.setCellId("Constant_wo9hei_a1b1a");
     editorCell.setDefaultText("");
     return editorCell;

@@ -21,7 +21,7 @@ public class ClassSelector_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL, 0x704031341929f11fL, "value"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL, 0x704031341929f11fL), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f113L, 0x214d04a0d1781befL, "value"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f113L, 0x214d04a0d1781befL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;

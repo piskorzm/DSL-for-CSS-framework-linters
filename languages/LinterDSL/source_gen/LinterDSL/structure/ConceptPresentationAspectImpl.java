@@ -21,12 +21,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Linter;
   private ConceptPresentation props_MissingElementCheck;
   private ConceptPresentation props_MisuseCheck;
+  private ConceptPresentation props_NotSelector;
   private ConceptPresentation props_PredecessorsCheck;
   private ConceptPresentation props_ReferenceSelector;
   private ConceptPresentation props_RequiredChildCheck;
   private ConceptPresentation props_Selector;
   private ConceptPresentation props_SelectorDefinition;
-  private ConceptPresentation props_StandardSelector;
   private ConceptPresentation props_TypeSelector;
 
   @Override
@@ -117,6 +117,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MisuseCheck = cpb.create();
         }
         return props_MisuseCheck;
+      case LanguageConceptSwitch.NotSelector:
+        if (props_NotSelector == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("not");
+          props_NotSelector = cpb.create();
+        }
+        return props_NotSelector;
       case LanguageConceptSwitch.PredecessorsCheck:
         if (props_PredecessorsCheck == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -151,12 +158,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SelectorDefinition = cpb.create();
         }
         return props_SelectorDefinition;
-      case LanguageConceptSwitch.StandardSelector:
-        if (props_StandardSelector == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_StandardSelector = cpb.create();
-        }
-        return props_StandardSelector;
       case LanguageConceptSwitch.TypeSelector:
         if (props_TypeSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

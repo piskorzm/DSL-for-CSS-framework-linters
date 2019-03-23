@@ -28,12 +28,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLinter = createDescriptorForLinter();
   /*package*/ final ConceptDescriptor myConceptMissingElementCheck = createDescriptorForMissingElementCheck();
   /*package*/ final ConceptDescriptor myConceptMisuseCheck = createDescriptorForMisuseCheck();
+  /*package*/ final ConceptDescriptor myConceptNotSelector = createDescriptorForNotSelector();
   /*package*/ final ConceptDescriptor myConceptPredecessorsCheck = createDescriptorForPredecessorsCheck();
   /*package*/ final ConceptDescriptor myConceptReferenceSelector = createDescriptorForReferenceSelector();
   /*package*/ final ConceptDescriptor myConceptRequiredChildCheck = createDescriptorForRequiredChildCheck();
   /*package*/ final ConceptDescriptor myConceptSelector = createDescriptorForSelector();
   /*package*/ final ConceptDescriptor myConceptSelectorDefinition = createDescriptorForSelectorDefinition();
-  /*package*/ final ConceptDescriptor myConceptStandardSelector = createDescriptorForStandardSelector();
   /*package*/ final ConceptDescriptor myConceptTypeSelector = createDescriptorForTypeSelector();
   /*package*/ final EnumerationDescriptor myEnumerationCheckType = new EnumerationDescriptor_CheckType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -44,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptStandardSelector, myConceptTypeSelector);
+    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptNotSelector, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptTypeSelector);
   }
 
   @Override
@@ -75,6 +75,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMissingElementCheck;
       case LanguageConceptSwitch.MisuseCheck:
         return myConceptMisuseCheck;
+      case LanguageConceptSwitch.NotSelector:
+        return myConceptNotSelector;
       case LanguageConceptSwitch.PredecessorsCheck:
         return myConceptPredecessorsCheck;
       case LanguageConceptSwitch.ReferenceSelector:
@@ -85,8 +87,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSelector;
       case LanguageConceptSwitch.SelectorDefinition:
         return myConceptSelectorDefinition;
-      case LanguageConceptSwitch.StandardSelector:
-        return myConceptStandardSelector;
       case LanguageConceptSwitch.TypeSelector:
         return myConceptTypeSelector;
       default:
@@ -116,9 +116,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAttributeSelector() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "AttributeSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f121L);
     b.class_(false, false, false);
-    b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650337");
     b.version(2);
+    b.property("value", 0x214d04a0d1781be3L).type(PrimitiveTypeId.STRING).origin("2399579265213930467").done();
     b.property("attributeName", 0x49c4924f14ffcb9aL).type(PrimitiveTypeId.STRING).origin("5315534328556407706").done();
     b.alias("attribute");
     return b.create();
@@ -136,18 +137,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForClassPatternSelector() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ClassPatternSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbda3ceeL);
     b.class_(false, false, false);
-    b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118");
     b.version(2);
+    b.property("value", 0x214d04a0d1781bf1L).type(PrimitiveTypeId.STRING).origin("2399579265213930481").done();
     b.alias("pattern");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForClassSelector() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "ClassSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f113L);
     b.class_(false, false, false);
-    b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650323");
     b.version(2);
+    b.property("value", 0x214d04a0d1781befL).type(PrimitiveTypeId.STRING).origin("2399579265213930479").done();
     b.alias("class");
     return b.create();
   }
@@ -177,7 +180,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650326");
     b.version(2);
-    b.aggregate("selectors", 0x704031341929f117L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL).optional(false).ordered(true).multiple(true).origin("8088519030587650327").done();
+    b.aggregate("selectors", 0x704031341929f117L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("8088519030587650327").done();
     b.alias("group");
     return b.create();
   }
@@ -221,6 +224,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("misuse check");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForNotSelector() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "NotSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1634cab96f676dL);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/6250494786758509");
+    b.version(2);
+    b.aggregate("selector", 0x1634cab96f676eL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(false).origin("6250494786758510").done();
+    b.alias("not");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPredecessorsCheck() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "PredecessorsCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x686f417f617be32cL);
     b.class_(false, false, false);
@@ -247,6 +260,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9051462808395798600");
     b.version(2);
+    b.property("position", 0x1468b2ffe1a18129L).type(PrimitiveTypeId.INTEGER).origin("1470622090408329513").done();
     b.aggregate("requiredChildSelectors", 0x7d9d4177b0175849L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798601").done();
     b.alias("required child check");
     return b.create();
@@ -264,25 +278,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853056289686");
     b.version(2);
-    b.aggregate("slectors", 0x4c70f606bbdebbc5L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("5508172853056289733").done();
+    b.aggregate("selectors", 0x4c70f606bbdebbc5L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("5508172853056289733").done();
     b.alias("selector");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForStandardSelector() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
-    b.class_(false, true, false);
-    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
-    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650334");
-    b.version(2);
-    b.property("value", 0x704031341929f11fL).type(PrimitiveTypeId.STRING).origin("8088519030587650335").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTypeSelector() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "TypeSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11bL);
     b.class_(false, false, false);
-    b.super_("LinterDSL.structure.StandardSelector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f11eL);
+    b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8088519030587650331");
     b.version(2);
+    b.property("value", 0x214d04a0d1781bf3L).type(PrimitiveTypeId.STRING).origin("2399579265213930483").done();
     b.alias("type");
     return b.create();
   }

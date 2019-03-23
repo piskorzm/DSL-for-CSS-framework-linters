@@ -44,6 +44,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new MissingElementCheck_TextGen();
       case LanguageConceptSwitch.MisuseCheck:
         return new MisuseCheck_TextGen();
+      case LanguageConceptSwitch.NotSelector:
+        return new NotSelector_TextGen();
       case LanguageConceptSwitch.PredecessorsCheck:
         return new PredecessorsCheck_TextGen();
       case LanguageConceptSwitch.ReferenceSelector:

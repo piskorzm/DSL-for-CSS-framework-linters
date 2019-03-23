@@ -21,12 +21,12 @@ public final class LanguageConceptSwitch {
   public static final int Linter = 9;
   public static final int MissingElementCheck = 10;
   public static final int MisuseCheck = 11;
-  public static final int PredecessorsCheck = 12;
-  public static final int ReferenceSelector = 13;
-  public static final int RequiredChildCheck = 14;
-  public static final int Selector = 15;
-  public static final int SelectorDefinition = 16;
-  public static final int StandardSelector = 17;
+  public static final int NotSelector = 12;
+  public static final int PredecessorsCheck = 13;
+  public static final int ReferenceSelector = 14;
+  public static final int RequiredChildCheck = 15;
+  public static final int Selector = 16;
+  public static final int SelectorDefinition = 17;
   public static final int TypeSelector = 18;
 
   public LanguageConceptSwitch() {
@@ -43,12 +43,12 @@ public final class LanguageConceptSwitch {
     builder.put(0x74695853078e2ad1L, Linter);
     builder.put(0x472d73cdfe350f81L, MissingElementCheck);
     builder.put(0x472d73cdfe35f711L, MisuseCheck);
+    builder.put(0x1634cab96f676dL, NotSelector);
     builder.put(0x686f417f617be32cL, PredecessorsCheck);
     builder.put(0x4c70f606bbdebc38L, ReferenceSelector);
     builder.put(0x7d9d4177b0175848L, RequiredChildCheck);
     builder.put(0x1419e78e6791ffedL, Selector);
     builder.put(0x4c70f606bbdebb96L, SelectorDefinition);
-    builder.put(0x704031341929f11eL, StandardSelector);
     builder.put(0x704031341929f11bL, TypeSelector);
     myIndex = builder.seal();
   }

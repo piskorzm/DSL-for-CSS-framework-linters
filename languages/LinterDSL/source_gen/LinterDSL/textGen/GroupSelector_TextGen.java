@@ -6,15 +6,37 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public class GroupSelector_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors"))) {
-      tgs.appendNode(item);
+    Iterable<SNode> refSelectors = SNodeOperations.ofConcept(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors")), MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebc38L, "LinterDSL.structure.ReferenceSelector"));
+    Iterable<SNode> nonRefSelectors = ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors"))).subtract(Sequence.fromIterable(refSelectors));
+
+    if (Sequence.fromIterable(refSelectors).isNotEmpty()) {
+      for (SNode ref : Sequence.fromIterable(refSelectors)) {
+        for (SNode element : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ref, MetaAdapterFactory.getReferenceLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebc38L, 0x4c70f606bbdebc39L, "selector")), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L, 0x4c70f606bbdebbc5L, "selectors")))) {
+          if (ref != Sequence.fromIterable(refSelectors).first() && element != ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ref, MetaAdapterFactory.getReferenceLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebc38L, 0x4c70f606bbdebc39L, "selector")), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L, 0x4c70f606bbdebbc5L, "selectors"))).first()) {
+            tgs.append("', '");
+          }
+          for (SNode item : nonRefSelectors) {
+            tgs.appendNode(item);
+          }
+          tgs.appendNode(element);
+        }
+      }
     }
+    if (Sequence.fromIterable(refSelectors).isEmpty()) {
+      for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f116L, 0x704031341929f117L, "selectors"))) {
+        tgs.appendNode(item);
+      }
+    }
+
   }
 }

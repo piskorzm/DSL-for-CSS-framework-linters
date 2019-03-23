@@ -178,6 +178,11 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
+    <node concept="1TJgyi" id="1hCGJZxCo4D" role="1TKVEl">
+      <property role="IQ2nx" value="1470622090408329513" />
+      <property role="TrG5h" value="position" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6xJgnXxuYcG">
     <property role="EcuMT" value="7525305517711549228" />
@@ -202,7 +207,12 @@
     <property role="EcuMT" value="8088519030587650323" />
     <property role="TrG5h" value="ClassSelector" />
     <property role="34LRSv" value="class" />
-    <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
+    <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
+    <node concept="1TJgyi" id="25d1a3hu1JJ" role="1TKVEl">
+      <property role="IQ2nx" value="2399579265213930479" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="710cjgpav4m">
     <property role="EcuMT" value="8088519030587650326" />
@@ -214,22 +224,16 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="selectors" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="710cjgpav4u" resolve="StandardSelector" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
   <node concept="1TIwiD" id="710cjgpav4r">
     <property role="EcuMT" value="8088519030587650331" />
     <property role="TrG5h" value="TypeSelector" />
     <property role="34LRSv" value="type" />
-    <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
-  </node>
-  <node concept="1TIwiD" id="710cjgpav4u">
-    <property role="EcuMT" value="8088519030587650334" />
-    <property role="TrG5h" value="StandardSelector" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
-    <node concept="1TJgyi" id="710cjgpav4v" role="1TKVEl">
-      <property role="IQ2nx" value="8088519030587650335" />
+    <node concept="1TJgyi" id="25d1a3hu1JN" role="1TKVEl">
+      <property role="IQ2nx" value="2399579265213930483" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -238,7 +242,12 @@
     <property role="EcuMT" value="8088519030587650337" />
     <property role="TrG5h" value="AttributeSelector" />
     <property role="34LRSv" value="attribute" />
-    <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
+    <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
+    <node concept="1TJgyi" id="25d1a3hu1Jz" role="1TKVEl">
+      <property role="IQ2nx" value="2399579265213930467" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="4B4$$WkZWIq" role="1TKVEl">
       <property role="IQ2nx" value="5315534328556407706" />
       <property role="TrG5h" value="attributeName" />
@@ -260,7 +269,12 @@
     <property role="EcuMT" value="5508172853055995118" />
     <property role="TrG5h" value="ClassPatternSelector" />
     <property role="34LRSv" value="pattern" />
-    <ref role="1TJDcQ" node="710cjgpav4u" resolve="StandardSelector" />
+    <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
+    <node concept="1TJgyi" id="25d1a3hu1JL" role="1TKVEl">
+      <property role="IQ2nx" value="2399579265213930481" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4LKXwqVRFIm">
     <property role="EcuMT" value="5508172853056289686" />
@@ -273,8 +287,8 @@
     <node concept="1TJgyj" id="4LKXwqVRFJ5" role="1TKVEi">
       <property role="IQ2ns" value="5508172853056289733" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="slectors" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="selectors" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
@@ -289,6 +303,19 @@
       <property role="20kJfa" value="selector" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4LKXwqVRFIm" resolve="SelectorDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="mdcETrQtH">
+    <property role="EcuMT" value="6250494786758509" />
+    <property role="TrG5h" value="NotSelector" />
+    <property role="34LRSv" value="not" />
+    <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
+    <node concept="1TJgyj" id="mdcETrQtI" role="1TKVEi">
+      <property role="IQ2ns" value="6250494786758510" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
   </node>
 </model>
