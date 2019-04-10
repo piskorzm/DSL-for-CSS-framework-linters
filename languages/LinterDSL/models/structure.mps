@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -94,6 +95,11 @@
       <property role="IQ2nx" value="1448443353985279886" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="1gpTSTB$mu9" resolve="CheckType" />
+    </node>
+    <node concept="1TJgyi" id="7W$JtcILDb5" role="1TKVEl">
+      <property role="IQ2nx" value="9161656256698946245" />
+      <property role="TrG5h" value="customMessage" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="1gpTSTB$mvi" role="1TKVEi">
       <property role="IQ2ns" value="1448443353985279954" />
@@ -183,6 +189,11 @@
       <property role="TrG5h" value="position" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="7W$JtcIN3RY" role="1TKVEl">
+      <property role="IQ2nx" value="9161656256699317758" />
+      <property role="TrG5h" value="uniqueFlag" />
+      <ref role="AX2Wp" node="7W$JtcIN3RQ" resolve="UniqueFlag" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6xJgnXxuYcG">
     <property role="EcuMT" value="7525305517711549228" />
@@ -195,6 +206,11 @@
       <property role="20kJfa" value="requiredPredecesors" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+    <node concept="1TJgyi" id="7W$JtcILLD_" role="1TKVEl">
+      <property role="IQ2nx" value="9161656256698980965" />
+      <property role="TrG5h" value="generations" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="3P8nfCCANXR">
@@ -316,6 +332,65 @@
       <property role="20kJfa" value="selector" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7W$JtcIKFM8">
+    <property role="EcuMT" value="9161656256698694792" />
+    <property role="TrG5h" value="SiblingsCheck" />
+    <property role="34LRSv" value="siblings check" />
+    <ref role="1TJDcQ" node="7hDm5c7zyFC" resolve="Check" />
+    <node concept="1TJgyj" id="7W$JtcIKFMs" role="1TKVEi">
+      <property role="IQ2ns" value="9161656256698694812" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="allowedSiblings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
+    </node>
+    <node concept="1TJgyi" id="7W$JtcILukk" role="1TKVEl">
+      <property role="IQ2nx" value="9161656256698901780" />
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" node="7W$JtcILujO" resolve="SiblingsCheckType" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7W$JtcILujO">
+    <property role="TrG5h" value="SiblingsCheckType" />
+    <property role="PDuV0" value="true" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="7W$JtcILujP" role="M5hS2">
+      <property role="1uS6qv" value="Next" />
+      <property role="1uS6qo" value="only have next immediate sibling" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcILujT" role="M5hS2">
+      <property role="1uS6qv" value="NextAll" />
+      <property role="1uS6qo" value="only appear before elements" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcILukb" role="M5hS2">
+      <property role="1uS6qv" value="NextNo" />
+      <property role="1uS6qo" value="not have next siblings" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcILujW" role="M5hS2">
+      <property role="1uS6qv" value="Prev" />
+      <property role="1uS6qo" value="only have previous immediate sibling" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcILuk0" role="M5hS2">
+      <property role="1uS6qv" value="PrevAll" />
+      <property role="1uS6qo" value="only appear after elements" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcILuk5" role="M5hS2">
+      <property role="1uS6qo" value="not have previous siblings" />
+      <property role="1uS6qv" value="PrevNo" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7W$JtcIN3RQ">
+    <property role="TrG5h" value="UniqueFlag" />
+    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="M4N5e" id="7W$JtcIN3RR" role="M5hS2">
+      <property role="1uS6qv" value="false" />
+      <property role="1uS6qo" value="at least" />
+    </node>
+    <node concept="M4N5e" id="7W$JtcIN3RS" role="M5hS2">
+      <property role="1uS6qv" value="true" />
+      <property role="1uS6qo" value="exactly" />
     </node>
   </node>
 </model>

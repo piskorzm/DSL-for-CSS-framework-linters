@@ -188,6 +188,16 @@
             </node>
             <node concept="l2Vlx" id="4sHsWRYcL9u" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="7W$JtcILDe7" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDe8" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDe9" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDea" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDeb" role="2iSdaV" />
+          </node>
           <node concept="3F0ifn" id="4sHsWRYcSf3" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYcL6K" role="2iSdaV" />
         </node>
@@ -246,6 +256,16 @@
               </node>
             </node>
             <node concept="l2Vlx" id="7QtgnuK5PFh" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILDeW" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDeX" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDeY" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDeZ" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDf0" role="2iSdaV" />
           </node>
           <node concept="3F0ifn" id="4sHsWRYdgYM" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYdgYN" role="2iSdaV" />
@@ -325,7 +345,17 @@
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvpp" role="2iSdaV" />
           </node>
-          <node concept="3F0ifn" id="4sHsWRYdvp_" role="3EZMnx" />
+          <node concept="3EZMnI" id="7W$JtcILDdz" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDd_" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDdB" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDe3" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDdC" role="2iSdaV" />
+          </node>
+          <node concept="3F0ifn" id="7W$JtcIMsdj" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYdvpA" role="2iSdaV" />
         </node>
         <node concept="l2Vlx" id="4sHsWRYdvpB" role="2iSdaV" />
@@ -403,6 +433,16 @@
             </node>
             <node concept="l2Vlx" id="4sHsWRYdvt3" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="7W$JtcILDfg" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDfh" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDfi" role="3EZMnx">
+              <property role="3F0ifm" value="custom message: " />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDfj" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDfk" role="2iSdaV" />
+          </node>
           <node concept="3F0ifn" id="6xJgnXxuUkt" role="3EZMnx" />
           <node concept="2iRkQZ" id="4sHsWRYdvta" role="2iSdaV" />
         </node>
@@ -465,7 +505,13 @@
           <node concept="3EZMnI" id="7QtgnuK5PAi" role="3EZMnx">
             <node concept="VPM3Z" id="7QtgnuK5PAj" role="3F10Kt" />
             <node concept="3F0ifn" id="7QtgnuK5PAk" role="3EZMnx">
-              <property role="3F0ifm" value="must have a child" />
+              <property role="3F0ifm" value="must have" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcIN3S9" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcIN3RY" resolve="uniqueFlag" />
+            </node>
+            <node concept="3F0ifn" id="7W$JtcIN3Sr" role="3EZMnx">
+              <property role="3F0ifm" value="one child" />
             </node>
             <node concept="3F2HdR" id="7QtgnuK5PAl" role="3EZMnx">
               <property role="2czwfO" value=" or" />
@@ -490,6 +536,16 @@
               <ref role="1NtTu8" to="izhu:1hCGJZxCo4D" resolve="position" />
             </node>
             <node concept="l2Vlx" id="1hCGJZxCo4K" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILDga" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDgb" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDgc" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDgd" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDge" role="2iSdaV" />
           </node>
           <node concept="3F0ifn" id="1hCGJZxD6Z4" role="3EZMnx" />
           <node concept="2iRkQZ" id="7QtgnuK5PAp" role="2iSdaV" />
@@ -553,7 +609,7 @@
           <node concept="3EZMnI" id="6xJgnXxuYdf" role="3EZMnx">
             <node concept="VPM3Z" id="6xJgnXxuYdg" role="3F10Kt" />
             <node concept="3F0ifn" id="6xJgnXxuYdh" role="3EZMnx">
-              <property role="3F0ifm" value="must be descendants of elements" />
+              <property role="3F0ifm" value="must have a descendant" />
             </node>
             <node concept="3F2HdR" id="6xJgnXxuYdi" role="3EZMnx">
               <property role="2czwfO" value=" or" />
@@ -568,6 +624,26 @@
               </node>
             </node>
             <node concept="l2Vlx" id="6xJgnXxuYdk" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILLEf" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILLEh" role="3F10Kt" />
+            <node concept="3F0A7n" id="7W$JtcILLEM" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILLD_" resolve="generations" />
+            </node>
+            <node concept="3F0ifn" id="7W$JtcILLES" role="3EZMnx">
+              <property role="3F0ifm" value="generations up" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILLEk" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILDfH" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDfI" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDfJ" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDfK" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDfL" role="2iSdaV" />
           </node>
           <node concept="3F0ifn" id="6xJgnXxuYdl" role="3EZMnx" />
           <node concept="2iRkQZ" id="6xJgnXxuYdm" role="2iSdaV" />
@@ -634,6 +710,16 @@
               <property role="3F0ifm" value="are not valid in the framework" />
             </node>
             <node concept="l2Vlx" id="3P8nfCCANYC" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILDe$" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDe_" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDeA" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDeB" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDeC" role="2iSdaV" />
           </node>
           <node concept="3F0ifn" id="3P8nfCCANYD" role="3EZMnx" />
           <node concept="2iRkQZ" id="3P8nfCCANYE" role="2iSdaV" />
@@ -843,6 +929,97 @@
         <ref role="1NtTu8" to="izhu:mdcETrQtI" resolve="selector" />
       </node>
       <node concept="l2Vlx" id="mdcETrQtX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7W$JtcIKFMD">
+    <ref role="1XX52x" to="izhu:7W$JtcIKFM8" resolve="SiblingsCheck" />
+    <node concept="3EZMnI" id="7W$JtcIKFMF" role="2wV5jI">
+      <node concept="2iRkQZ" id="7W$JtcIKFMG" role="2iSdaV" />
+      <node concept="3EZMnI" id="7W$JtcIKFMH" role="3EZMnx">
+        <node concept="2iRfu4" id="7W$JtcIKFMI" role="2iSdaV" />
+        <node concept="VPM3Z" id="7W$JtcIKFMJ" role="3F10Kt" />
+        <node concept="3F0ifn" id="7W$JtcIKFMK" role="3EZMnx">
+          <property role="3F0ifm" value="next sibling check" />
+          <node concept="VechU" id="7W$JtcIKFML" role="3F10Kt">
+            <node concept="1iSF2X" id="7W$JtcIKFMM" role="VblUZ">
+              <property role="1iTho6" value="0000bb" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7W$JtcIKFMN" role="3EZMnx">
+          <property role="3F0ifm" value="with id" />
+        </node>
+        <node concept="3F0A7n" id="7W$JtcIKFMO" role="3EZMnx">
+          <ref role="1NtTu8" to="izhu:7hDm5c7zyFM" resolve="id" />
+        </node>
+        <node concept="3F0ifn" id="7W$JtcIKFMP" role="3EZMnx">
+          <property role="3F0ifm" value="rises" />
+        </node>
+        <node concept="3F0A7n" id="7W$JtcIKFMQ" role="3EZMnx">
+          <ref role="1NtTu8" to="izhu:1gpTSTB$mue" resolve="type" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7W$JtcIKFMR" role="3EZMnx">
+        <node concept="VPM3Z" id="7W$JtcIKFMS" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7W$JtcIKFMT" role="3EZMnx" />
+        <node concept="3EZMnI" id="7W$JtcIKFMU" role="3EZMnx">
+          <node concept="VPM3Z" id="7W$JtcIKFMV" role="3F10Kt" />
+          <node concept="3EZMnI" id="7W$JtcIKFMW" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcIKFMX" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcIKFMY" role="3EZMnx">
+              <property role="3F0ifm" value="elements" />
+            </node>
+            <node concept="3F2HdR" id="7W$JtcIKFMZ" role="3EZMnx">
+              <property role="2czwfO" value=" or" />
+              <ref role="1NtTu8" to="izhu:1gpTSTB$mvi" resolve="applyTo" />
+              <node concept="l2Vlx" id="7W$JtcIKFN0" role="2czzBx" />
+              <node concept="tppnM" id="7W$JtcIKFN1" role="sWeuL">
+                <node concept="VechU" id="7W$JtcIKFN2" role="3F10Kt">
+                  <node concept="1iSF2X" id="7W$JtcIKFN3" role="VblUZ">
+                    <property role="1iTho6" value="999999" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="7W$JtcIKFN4" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcIKFN5" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcIKFN6" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcIKFN7" role="3EZMnx">
+              <property role="3F0ifm" value="can" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILukB" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILukk" resolve="condition" />
+            </node>
+            <node concept="3F2HdR" id="7W$JtcILtfF" role="3EZMnx">
+              <property role="2czwfO" value=" or" />
+              <ref role="1NtTu8" to="izhu:7W$JtcIKFMs" resolve="allowedSiblings" />
+              <node concept="l2Vlx" id="7W$JtcILtfG" role="2czzBx" />
+              <node concept="tppnM" id="7W$JtcILtfH" role="sWeuL">
+                <node concept="VechU" id="7W$JtcILtfI" role="3F10Kt">
+                  <node concept="1iSF2X" id="7W$JtcILtfJ" role="VblUZ">
+                    <property role="1iTho6" value="999999" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="7W$JtcIKFNd" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="7W$JtcILDgG" role="3EZMnx">
+            <node concept="VPM3Z" id="7W$JtcILDgH" role="3F10Kt" />
+            <node concept="3F0ifn" id="7W$JtcILDgI" role="3EZMnx">
+              <property role="3F0ifm" value="custom message:" />
+            </node>
+            <node concept="3F0A7n" id="7W$JtcILDgJ" role="3EZMnx">
+              <ref role="1NtTu8" to="izhu:7W$JtcILDb5" resolve="customMessage" />
+            </node>
+            <node concept="l2Vlx" id="7W$JtcILDgK" role="2iSdaV" />
+          </node>
+          <node concept="3F0ifn" id="7W$JtcILthE" role="3EZMnx" />
+          <node concept="2iRkQZ" id="7W$JtcIKFNf" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="7W$JtcIKFNg" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>

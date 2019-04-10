@@ -27,6 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RequiredChildCheck;
   private ConceptPresentation props_Selector;
   private ConceptPresentation props_SelectorDefinition;
+  private ConceptPresentation props_SiblingsCheck;
   private ConceptPresentation props_TypeSelector;
 
   @Override
@@ -158,6 +159,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SelectorDefinition = cpb.create();
         }
         return props_SelectorDefinition;
+      case LanguageConceptSwitch.SiblingsCheck:
+        if (props_SiblingsCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("siblings check");
+          props_SiblingsCheck = cpb.create();
+        }
+        return props_SiblingsCheck;
       case LanguageConceptSwitch.TypeSelector:
         if (props_TypeSelector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

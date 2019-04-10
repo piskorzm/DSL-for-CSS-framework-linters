@@ -27,7 +27,8 @@ public final class LanguageConceptSwitch {
   public static final int RequiredChildCheck = 15;
   public static final int Selector = 16;
   public static final int SelectorDefinition = 17;
-  public static final int TypeSelector = 18;
+  public static final int SiblingsCheck = 18;
+  public static final int TypeSelector = 19;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L);
@@ -49,6 +50,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x7d9d4177b0175848L, RequiredChildCheck);
     builder.put(0x1419e78e6791ffedL, Selector);
     builder.put(0x4c70f606bbdebb96L, SelectorDefinition);
+    builder.put(0x7f24bdd32ec2bc88L, SiblingsCheck);
     builder.put(0x704031341929f11bL, TypeSelector);
     myIndex = builder.seal();
   }

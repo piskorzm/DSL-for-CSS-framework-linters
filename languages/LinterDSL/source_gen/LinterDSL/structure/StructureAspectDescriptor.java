@@ -34,8 +34,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRequiredChildCheck = createDescriptorForRequiredChildCheck();
   /*package*/ final ConceptDescriptor myConceptSelector = createDescriptorForSelector();
   /*package*/ final ConceptDescriptor myConceptSelectorDefinition = createDescriptorForSelectorDefinition();
+  /*package*/ final ConceptDescriptor myConceptSiblingsCheck = createDescriptorForSiblingsCheck();
   /*package*/ final ConceptDescriptor myConceptTypeSelector = createDescriptorForTypeSelector();
   /*package*/ final EnumerationDescriptor myEnumerationCheckType = new EnumerationDescriptor_CheckType();
+  /*package*/ final EnumerationDescriptor myEnumerationSiblingsCheckType = new EnumerationDescriptor_SiblingsCheckType();
+  /*package*/ final EnumerationDescriptor myEnumerationUniqueFlag = new EnumerationDescriptor_UniqueFlag();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -44,7 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptNotSelector, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptTypeSelector);
+    return Arrays.asList(myConceptAllowedChildrenCheck, myConceptAttributeSelector, myConceptCheck, myConceptClassPatternSelector, myConceptClassSelector, myConceptCustomSelector, myConceptDirectParentCheck, myConceptGroupSelector, myConceptInvalidElementCheck, myConceptLinter, myConceptMissingElementCheck, myConceptMisuseCheck, myConceptNotSelector, myConceptPredecessorsCheck, myConceptReferenceSelector, myConceptRequiredChildCheck, myConceptSelector, myConceptSelectorDefinition, myConceptSiblingsCheck, myConceptTypeSelector);
   }
 
   @Override
@@ -87,6 +90,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSelector;
       case LanguageConceptSwitch.SelectorDefinition:
         return myConceptSelectorDefinition;
+      case LanguageConceptSwitch.SiblingsCheck:
+        return myConceptSiblingsCheck;
       case LanguageConceptSwitch.TypeSelector:
         return myConceptTypeSelector;
       default:
@@ -96,7 +101,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationCheckType);
+    return Arrays.asList(myEnumerationCheckType, myEnumerationSiblingsCheckType, myEnumerationUniqueFlag);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -131,6 +136,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("id", 0x74695853078e2af2L).type(PrimitiveTypeId.INTEGER).origin("8388332894586546930").done();
     b.property("type", 0x1419e78e6791678eL).type(MetaIdFactory.dataTypeId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e67916789L)).origin("1448443353985279886").done();
+    b.property("customMessage", 0x7f24bdd32ec692c5L).type(PrimitiveTypeId.STRING).origin("9161656256698946245").done();
     b.aggregate("applyTo", 0x1419e78e679167d2L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("1448443353985279954").done();
     return b.create();
   }
@@ -240,6 +246,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/7525305517711549228");
     b.version(2);
+    b.property("generations", 0x7f24bdd32ec71a65L).type(PrimitiveTypeId.INTEGER).origin("9161656256698980965").done();
     b.aggregate("requiredPredecesors", 0x686f417f617be32dL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("7525305517711549229").done();
     b.alias("predecessors check");
     return b.create();
@@ -261,6 +268,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9051462808395798600");
     b.version(2);
     b.property("position", 0x1468b2ffe1a18129L).type(PrimitiveTypeId.INTEGER).origin("1470622090408329513").done();
+    b.property("uniqueFlag", 0x7f24bdd32ecc3dfeL).type(MetaIdFactory.dataTypeId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7f24bdd32ecc3df6L)).origin("9161656256699317758").done();
     b.aggregate("requiredChildSelectors", 0x7d9d4177b0175849L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798601").done();
     b.alias("required child check");
     return b.create();
@@ -280,6 +288,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("selectors", 0x4c70f606bbdebbc5L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("5508172853056289733").done();
     b.alias("selector");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSiblingsCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("LinterDSL", "SiblingsCheck", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7f24bdd32ec2bc88L);
+    b.class_(false, false, false);
+    b.super_("LinterDSL.structure.Check", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L);
+    b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9161656256698694792");
+    b.version(2);
+    b.property("condition", 0x7f24bdd32ec5e514L).type(MetaIdFactory.dataTypeId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7f24bdd32ec5e4f4L)).origin("9161656256698901780").done();
+    b.aggregate("allowedSiblings", 0x7f24bdd32ec2bc9cL).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(true).ordered(true).multiple(true).origin("9161656256698694812").done();
+    b.alias("siblings check");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTypeSelector() {
