@@ -75,9 +75,14 @@
           <property role="3F0ifm" value="for" />
         </node>
         <node concept="3F0A7n" id="4sHsWRYcwER" role="3EZMnx">
-          <ref role="1NtTu8" to="izhu:7hDm5c7zyGu" resolve="framework" />
+          <ref role="1NtTu8" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
         </node>
-        <node concept="3F0ifn" id="4sHsWRYcwF3" role="3EZMnx" />
+        <node concept="3F0ifn" id="4sHsWRYcwF3" role="3EZMnx">
+          <property role="3F0ifm" value="version" />
+        </node>
+        <node concept="3F0A7n" id="4V6pqwp3cCY" role="3EZMnx">
+          <ref role="1NtTu8" to="izhu:4V6pqwp3cCO" resolve="supportedVersion" />
+        </node>
         <node concept="2iRfu4" id="4sHsWRYcwEt" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="4sHsWRYcwFm" role="3EZMnx" />
@@ -609,7 +614,7 @@
           <node concept="3EZMnI" id="6xJgnXxuYdf" role="3EZMnx">
             <node concept="VPM3Z" id="6xJgnXxuYdg" role="3F10Kt" />
             <node concept="3F0ifn" id="6xJgnXxuYdh" role="3EZMnx">
-              <property role="3F0ifm" value="must have a descendant" />
+              <property role="3F0ifm" value="must have an ancestor" />
             </node>
             <node concept="3F2HdR" id="6xJgnXxuYdi" role="3EZMnx">
               <property role="2czwfO" value=" or" />
@@ -860,7 +865,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4LKXwqVQzO3" role="3EZMnx">
-        <ref role="1NtTu8" to="izhu:25d1a3hu1JL" resolve="value" />
+        <ref role="1NtTu8" to="izhu:25d1a3hu1JL" resolve="regularExpression" />
       </node>
       <node concept="l2Vlx" id="4LKXwqVQzO4" role="2iSdaV" />
     </node>

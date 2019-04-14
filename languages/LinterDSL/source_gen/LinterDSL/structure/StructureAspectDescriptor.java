@@ -146,7 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("LinterDSL.structure.Selector", 0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853055995118");
     b.version(2);
-    b.property("value", 0x214d04a0d1781bf1L).type(PrimitiveTypeId.STRING).origin("2399579265213930481").done();
+    b.property("regularExpression", 0x214d04a0d1781bf1L).type(PrimitiveTypeId.STRING).origin("2399579265213930481").done();
     b.alias("pattern");
     return b.create();
   }
@@ -205,7 +205,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/8388332894586546897");
     b.version(2);
-    b.property("framework", 0x74695853078e2b1eL).type(PrimitiveTypeId.STRING).origin("8388332894586546974").done();
+    b.property("supportedFramework", 0x74695853078e2b1eL).type(PrimitiveTypeId.STRING).origin("8388332894586546974").done();
+    b.property("supportedVersion", 0x4ec665a8190cca34L).type(PrimitiveTypeId.STRING).origin("5676336152996268596").done();
     b.aggregate("selectorDefinitions", 0x4c70f606bbdebbc2L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x4c70f606bbdebb96L).optional(true).ordered(true).multiple(true).origin("5508172853056289730").done();
     b.aggregate("checks", 0x74695853078e2ae6L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ae8L).optional(true).ordered(true).multiple(true).origin("8388332894586546918").done();
     b.alias("linter");

@@ -286,7 +286,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_4() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "must have a descendant");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "must have an ancestor");
     editorCell.setCellId("Constant_99oaif_a1b1a");
     editorCell.setDefaultText("");
     return editorCell;

@@ -67,7 +67,12 @@
     </node>
     <node concept="1TJgyi" id="7hDm5c7zyGu" role="1TKVEl">
       <property role="IQ2nx" value="8388332894586546974" />
-      <property role="TrG5h" value="framework" />
+      <property role="TrG5h" value="supportedFramework" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4V6pqwp3cCO" role="1TKVEl">
+      <property role="IQ2nx" value="5676336152996268596" />
+      <property role="TrG5h" value="supportedVersion" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="7hDm5c7zyFA" role="1TKVEi">
@@ -288,7 +293,7 @@
     <ref role="1TJDcQ" node="1gpTSTB$vZH" resolve="Selector" />
     <node concept="1TJgyi" id="25d1a3hu1JL" role="1TKVEl">
       <property role="IQ2nx" value="2399579265213930481" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="regularExpression" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

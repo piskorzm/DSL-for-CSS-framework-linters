@@ -339,7 +339,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("var message = 'MissingElement' + type + ' (check id: ' + id + '): presence of an element matching ' + applyTo.join(' or ') + ");
     tgs.append("' is required by ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "framework")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "supportedFramework")));
     tgs.append(".';");
     tgs.newLine();
 
@@ -385,7 +385,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("var message = 'InvalidElement' + type + ' (check id: ' + id + '): elements matching ' + applyTo.join(' or ') + ");
     tgs.append("' are not valid in ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "framework")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "supportedFramework")));
     tgs.append(". Element: ';");
     tgs.newLine();
 
@@ -414,7 +414,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("var message = 'InvalidElement' + type + ' (check id: ' + id + '): elements matching ' + applyTo.join(' or ') + ");
     tgs.append("' are not valid in ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "framework")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "supportedFramework")));
     tgs.append(". InvalidElements: ';");
     tgs.newLine();
 
@@ -945,7 +945,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.append("      var message = 'MissingElement' + requiredElements[i].type + ' (check id: ' + requiredElements[i].id + '): presence of an element matching ' + requiredElements[i].applyTo.join(' or ') + ' is required by Bootstrap.';\n");
     tgs.newLine();
     tgs.append("' is required by ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "framework")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x74695853078e2ad1L, 0x74695853078e2b1eL, "supportedFramework")));
     tgs.append(".';");
     tgs.newLine();
 

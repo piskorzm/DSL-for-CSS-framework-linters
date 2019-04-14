@@ -2141,7 +2141,7 @@
                   </node>
                 </node>
                 <node concept="3TrcHB" id="bA" role="2OqNvi">
-                  <ref role="3TsBF5" to="izhu:25d1a3hu1JL" resolve="value" />
+                  <ref role="3TsBF5" to="izhu:25d1a3hu1JL" resolve="regularExpression" />
                   <node concept="cd27G" id="bG" role="lGtFl">
                     <node concept="3u3nmq" id="bH" role="cd27D">
                       <property role="3u3nmv" value="2399579265216564371" />
@@ -17019,7 +17019,7 @@
                   </node>
                 </node>
                 <node concept="3TrcHB" id="1NP" role="2OqNvi">
-                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                   <node concept="cd27G" id="1NV" role="lGtFl">
                     <node concept="3u3nmq" id="1NW" role="cd27D">
                       <property role="3u3nmv" value="8296534546214271676" />
@@ -18725,7 +18725,7 @@
                   </node>
                 </node>
                 <node concept="3TrcHB" id="1XJ" role="2OqNvi">
-                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                   <node concept="cd27G" id="1XP" role="lGtFl">
                     <node concept="3u3nmq" id="1XQ" role="cd27D">
                       <property role="3u3nmv" value="8296534546214080502" />
@@ -19769,7 +19769,7 @@
                   </node>
                 </node>
                 <node concept="3TrcHB" id="23M" role="2OqNvi">
-                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                   <node concept="cd27G" id="23S" role="lGtFl">
                     <node concept="3u3nmq" id="23T" role="cd27D">
                       <property role="3u3nmv" value="7144259614604382905" />
@@ -38905,7 +38905,7 @@
                   </node>
                 </node>
                 <node concept="3TrcHB" id="3MI" role="2OqNvi">
-                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                  <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                   <node concept="cd27G" id="3MO" role="lGtFl">
                     <node concept="3u3nmq" id="3MP" role="cd27D">
                       <property role="3u3nmv" value="8296534546214284568" />

@@ -929,7 +929,7 @@
                             <node concept="2OqwBi" id="7czdzpXQVEU" role="lb14g">
                               <node concept="117lpO" id="7czdzpXQVEV" role="2Oq$k0" />
                               <node concept="3TrcHB" id="7czdzpXQVEW" role="2OqNvi">
-                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                               </node>
                             </node>
                           </node>
@@ -1040,7 +1040,7 @@
                             <node concept="2OqwBi" id="7czdzpXQcZO" role="lb14g">
                               <node concept="117lpO" id="7czdzpXQcZP" role="2Oq$k0" />
                               <node concept="3TrcHB" id="7czdzpXQcZQ" role="2OqNvi">
-                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                               </node>
                             </node>
                           </node>
@@ -1114,7 +1114,7 @@
                             <node concept="2OqwBi" id="6c_w$hZEtaR" role="lb14g">
                               <node concept="117lpO" id="6c_w$hZEtaS" role="2Oq$k0" />
                               <node concept="3TrcHB" id="6c_w$hZEtaT" role="2OqNvi">
-                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                                <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                               </node>
                             </node>
                           </node>
@@ -2321,7 +2321,7 @@
                         <node concept="2OqwBi" id="7czdzpXQYOm" role="lb14g">
                           <node concept="117lpO" id="7czdzpXQYOn" role="2Oq$k0" />
                           <node concept="3TrcHB" id="7czdzpXQYOo" role="2OqNvi">
-                            <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="framework" />
+                            <ref role="3TsBF5" to="izhu:7hDm5c7zyGu" resolve="supportedFramework" />
                           </node>
                         </node>
                       </node>
@@ -4068,7 +4068,7 @@
             <node concept="2OqwBi" id="25d1a3hC4D7" role="lb14g">
               <node concept="117lpO" id="25d1a3hC4wO" role="2Oq$k0" />
               <node concept="3TrcHB" id="25d1a3hC4Mj" role="2OqNvi">
-                <ref role="3TsBF5" to="izhu:25d1a3hu1JL" resolve="value" />
+                <ref role="3TsBF5" to="izhu:25d1a3hu1JL" resolve="regularExpression" />
               </node>
             </node>
           </node>
