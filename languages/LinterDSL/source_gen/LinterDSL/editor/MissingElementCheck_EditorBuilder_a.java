@@ -129,7 +129,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
   }
   private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "rises");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "raises");
     editorCell.setCellId("Constant_n3mma5_d0a");
     editorCell.setDefaultText("");
     return editorCell;

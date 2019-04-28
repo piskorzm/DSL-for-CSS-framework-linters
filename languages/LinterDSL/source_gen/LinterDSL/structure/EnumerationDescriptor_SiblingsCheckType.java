@@ -22,6 +22,7 @@ public class EnumerationDescriptor_SiblingsCheckType extends EnumerationDescript
   private final EnumerationDescriptor.MemberDescriptor VALUE_Prev_0 = new EnumerationDescriptor.MemberDescriptor("Prev", "only have previous immediate sibling", "r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9161656256698901756", "only have previous immediate sibling");
   private final EnumerationDescriptor.MemberDescriptor VALUE_PrevAll_0 = new EnumerationDescriptor.MemberDescriptor("PrevAll", "only appear after elements", "r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9161656256698901760", "only appear after elements");
   private final EnumerationDescriptor.MemberDescriptor VALUE_PrevNo_0 = new EnumerationDescriptor.MemberDescriptor("PrevNo", "not have previous siblings", "r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/9161656256698901765", "not have previous siblings");
+  private final EnumerationDescriptor.MemberDescriptor VALUE_ReuireOne_0 = new EnumerationDescriptor.MemberDescriptor("ReuireOne", "only appear with at least one sibling", "r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/4062162906884970777", "only appear with at least one sibling");
 
   @Nullable
   @Override
@@ -32,7 +33,7 @@ public class EnumerationDescriptor_SiblingsCheckType extends EnumerationDescript
   @NotNull
   @Override
   public Collection<EnumerationDescriptor.MemberDescriptor> getMembers() {
-    return Arrays.asList(VALUE_Next_0, VALUE_NextAll_0, VALUE_NextNo_0, VALUE_Prev_0, VALUE_PrevAll_0, VALUE_PrevNo_0);
+    return Arrays.asList(VALUE_Next_0, VALUE_NextAll_0, VALUE_NextNo_0, VALUE_Prev_0, VALUE_PrevAll_0, VALUE_PrevNo_0, VALUE_ReuireOne_0);
   }
 
   @Nullable
@@ -54,6 +55,8 @@ public class EnumerationDescriptor_SiblingsCheckType extends EnumerationDescript
         return VALUE_PrevAll_0;
       case "PrevNo":
         return VALUE_PrevNo_0;
+      case "ReuireOne":
+        return VALUE_ReuireOne_0;
     }
     return null;
   }

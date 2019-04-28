@@ -14,5 +14,6 @@ public class NotSelector_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append(":not(");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1634cab96f676dL, 0x1634cab96f676eL, "selector")));
+    tgs.append(")");
   }
 }

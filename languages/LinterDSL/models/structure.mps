@@ -385,6 +385,10 @@
       <property role="1uS6qo" value="not have previous siblings" />
       <property role="1uS6qv" value="PrevNo" />
     </node>
+    <node concept="M4N5e" id="3xvGUgWDp$p" role="M5hS2">
+      <property role="1uS6qv" value="ReuireOne" />
+      <property role="1uS6qo" value="only appear with at least one sibling" />
+    </node>
   </node>
   <node concept="AxPO7" id="7W$JtcIN3RQ">
     <property role="TrG5h" value="UniqueFlag" />
