@@ -29,7 +29,7 @@ public class ClassSelector_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "value";
-        return (SPropertyOperations.getString(propertyValue)).matches("\\w+|(\\w+-)+\\w+");
+        return !((SPropertyOperations.getString(propertyValue)).matches(".*(\"|;|').*"));
       }
     });
     return properties;

@@ -87,7 +87,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "predecesors check");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "predecessors check");
     editorCell.setCellId("Constant_99oaif_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(187)));

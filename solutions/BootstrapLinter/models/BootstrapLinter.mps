@@ -25,7 +25,7 @@
       <concept id="9051462808395798600" name="LinterDSL.structure.RequiredChildCheck" flags="ng" index="3dyx$Z">
         <property id="9161656256699317758" name="uniqueFlag" index="1hU80H" />
         <property id="1470622090408329513" name="position" index="3PMjfm" />
-        <child id="9051462808395798601" name="requiredChildSelectors" index="3dyx$Y" />
+        <child id="9051462808395798601" name="requiredChild" index="3dyx$Y" />
       </concept>
       <concept id="9161656256698694792" name="LinterDSL.structure.SiblingsCheck" flags="ng" index="1hTw5r">
         <property id="9161656256698901780" name="condition" index="1hSlz7" />

@@ -270,7 +270,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("position", 0x1468b2ffe1a18129L).type(PrimitiveTypeId.INTEGER).origin("1470622090408329513").done();
     b.property("uniqueFlag", 0x7f24bdd32ecc3dfeL).type(MetaIdFactory.dataTypeId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7f24bdd32ecc3df6L)).origin("9161656256699317758").done();
-    b.aggregate("requiredChildSelectors", 0x7d9d4177b0175849L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798601").done();
+    b.aggregate("requiredChild", 0x7d9d4177b0175849L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("9051462808395798601").done();
     b.alias("required child check");
     return b.create();
   }
@@ -288,7 +288,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:21d30a29-243b-40e8-a51d-38ea30739819(LinterDSL.structure)/5508172853056289686");
     b.version(2);
     b.aggregate("selectors", 0x4c70f606bbdebbc5L).target(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL).optional(false).ordered(true).multiple(true).origin("5508172853056289733").done();
-    b.alias("selector");
+    b.alias("selector definition");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSiblingsCheck() {

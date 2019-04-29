@@ -198,7 +198,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "all elements");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "elements");
     editorCell.setCellId("Constant_wo9hei_a0b1a");
     editorCell.setDefaultText("");
     return editorCell;

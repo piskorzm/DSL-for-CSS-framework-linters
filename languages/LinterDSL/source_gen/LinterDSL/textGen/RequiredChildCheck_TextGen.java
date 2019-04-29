@@ -33,15 +33,15 @@ public class RequiredChildCheck_TextGen extends TextGenDescriptorBase {
 
     if (SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L, "position")) == 0) {
       tgs.append("['");
-      Linter_functions.toStringList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors")), ctx);
+      Linter_functions.toStringList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild")), ctx);
       tgs.append("']);");
       tgs.newLine();
     }
     if (SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L, "position")) == -1) {
       tgs.append("['");
 
-      for (SNode selector : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors")))) {
-        if (selector != ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors"))).first()) {
+      for (SNode selector : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild")))) {
+        if (selector != ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild"))).first()) {
           tgs.append(", ");
         }
         tgs.appendNode(selector);
@@ -53,8 +53,8 @@ public class RequiredChildCheck_TextGen extends TextGenDescriptorBase {
     if (SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L, "position")) != -1 && SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L, "position")) != 0) {
       tgs.append("['");
 
-      for (SNode selector : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors")))) {
-        if (selector != ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors"))).first()) {
+      for (SNode selector : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild")))) {
+        if (selector != ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild"))).first()) {
           tgs.append(", ");
         }
         tgs.appendNode(selector);
@@ -65,7 +65,6 @@ public class RequiredChildCheck_TextGen extends TextGenDescriptorBase {
       tgs.append("']);");
       tgs.newLine();
     }
-
 
   }
 }

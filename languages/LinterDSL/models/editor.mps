@@ -89,6 +89,7 @@
       <node concept="3F0ifn" id="4LKXwqVSc1Y" role="3EZMnx">
         <property role="3F0ifm" value="reusable selector definitions:" />
       </node>
+      <node concept="3F0ifn" id="3nM2dFP0F9e" role="3EZMnx" />
       <node concept="3EZMnI" id="4LKXwqVSc2F" role="3EZMnx">
         <node concept="VPM3Z" id="4LKXwqVSc2G" role="3F10Kt" />
         <node concept="3XFhqQ" id="4LKXwqVSc2H" role="3EZMnx" />
@@ -403,7 +404,7 @@
           <node concept="3EZMnI" id="4sHsWRYdvsS" role="3EZMnx">
             <node concept="VPM3Z" id="4sHsWRYdvsT" role="3F10Kt" />
             <node concept="3F0ifn" id="4sHsWRYdvsU" role="3EZMnx">
-              <property role="3F0ifm" value="all elements" />
+              <property role="3F0ifm" value="elements" />
             </node>
             <node concept="3F2HdR" id="4sHsWRYdvsV" role="3EZMnx">
               <property role="2czwfO" value=" or" />
@@ -520,7 +521,7 @@
             </node>
             <node concept="3F2HdR" id="7QtgnuK5PAl" role="3EZMnx">
               <property role="2czwfO" value=" or" />
-              <ref role="1NtTu8" to="izhu:7QtgnuK5Px9" resolve="requiredChildSelectors" />
+              <ref role="1NtTu8" to="izhu:7QtgnuK5Px9" resolve="requiredChild" />
               <node concept="l2Vlx" id="7QtgnuK5PAm" role="2czzBx" />
               <node concept="tppnM" id="4B4$$Wl1YSF" role="sWeuL">
                 <node concept="VechU" id="4B4$$Wl1YSH" role="3F10Kt">
@@ -567,7 +568,7 @@
         <node concept="2iRfu4" id="6xJgnXxuYcW" role="2iSdaV" />
         <node concept="VPM3Z" id="6xJgnXxuYcX" role="3F10Kt" />
         <node concept="3F0ifn" id="6xJgnXxuYcY" role="3EZMnx">
-          <property role="3F0ifm" value="predecesors check" />
+          <property role="3F0ifm" value="predecessors check" />
           <node concept="VechU" id="4B4$$Wl1YS3" role="3F10Kt">
             <node concept="1iSF2X" id="4B4$$Wl1YS4" role="VblUZ">
               <property role="1iTho6" value="0000bb" />
@@ -958,7 +959,7 @@
           <ref role="1NtTu8" to="izhu:7hDm5c7zyFM" resolve="id" />
         </node>
         <node concept="3F0ifn" id="7W$JtcIKFMP" role="3EZMnx">
-          <property role="3F0ifm" value="rises" />
+          <property role="3F0ifm" value="raises" />
         </node>
         <node concept="3F0A7n" id="7W$JtcIKFMQ" role="3EZMnx">
           <ref role="1NtTu8" to="izhu:1gpTSTB$mue" resolve="type" />

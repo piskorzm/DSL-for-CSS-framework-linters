@@ -9289,7 +9289,7 @@
                         <node concept="liA8E" id="Qi" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="aggregate" />
                           <node concept="Xl_RD" id="Qj" role="37wK5m">
-                            <property role="Xl_RC" value="requiredChildSelectors" />
+                            <property role="Xl_RC" value="requiredChild" />
                           </node>
                           <node concept="1adDum" id="Qk" role="37wK5m">
                             <property role="1adDun" value="0x7d9d4177b0175849L" />
@@ -9625,7 +9625,7 @@
             <node concept="liA8E" id="S7" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="S8" role="37wK5m">
-                <property role="Xl_RC" value="selector" />
+                <property role="Xl_RC" value="selector definition" />
               </node>
             </node>
           </node>

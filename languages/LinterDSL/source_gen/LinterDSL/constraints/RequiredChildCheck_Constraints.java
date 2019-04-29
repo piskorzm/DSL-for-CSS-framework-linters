@@ -13,23 +13,23 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
-public class AttributeSelector_Constraints extends BaseConstraintsDescriptor {
-  public AttributeSelector_Constraints() {
-    super(MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f121L, "LinterDSL.structure.AttributeSelector"));
+public class RequiredChildCheck_Constraints extends BaseConstraintsDescriptor {
+  public RequiredChildCheck_Constraints() {
+    super(MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, "LinterDSL.structure.RequiredChildCheck"));
   }
 
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f121L, 0x214d04a0d1781be3L, "value"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x704031341929f121L, 0x214d04a0d1781be3L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L, "position"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x1468b2ffe1a18129L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
       }
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
-        String propertyName = "value";
-        return !((SPropertyOperations.getString(propertyValue)).matches(".*(\"|;|').*"));
+        String propertyName = "position";
+        return (SPropertyOperations.getInteger(propertyValue)) >= -1;
       }
     });
     return properties;

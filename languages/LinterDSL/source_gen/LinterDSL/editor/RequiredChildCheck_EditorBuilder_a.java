@@ -327,17 +327,17 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new RequiredChildCheck_EditorBuilder_a.requiredChildSelectorsListHandler_1pye40_d1b1a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new RequiredChildCheck_EditorBuilder_a.requiredChildListHandler_1pye40_d1b1a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_requiredChildSelectors");
+    editorCell.setCellId("refNodeList_requiredChild");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class requiredChildSelectorsListHandler_1pye40_d1b1a extends RefNodeListHandler {
+  private static class requiredChildListHandler_1pye40_d1b1a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public requiredChildSelectorsListHandler_1pye40_d1b1a(SNode ownerNode, EditorContext context) {
+    public requiredChildListHandler_1pye40_d1b1a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -347,7 +347,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors");
+      return MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild");
     }
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x1419e78e6791ffedL, "LinterDSL.structure.Selector");
@@ -360,7 +360,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(requiredChildSelectorsListHandler_1pye40_d1b1a.this.getNode(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChildSelectors")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(requiredChildListHandler_1pye40_d1b1a.this.getNode(), MetaAdapterFactory.getContainmentLink(0xc400f4156edc4c5fL, 0xa0ceccbb04f551e6L, 0x7d9d4177b0175848L, 0x7d9d4177b0175849L, "requiredChild")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

@@ -21,6 +21,9 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.newLine();
 
+    tgs.append("function registerRegex() {");
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
     tgs.append("jQuery.expr[':'].regex = function(elem, index, match) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
@@ -38,9 +41,14 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("return regex.test(jQuery(elem)[attr.method](attr.property));");
     ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();
     tgs.newLine();
+
 
     tgs.append("function childrenTypeCheck(id, customMessage, type, applyTo, allowedChildrenSelectors) {");
     tgs.newLine();
@@ -142,7 +150,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
-    tgs.append("' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + ' at position ' + position + '. Element: ';");
+    tgs.append("' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + '. Element: ';");
     tgs.newLine();
 
     tgs.indent();
@@ -193,7 +201,7 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ");
-    tgs.append("' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + ' at position ' + position + '. Elements missing required children: ';");
+    tgs.append("' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + '. Elements missing required children: ';");
     tgs.newLine();
 
     tgs.indent();
@@ -1160,6 +1168,38 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
+    tgs.append("if (typeof jQuery === 'undefined') {");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("var script = document.createElement('script');");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("document.getElementsByTagName('head')[0].appendChild(script);");
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("setTimeout(function() {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append("(mode, disable);");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}, 1000);");
+    tgs.newLine();
+
+    tgs.indent();
+    tgs.append("} else {");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("registerRegex();");
+    tgs.indent();
     tgs.append("singleDomIterationMode = mode;");
     tgs.newLine();
     tgs.indent();
@@ -1210,6 +1250,10 @@ public class Linter_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("alert(\"Check the console to see violations. (Press F12)\");");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");

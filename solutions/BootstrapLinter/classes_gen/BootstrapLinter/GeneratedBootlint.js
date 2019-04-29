@@ -1,11 +1,10 @@
 //generated linter for Bootstrap v 4
 
-function registerRegex() {  jQuery.expr[':'].regex = function(elem, index, match) {
-    var matchParams = match[3].split(','), validLabels = /^(data|css):/,
-      attr = {method: matchParams[0].match(validLabels) ?  matchParams[0].split(':')[0] : 'attr', property: matchParams.shift().replace(validLabels,'')},
-      regexFlags = 'ig', regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
-    return regex.test(jQuery(elem)[attr.method](attr.property));  }
-}
+jQuery.expr[':'].regex = function(elem, index, match) {
+  var matchParams = match[3].split(','), validLabels = /^(data|css):/,
+    attr = {method: matchParams[0].match(validLabels) ?  matchParams[0].split(':')[0] : 'attr', property: matchParams.shift().replace(validLabels,'')},
+    regexFlags = 'ig', regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
+  return regex.test(jQuery(elem)[attr.method](attr.property));}
 
 function childrenTypeCheck(id, customMessage, type, applyTo, allowedChildrenSelectors) {
 
@@ -33,7 +32,7 @@ function requiredChildCheck(id, customMessage, type, position, unique, applyTo, 
   if (!disabledChecks.includes(id)) {
     if (singleDomIterationMode) {
       if ($(investigatedElement).filter(applyTo.join(', ')).length && (!$(investigatedElement).children(requiredChildSelectors.join(', ')).length || (unique && !$(investigatedElement.children(requiredChildSelectors.join(', '). length != 1))))) {
-        var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + '. Element: ';
+        var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + ' at position ' + position + '. Element: ';
         message = (customMessage != '-' ? customMessage : message);
         printMessage3(type, message, investigatedElement);
       }
@@ -46,7 +45,7 @@ function requiredChildCheck(id, customMessage, type, position, unique, applyTo, 
         }
       });
       if (elementsMissingChildren.length) {
-        var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + '. Elements missing required children: ';
+        var message = 'RequiredChildren' + type + ' (check id: ' + id + '): elements which satisfy ' + applyTo.join(' or ') + ' must have ' + (unique ? 'exactly' : 'at least') + ' one child matching ' + requiredChildSelectors.join(' or ') + ' at position ' + position + '. Elements missing required children: ';
         message = (customMessage != '-' ? customMessage : message);
         printMessage3(type, message, elementsMissingChildren);
       }
@@ -360,29 +359,20 @@ function runChecks() {
 var singleDomIterationMode, requiredElements, domElements, investigatedElement, disabledChecks;
 
 function GeneratedBootlint(mode, disable) {
-  if (typeof jQuery === 'undefined') {
-  var script = document.createElement('script');
-  script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
-  document.getElementsByTagName('head')[0].appendChild(script);
-  setTimeout(function() {
-    GeneratedBootlint(mode, disable);
-  }, 1000);
-  } else {
-    registerRegex();    singleDomIterationMode = mode;
-    disabledChecks = disable;
-    requiredElements  = [];
-    domElements = [];
+  singleDomIterationMode = mode;
+  disabledChecks = disable;
+  requiredElements  = [];
+  domElements = [];
 
-    if (singleDomIterationMode) {
-      domElements = document.querySelectorAll('*');
-      for (var i = 0; i < domElements.length; i ++) {
-        investigatedElement = domElements[i];
-        runChecks();
-      }
-      printMissingElementChecks();
-    } else {
+  if (singleDomIterationMode) {
+    domElements = document.querySelectorAll('*');
+    for (var i = 0; i < domElements.length; i ++) {
+      investigatedElement = domElements[i];
       runChecks();
     }
-    alert("Check the console to see violations. (Press F12)");
+    printMissingElementChecks();
+  } else {
+    runChecks();
   }
+  alert("Check the console to see violations. (Press F12)");
 }

@@ -294,8 +294,8 @@
       <node id="5508172853056289686" at="287,71,288,96" concept="1" />
       <node id="5508172853056289686" at="288,96,289,17" concept="1" />
       <node id="5508172853056289733" at="289,17,290,202" concept="1" />
-      <node id="5508172853056289686" at="290,202,291,24" concept="1" />
-      <node id="5508172853056289686" at="291,24,292,22" concept="6" />
+      <node id="5508172853056289686" at="290,202,291,35" concept="1" />
+      <node id="5508172853056289686" at="291,35,292,22" concept="6" />
       <node id="5508172853056289686" at="284,0,294,0" concept="8" trace="createDescriptorForSelectorDefinition#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="5508172853056289686" at="91,52,92,43" />
       <scope id="5508172853056289686" at="284,76,292,22">
@@ -732,8 +732,8 @@
       <node id="9051462808395798600" at="269,96,270,17" concept="1" />
       <node id="1470622090408329513" at="270,17,271,115" concept="1" />
       <node id="9161656256699317758" at="271,115,272,181" concept="1" />
-      <node id="9051462808395798601" at="272,181,273,215" concept="1" />
-      <node id="9051462808395798600" at="273,215,274,36" concept="1" />
+      <node id="9051462808395798601" at="272,181,273,206" concept="1" />
+      <node id="9051462808395798600" at="273,206,274,36" concept="1" />
       <node id="9051462808395798600" at="274,36,275,22" concept="6" />
       <node id="9051462808395798600" at="265,0,277,0" concept="8" trace="createDescriptorForRequiredChildCheck#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="9051462808395798600" at="87,52,88,43" />

@@ -185,7 +185,7 @@
     <node concept="1TJgyj" id="7QtgnuK5Px9" role="1TKVEi">
       <property role="IQ2ns" value="9051462808395798601" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requiredChildSelectors" />
+      <property role="20kJfa" value="requiredChild" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gpTSTB$vZH" resolve="Selector" />
     </node>
@@ -300,7 +300,7 @@
   <node concept="1TIwiD" id="4LKXwqVRFIm">
     <property role="EcuMT" value="5508172853056289686" />
     <property role="TrG5h" value="SelectorDefinition" />
-    <property role="34LRSv" value="selector" />
+    <property role="34LRSv" value="selector definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4LKXwqVRFIn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
